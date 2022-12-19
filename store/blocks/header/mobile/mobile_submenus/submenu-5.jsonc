@@ -1,0 +1,80 @@
+{
+  "menu-item#mobile_menu-5": {
+    "props": {
+      "id": "menu-item-outlet",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
+      },
+      "blockClass": "mob-menu-prin-header"
+    },
+    "title":"outlet-header-desktop"
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile_menu-7": {
+    "props": {
+      "width": "auto",
+      "blockClass": "mobile-submenu-7"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#mobile_menu-7"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_menu-7": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#ksimeritos",
+            "menu-item#aquameritos",
+            "menu-item#mikromeritos",
+            "menu-item#emoshionatos",
+            "menu-item#volameritos",
+            "menu-item#sigotos",
+            "menu-item#prematuros",
+            "menu-item#espumantis",
+            "menu-item#neoflobbies",
+            "menu-item#kkitos"
+    ]
+  }
+
+
+
+
+  // "menu-item#mobile_menu-5": {
+  //   "props": {
+  //     "id": "menu-item-juegos",
+  //     "type": "custom",
+  //     "iconId": null,
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/juegos",
+  //       "noFollow": false,
+  //       "tagTitle": "Juegos",
+  //       "text": "Juegos"
+  //     },
+  //     "blockClass": "mob-menu-prin-header-juegos"
+  //     // "blockClass": "menuMob-juegos"
+  //   }
+  //   // "blocks":["vtex.menu@2.x:submenu.accordion#mobile_menu-5"]
+  // }
+  // "vtex.menu@2.x:submenu.accordion#mobile_menu-5":{
+  //   "children":[
+  //     "vtex.menu@2.x:menu#mobile_submenu-5"
+  //   ]
+  // },
+  // "vtex.menu@2.x:menu#mobile_submenu-5":{
+  //   "props":{
+  //     "blockClass": "submenuAccordion",
+  //     "categoryId": 61,
+  //     "orientation": "vertical"
+  //   }
+  // }
+}

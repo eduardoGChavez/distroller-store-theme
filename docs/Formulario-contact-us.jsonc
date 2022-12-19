@@ -1,0 +1,115 @@
+// Entity https://distrollermx.vtexcommercestable.com.br/api/dataentities/contactform/schemas/datoscont
+{
+    "title": "datoscont",
+    "type": "object",
+    "properties": {
+        "nombre": {
+            "type": "string",
+            "title": "Nombre",
+            "description": "Nombre persona"
+        },
+        "email": {
+            "type": "string",
+            "format": "email",
+            "title": "Correo electrónico"
+        },
+        "mensaje": {
+            "type": "string",
+            "title": "Mensaje",
+            "description": "Mensaje"
+        }
+    },
+    "required": [
+        "nombre",
+        "email",
+        "mensaje"
+    ],
+    "v-indexed": [
+        "nombre",
+        "email",
+        "mensaje"
+    ],
+    "v-security": {
+        "publicJsonSchema": true,
+        "allowGetAll": false,
+        "publicRead": [
+            "fieldExample"
+        ],
+        "publicWrite": [
+            "nombre",
+            "email",
+            "mensaje"
+        ],
+        "publicFilter": [
+            "fieldExample"
+        ]
+    },
+    "v-triggers": [
+        {
+            "name": "info-contacto",
+            "active": true,
+            "action": {
+                "type": "t-email",
+                "template": "info-contacto",
+                "body": {
+                    "nombre": "{!nombre}",
+                    "email": "{!email}",
+                    "mensaje": "{!mensaje}"
+                }
+            }
+        }
+    ]
+}
+
+// VTable https://distrollermx.vtexcommercestable.com.br/api/dataentities/vtable/documents/{FormularioContacto}?_schema=app
+{
+    "name": "FormularioContacto",
+    "title": "Contact Form",
+    "tables": [
+        {
+            "id": "contactform",
+            "title": "Contact Form",
+            "entity": "contactform",
+            "model": "datoscont",
+            "fields": {
+                "id": {
+                    "width": 200,
+                    "label": "Id"
+                },
+                "nombre": {
+                    "width": 300,
+                    "label": "Nombre"
+                },
+                "email": {
+                    "width": 200,
+                    "label": "Correo"
+                },
+                "mensaje": {
+                    "width": 500,
+                    "label": "Mensaje"
+                }
+            },
+            "list": [
+                "id",
+                "nombre",
+                "email",
+                "mensaje"
+            ],
+            "editor": {
+                "settings": {
+                    "sections": [
+                        {
+                            "name": "Personal Data",
+                            "fields": [
+                                "id",
+                                "nombre",
+                                "email",
+                                "mensaje"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

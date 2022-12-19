@@ -1,0 +1,1157 @@
+{
+  "store.custom#faq": {
+    "children": [
+      "flex-layout.row#faq"
+    ]
+  },
+
+  "flex-layout.row#faq": {
+    "props": {
+      "horizontalAlign":"center",
+      "blockClass": "faq"
+    },
+    "children": [
+      "flex-layout.col#faq"
+    ]
+  },
+
+  "flex-layout.col#faq": {
+    "props":{
+      "horizontalAlign":"center"
+    },
+    "children": [
+      
+      "rich-text#faq",
+      "disclosure-layout-group#group"
+    ]
+  },
+  "rich-text#faq": {
+    "props": {
+      "blockClass":"titulofaq",
+      "text": "## Preguntas frecuentes"
+    }
+  },
+
+  "disclosure-layout-group#group": {
+    "children": [
+      "disclosure-layout#firstb",
+      "flex-layout.row#linea",
+      "disclosure-layout#secondb",
+      "flex-layout.row#linea",
+      "disclosure-layout#thirdb",
+      "flex-layout.row#linea",
+      "disclosure-layout#fourthb",
+      "flex-layout.row#linea",
+      "disclosure-layout#fifthb",
+      "flex-layout.row#linea",
+      "disclosure-layout#6b",
+      "flex-layout.row#linea",
+      "disclosure-layout#7b",
+      "flex-layout.row#linea",
+      "disclosure-layout#8b",
+      "flex-layout.row#linea",
+      "disclosure-layout#9b",
+      "flex-layout.row#linea",
+      "disclosure-layout#10b",
+      "flex-layout.row#linea",
+      "disclosure-layout#11b",
+      "flex-layout.row#linea",
+      "disclosure-layout#12b",
+      "flex-layout.row#linea",
+      "disclosure-layout#13b",
+      "flex-layout.row#linea",
+      "disclosure-layout#14b",
+      "flex-layout.row#linea",
+      "disclosure-layout#15b",
+      "flex-layout.row#linea",
+      "disclosure-layout#16b",
+      "flex-layout.row#linea",
+      "disclosure-layout#17b",
+      "flex-layout.row#linea",
+      "disclosure-layout#18b",
+      "flex-layout.row#linea",
+      "disclosure-layout#19b",
+      "flex-layout.row#linea",
+      "disclosure-layout#20b",
+      "flex-layout.row#linea",
+      "disclosure-layout#21b",
+      "flex-layout.row#linea",
+      "disclosure-layout#22b",
+      "flex-layout.row#linea",
+      "disclosure-layout#23b",
+      "flex-layout.row#linea",
+      "disclosure-layout#24b",
+      "flex-layout.row#linea",
+      "disclosure-layout#25b",
+      "flex-layout.row#linea"
+      // "flex-layout.row#fecha",
+      // "flex-layout.row#boton-test"
+    ]
+  },
+  "disclosure-layout#25b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#25b",
+      "disclosure-content#25b"
+      
+    ]
+  },
+  "disclosure-trigger#25b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b25",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#25b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b25"
+    ]
+  },
+  "rich-text#question1b25": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b25": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#24b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#24b",
+      "disclosure-content#24b"
+      
+    ]
+  },
+  "disclosure-trigger#24b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b24",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#24b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b24"
+    ]
+  },
+  "rich-text#question1b24": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b24": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#23b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#23b",
+      "disclosure-content#23b"
+      
+    ]
+  },
+  "disclosure-trigger#23b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b23",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#23b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b23"
+    ]
+  },
+  "rich-text#question1b23": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b23": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#22b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#22b",
+      "disclosure-content#22b"
+      
+    ]
+  },
+  "disclosure-trigger#22b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b22",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#22b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b22"
+    ]
+  },
+  "rich-text#question1b22": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b22": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#21b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#21b",
+      "disclosure-content#21b"
+      
+    ]
+  },
+  "disclosure-trigger#21b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b21",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#21b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b21"
+    ]
+  },
+  "rich-text#question1b21": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b21": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#20b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#20b",
+      "disclosure-content#20b"
+      
+    ]
+  },
+  "disclosure-trigger#20b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b20",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#20b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b20"
+    ]
+  },
+  "rich-text#question1b20": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b20": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#19b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#19b",
+      "disclosure-content#19b"
+      
+    ]
+  },
+  "disclosure-trigger#19b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b19",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#19b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b19"
+    ]
+  },
+  "rich-text#question1b19": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b19": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#18b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#18b",
+      "disclosure-content#18b"
+      
+    ]
+  },
+  "disclosure-trigger#18b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b18",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#18b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b18"
+    ]
+  },
+  "rich-text#question1b18": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b18": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#17b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#17b",
+      "disclosure-content#17b"
+      
+    ]
+  },
+  "disclosure-trigger#17b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b17",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#17b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b17"
+    ]
+  },
+  "rich-text#question1b17": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b17": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#16b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#16b",
+      "disclosure-content#16b"
+      
+    ]
+  },
+  "disclosure-trigger#16b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b16",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#16b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b16"
+    ]
+  },
+  "rich-text#question1b16": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b16": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#15b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#15b",
+      "disclosure-content#15b"
+      
+    ]
+  },
+  "disclosure-trigger#15b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b15",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#15b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b15"
+    ]
+  },
+  "rich-text#question1b15": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b15": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+
+  "disclosure-layout#14b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#14b",
+      "disclosure-content#14b"
+      
+    ]
+  },
+  "disclosure-trigger#14b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b14",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#14b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b14"
+    ]
+  },
+  "rich-text#question1b14": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b14": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#13b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#13b",
+      "disclosure-content#13b"
+      
+    ]
+  },
+  "disclosure-trigger#13b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b13",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#13b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b13"
+    ]
+  },
+  "rich-text#question1b13": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b13": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#12b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#12b",
+      "disclosure-content#12b"
+      
+    ]
+  },
+  "disclosure-trigger#12b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b12",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#12b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b12"
+    ]
+  },
+  "rich-text#question1b12": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b12": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+
+  "disclosure-layout#11b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#11b",
+      "disclosure-content#11b"
+      
+    ]
+  },
+
+  "disclosure-trigger#11b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b11",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#11b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b11"
+    ]
+  },
+  "rich-text#question1b11": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b11": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#10b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#10b",
+      "disclosure-content#10b"
+      
+    ]
+  },
+  "disclosure-trigger#10b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b10",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#10b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b10"
+    ]
+  },
+  "rich-text#question1b10": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b10": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+
+  "disclosure-layout#9b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#9b",
+      "disclosure-content#9b"
+      
+    ]
+  },
+  "disclosure-trigger#9b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b9",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#9b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b9"
+    ]
+  },
+  "rich-text#question1b9": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b9": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+
+  "disclosure-layout#8b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#8b",
+      "disclosure-content#8b"
+      
+    ]
+  },
+  "disclosure-trigger#8b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b8",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#8b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b8"
+    ]
+  },
+  "rich-text#question1b8": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b8": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+
+  "disclosure-layout#7b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#7b",
+      "disclosure-content#7b"
+      
+    ]
+  },
+  "disclosure-trigger#7b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b7",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#7b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b7"
+    ]
+  },
+  "rich-text#question1b7": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b7": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+
+  "disclosure-layout#6b": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#6b",
+      "disclosure-content#6b"
+      
+    ]
+  },
+  "disclosure-trigger#6b": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b6",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#6b": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b6"
+    ]
+  },
+  "rich-text#question1b6": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b6": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+
+
+
+
+
+
+  // "flex-layout.row#boton-test":{
+  //   "props":{
+  //     "blockClass":"boton-test-row"
+  //   },
+  //   "children":[
+  //     "flex-layout.col#boton-test"
+  //   ]
+  // },
+  // "flex-layout.col#boton-test":{
+  //   "props":{
+  //     "horizontalAlign":"center",
+  //     "blockClass":"boton-test-col"
+  //   },
+  //   "children":[
+  //     "rich-text#button-rt"
+  //   ]
+  // },
+  // "rich-text#button-rt":{
+  //   "props":{
+  //     "blockClass":"buttontext",
+  //     "text":"[Button Test](/button)"
+  //   }
+  // },
+  // "flex-layout.row#fecha":{
+  //   "props":{
+  //     "horizontalAlign":"center",
+  //     "blockClass":"fecha"
+  //   },
+  //   "children":[
+  //     "rich-text#fecha"
+  //   ]
+  // },
+  // "rich-text#fecha":{
+  //   "props":{
+  //     "blockClass":"fecha",
+  //     "text":"Este documento fue modificado en 26/Enero/2022"
+  //   }
+  // },
+  "flex-layout.row#linea":{
+    "props":{
+      "blockClass":"linea-faq"
+    }
+  },
+  "disclosure-layout#firstb": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#firstb",
+      "disclosure-content#firstb"
+      
+    ]
+  },
+
+  "disclosure-trigger#firstb": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question1b",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#firstb": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      "rich-text#answer1b"
+    ]
+  },
+  "rich-text#question1b": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer1b": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+  "disclosure-layout#secondb": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#secondb", 
+      "disclosure-content#secondb"
+    ]
+  },
+  
+  "disclosure-trigger#secondb": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question2b",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#secondb": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2b"]
+  },
+  "rich-text#question2b": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer2b": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+
+  "disclosure-layout#thirdb": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#thirdb",
+      "disclosure-content#thirdb"
+    ]
+  },
+  "disclosure-trigger#thirdb": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question3b",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#thirdb": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer3b"]
+  },
+  "rich-text#question3b": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer3b": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+
+  "disclosure-layout#fourthb": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#fourthb",
+      "disclosure-content#fourthb"
+    ]
+  },
+  "disclosure-trigger#fourthb": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question4b",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#fourthb": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2b"]
+  },
+  "rich-text#question4b": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer4b": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+
+  "disclosure-layout#fifthb": {
+    "props": {
+      "blockClass":"rowfaq",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#fifthb", 
+      "disclosure-content#fifthb"
+    ]
+  },
+  "disclosure-trigger#fifthb": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#question5b",
+      "disclosure-state-indicator"
+    ]
+  },
+  "disclosure-content#fifthb": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2b"]
+  },
+  "rich-text#question5b": {
+    "props": {
+      "text": "Lorem Ipsum una pregunta super"
+    }
+  },
+  "rich-text#answer5b": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+    }
+  },
+
+
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "icon-caret#down",
+      "Hide": "icon-caret#up"
+    }
+  },
+  "icon-caret#down": {
+    "props": {
+      "orientation": "down"
+    }
+  },
+  "icon-caret#up": {
+    "props": {
+      "orientation": "up"
+    }
+  }
+}

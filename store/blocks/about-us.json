@@ -1,0 +1,633 @@
+{
+  "store.custom#about-us": {
+    "blocks": [
+      "responsive-layout.desktop#aboutDesktop",
+      "responsive-layout.mobile#aboutMobile"
+    ]
+  },
+
+  "responsive-layout.mobile#aboutMobile":{
+    "props":{
+      "blockClass":"aboutMobile"
+    },
+    "children":[
+      "flex-layout.row#tituloAbout",
+      "flex-layout.row#descripcionAbout",
+      "flex-layout.row#imagenAbout",
+      "flex-layout.row#tituloMisionVision",
+      "flex-layout.row#misionVisionCol",
+      "flex-layout.row#tituloValores",
+      "flex-layout.row#textoValores",
+      "flex-layout.row#titulocompromisoSocial",
+      "flex-layout.row#textocompromisoSocial",
+      "flex-layout.row#localStores"
+    ]
+  },
+
+  "flex-layout.row#textocompromisoSocial":{
+    "props":{
+      "blockClass":"textocompromisoSocial"
+    },
+    "children":[
+      "rich-text#textocompromisoSocial"
+    ],
+    "title":"texto-compromiso-social-mobile"
+  },
+  "rich-text#textocompromisoSocial":{
+    "props":{
+      "blockClass":"textocompromisoSocial",
+      "text":"Ayudar es la neta. En Distroller destinamos parte de las ganancias de cada producto en apoyo a diferentes fundaciones. Es una convicción que nos lleva a dar algo de regreso a la comunidad. Es parte del ADN de la marca, es otra forma de dar color al mundo.\n\nAdicionalmente, la Fundación Amparo Serrano lleva a cabo proyectos enfocados en mejorar la calidad de vida de niñas de distintas instituciones, a través del baile, la música o la pintura."
+    }
+  },
+
+  "flex-layout.row#titulocompromisoSocial":{
+    "props":{
+      "blockClass":"titulocompromisoSocial"
+    },
+    "children":[
+      "rich-text#titulocompromisoSocial"
+    ],
+    "title":"titulo-comprension-social-mobile"
+  },
+
+  "rich-text#titulocompromisoSocial":{
+    "props":{
+      "blockClass":"titulocompromisoSocial",
+      "text":"### Compromiso Social"
+    }
+  },
+
+  "flex-layout.row#textoValores":{
+    "props":{
+      "blockClass":"textoValores"
+    },
+    "children":[
+      "flex-layout.col#textoValores"
+    ],
+    "title":"texto-valores-mobile"
+  },
+  "flex-layout.col#textoValores":{
+    "props":{
+      "blockClass":"textoValores"
+    },
+    "children":[
+      "flex-layout.row#textoValores1",
+      "flex-layout.row#textoValores2",
+      "flex-layout.row#textoValores3",
+      "flex-layout.row#textoValores4"
+    ]
+  },
+
+  "flex-layout.row#textoValores4":{
+    "props":{
+      "blockClass":"textoValores4"
+    },
+    "children":[
+      "rich-text#textoValores4"
+    ]
+  },
+  "rich-text#textoValores4":{
+    "props":{
+      "blockClass":"textoValores4",
+      "text":"### Libertad de expresión\nSer lo más güananonli del diseño, siempre yendo un paso adelante es el motor de la marca. El uso del color en su máxima saturación inspira a la mente creativa detrás de todo lo que hacemos. Innovación: si lo que hacemos ya de por sí es bueno, vivimos en búsqueda de siempre hacerlo mejor."
+    }
+  },
+
+  "flex-layout.row#textoValores3":{
+    "props":{
+      "blockClass":"textoValores3"
+    },
+    "children":[
+      "rich-text#textoValores3"
+    ]
+  },
+  "rich-text#textoValores3":{
+    "props":{
+      "blockClass":"textoValores3",
+      "text":"### Trabajo en equipo\nSer lo más güananonli del diseño, siempre yendo un paso adelante es el motor de la marca. El uso del color en su máxima saturación inspira a la mente creativa detrás de todo lo que hacemos. Innovación: si lo que hacemos ya de por sí es bueno, vivimos en búsqueda de siempre hacerlo mejor."
+    }
+  },
+
+  "flex-layout.row#textoValores2":{
+    "props":{
+      "blockClass":"textoValores2"
+    },
+    "children":[
+      "rich-text#textoValores2"
+    ]
+  },
+  "rich-text#textoValores2":{
+    "props":{
+      "blockClass":"textoValores2",
+      "text":"### Pro actividad\nSer lo más güananonli del diseño, siempre yendo un paso adelante es el motor de la marca. El uso del color en su máxima saturación inspira a la mente creativa detrás de todo lo que hacemos. Innovación: si lo que hacemos ya de por sí es bueno, vivimos en búsqueda de siempre hacerlo mejor."
+    }
+  },
+
+  "flex-layout.row#textoValores1":{
+    "props":{
+      "blockClass":"textoValores1"
+    },
+    "children":[
+      "rich-text#textoValores1"
+    ]
+  },
+  "rich-text#textoValores1":{
+    "props":{
+      "blockClass":"textoValores1",
+      "text":"### Pasión por la creatividad y originalidad\nSer lo más güananonli del diseño, siempre yendo un paso adelante es el motor de la marca. El uso del color en su máxima saturación inspira a la mente creativa detrás de todo lo que hacemos. Innovación: si lo que hacemos ya de por sí es bueno, vivimos en búsqueda de siempre hacerlo mejor."
+    }
+  },
+
+
+  "flex-layout.row#tituloValores":{
+    "props":{
+      "blockClass":"tituloValores"
+    },
+    "children":[
+      "rich-text#tituloValores"
+    ],
+    "title":"titulo-valores-mobile"
+  },
+
+  "rich-text#tituloValores":{
+    "props":{
+      "blockClass":"tituloValores",
+      "text":"### Valores"
+    }
+  },
+
+  "flex-layout.row#misionVisionCol":{
+    "props":{
+      "blockClass":"misionVisionCol"
+    },
+    "children":[
+      "flex-layout.col#misionVisionCol"
+    ],
+    "title":"mision-vision-col-mobile"
+  },
+
+  "flex-layout.col#misionVisionCol":{
+    "props":{
+      "blockClass":"misionVisionCol"
+    },
+    "children":[
+      "flex-layout.row#misionVisionRow1",
+      "flex-layout.row#misionVisionRow2"
+    ]
+  },
+
+  "flex-layout.row#misionVisionRow2":{
+    "props":{
+      "blockClass":"misionVisionRow2"
+    },
+    "children":[
+      "rich-text#misionVisionRow2"
+    ]
+  },
+  "rich-text#misionVisionRow2":{
+    "props":{
+      "blockClass":"misionVisionRow2",
+      "text":"#### Misión\nLa misión de Distroller consiste en la exploración constante de nuevas fronteras de diseño Mexicano, donde los productos más originales, coloridos y divertidos hablan por sí mismos; haciendo de la vida un lugar más amable y ligero para vivir.\n#### Visión\nCrear productos diseños y conceptos basados en la filosofía de ver el lado extraordinario en lo ordinario, en el que todas las \"especies\" son bienvenidas y en el que la diversión es una materia obligatoria y que se cursa forever. Lo logramos a través de un diseño original, colorido, 102% mexicano cuidando cada detalle. Distroller no educa, solo da su humilde opinión."
+    }
+  },
+
+  "flex-layout.row#misionVisionRow1":{
+    "props":{
+      "blockClass":"misionVisionRow1"
+    },
+    "children":[
+      "flex-layout.col#rowCol1",
+      "flex-layout.col#rowCol2"
+    ]
+  },
+  "flex-layout.col#rowCol1":{
+    "props":{
+      "width":"50%",
+      "blockClass":"rowCol1"
+    }
+  },
+  "flex-layout.col#rowCol2":{
+    "props":{
+      "blockClass":"rowCol2"
+    },
+    "children":[
+      "image#rowCol2"
+    ]
+  },
+  "image#rowCol2":{
+    "props":{
+      
+      "blockClass":"rowCol2",
+      "src":"assets/rowCol2.png"
+    }
+  },
+
+  "flex-layout.row#tituloMisionVision":{
+    "props":{
+      "blockClass":"tituloMisionVision"
+    },
+    "children":[
+      "rich-text#tituloMisionVision"
+    ],
+    "title":"titulo-vision-mision-mobile"
+  },
+
+  "rich-text#tituloMisionVision":{
+    "props":{
+      "blockClass":"tituloMisionVision",
+      "text":"### Misión y visión"
+    }
+  },
+
+  "flex-layout.row#imagenAbout":{
+    "props":{
+      "blockClass":"imagenAbout"
+    },
+    "children":[
+      "image#imagenAbout"
+    ],
+    "title":"imagen-about-mobile"
+  },
+
+  "image#imagenAbout":{
+    "props":{
+      
+      "width":"100%",
+      "blockClass":"imagenAbout",
+      "src":"assets/imgMobileAbout.png"
+    }
+  },
+
+  "flex-layout.row#descripcionAbout":{
+    "props":{
+      "blockClass":"descripcionAbout"
+    },
+    "children":[
+      "rich-text#descripcionAbout"
+    ],
+    "title":"descripcion-about-mobile"
+  },
+  "rich-text#descripcionAbout":{
+    "props":{
+      "blockClass":"descripcionAbout",
+      "text":"Distroller® es una marca exponente del diseño 102 por ciento mexicano, que no hace diferencia entre sexo o edad y se dispone a conquistar a todos por igual. Utiliza el folklore, la cultura, lo divertido y lo triste de la vida para crear un universo lleno de color y buen humor.\n\nCon siete líneas de negocio y arriba de 60 socios de licenciamiento, comercializa más de 2,000 productos en 1,500 puntos de venta incluyendo butiks propias, store-in-store y distribución en las principales tiendas departamentales y de autoservicio de México, España y Latinoamérica; colocándose como un ícono de irreverencia y jovialidad único en el mercado. Distroller hace de lo ordinario algo extraordinario."
+    }
+  },
+
+
+  "flex-layout.row#tituloAbout":{
+    "props":{
+      "blockClass":"tituloAbout"
+    },
+    "children":[
+      "rich-text#tituloAbout"
+    ],
+    "title":"titulo-about-us"
+  },
+
+  "rich-text#tituloAbout":{
+    "props":{
+      "blockClass":"tituloAbout",
+      "text":"### Distroller Güorld"
+    }
+  },
+
+  "responsive-layout.desktop#aboutDesktop":{
+    "props":{
+      "blockClass":"aboutDesktop"
+    },
+    "children":[
+      "flex-layout.row#about-us"
+    ]
+  },
+
+  "flex-layout.row#about-us": {
+    "children": [
+      "flex-layout.col#text-about-us"
+    ]
+  },
+
+  "flex-layout.col#text-about-us": {
+    "children": [
+      "flex-layout.row#titleAbout",
+      "flex-layout.row#textAbout",
+      "flex-layout.row#imgDG",
+      "flex-layout.row#titleMision",
+      "flex-layout.row#textMision",
+      "flex-layout.row#textValores",
+      "flex-layout.row#colsValores",
+      "flex-layout.row#compromiso",
+      "flex-layout.row#compromisoText",
+      "flex-layout.row#localStores"
+    ],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#localStores":{
+    "props":{
+      "blockClass":"localStores"
+    },
+    "children":[
+      "flex-layout.col#localStoresCol1",
+      "flex-layout.col#localStoresCol2"
+    ],
+    "title":"local-stores"
+  },
+
+  "flex-layout.col#localStoresCol2":{
+    "props":{
+      "blockClass":"localStoresCol2"
+    },
+    "children":[
+      "flex-layout.row#localStores2"
+    ]
+  },
+  "flex-layout.row#localStores2":{
+    "props":{
+      "blockClass":"localStores2"
+    },
+    "children":[
+      "rich-text#localStores2"
+    ]
+  },
+
+  "rich-text#localStores2":{
+    "props":{
+      "blockClass":"localStores2",
+      "text":"[Localizar mi tienda](/stores)"
+    }
+  },
+
+  "flex-layout.col#localStoresCol1":{
+    "props":{
+      "width":"60%",
+      "blockClass":"localStoresCol1"
+    },
+    "children":[
+      "rich-text#localStoresCol1"
+    ]
+  },
+
+  "rich-text#localStoresCol1":{
+    "props":{
+      "blockClass":"localStoresCol1Text",
+      "text":"Localiza nuestras tiendas"
+    }
+  },
+
+  "flex-layout.row#compromisoText":{
+    "props":{
+      "blockClass":"compromisoText"
+    },
+    "children":[
+      "rich-text#compromisoText"
+    ],
+    "title":"texto-compromiso-desktop"
+  },
+
+  "rich-text#compromisoText":{
+    "props":{
+      "blockClass":"compromisoText",
+      "text":"Ayudar es la neta. En Distroller destinamos parte de las ganancias de cada producto en apoyo a diferentes fundaciones. Es una convicción que nos lleva a dar algo de regreso a la comunidad. Es parte del ADN de la marca, es otra forma de dar color al mundo.\n\nAdicionalmente, la Fundación Amparo Serrano lleva a cabo proyectos enfocados en mejorar la calidad de vida de niñas de distintas instituciones, a través del baile, la música o la pintura."
+    }
+  },
+
+  "flex-layout.row#compromiso":{
+    "props":{
+      "blockClass":"compromiso"
+    },
+    "children":[
+      "rich-text#compromiso"
+    ],
+    "title":"titulo-compromiso-desktop"
+  },
+
+  "rich-text#compromiso":{
+    "props":{
+      "blockClass":"compromiso",
+      "text":"## Compromiso Social"
+    }
+  },
+
+  "flex-layout.row#colsValores":{
+    "props":{
+      "blockClass":"colValores"
+    },
+    "children":[
+      "flex-layout.col#col1Valores",
+      "flex-layout.col#col2Valores"
+    ],
+    "title":"col-valores-desktop"
+  },
+  "flex-layout.col#col1Valores":{
+    "props":{
+      "blockClass":"colVal1"
+    },
+    "children":[
+      "flex-layout.row#rowVal1",
+      "flex-layout.row#rowVal3"
+    ]
+  },
+
+  "flex-layout.row#rowVal1":{
+    "props":{
+      "blockClass":"rowVal1"
+    },
+    "children":[
+      "rich-text#rowVal1"
+    ]
+  },
+  "rich-text#rowVal1":{
+    "props":{
+      "blockClass":"rowVal1",
+      "text":"### Pasión por la creatividad y originalidad\nSer lo más güananonli del diseño, siempre yendo un paso adelante es el motor de la marca. El uso del color en su máxima saturación inspira a la mente creativa detrás de todo lo que hacemos. Innovación: si lo que hacemos ya de por sí es bueno, vivimos en búsqueda de siempre hacerlo mejor."
+    }
+  },
+  "flex-layout.row#rowVal3":{
+    "props":{
+      "blockClass":"rowVal3"
+    },
+    "children":[
+      "rich-text#rowVal3"
+    ]
+  },
+  "rich-text#rowVal3":{
+    "props":{
+      "blockClass":"rowVal3",
+      "text":"### Trabajo en equipo\nSer lo más güananonli del diseño, siempre yendo un paso adelante es el motor de la marca. El uso del color en su máxima saturación inspira a la mente creativa detrás de todo lo que hacemos. Innovación: si lo que hacemos ya de por sí es bueno, vivimos en búsqueda de siempre hacerlo mejor."
+    }
+  },
+
+  "flex-layout.col#col2Valores":{
+    "props":{
+      "blockClass":"colVal2"
+    },
+    "children":[
+      "flex-layout.row#rowVal2",
+      "flex-layout.row#rowVal4"
+    ]
+  },
+
+  "flex-layout.row#rowVal2":{
+    "props":{
+      "blockClass":"rowVal2"
+    },
+    "children":[
+      "rich-text#rowVal2"
+    ]
+  },
+  "rich-text#rowVal2":{
+    "props":{
+      "blockClass":"rowVal2",
+      "text":"### Pro actividad\nSer lo más güananonli del diseño, siempre yendo un paso adelante es el motor de la marca. El uso del color en su máxima saturación inspira a la mente creativa detrás de todo lo que hacemos. Innovación: si lo que hacemos ya de por sí es bueno, vivimos en búsqueda de siempre hacerlo mejor."
+    }
+  },
+  "flex-layout.row#rowVal4":{
+    "props":{
+      "blockClass":"rowVal4"
+    },
+    "children":[
+      "rich-text#rowVal4"
+    ]
+  },
+  "rich-text#rowVal4":{
+    "props":{
+      "blockClass":"rowVal4",
+      "text":"### Libertad de expresión\nSer lo más güananonli del diseño, siempre yendo un paso adelante es el motor de la marca. El uso del color en su máxima saturación inspira a la mente creativa detrás de todo lo que hacemos. Innovación: si lo que hacemos ya de por sí es bueno, vivimos en búsqueda de siempre hacerlo mejor."
+    }
+  },
+
+
+
+  "flex-layout.row#textValores":{
+    "props":{
+      "blockClass":"textValores"
+    },
+    "children":[
+      "rich-text#valores"
+    ],
+    "title":"texto-valores-desktop"
+  },
+
+  "rich-text#valores":{
+    "props":{
+      "blockClass":"valores",
+      "text":"## Valores"
+    }
+  },
+
+  "flex-layout.row#imgDG":{
+    "props":{
+      "blockClass":"imgDG"
+    },
+    "children":[
+      "image#imgDG"
+    ],
+    "title":"imagen-aboutus-desktop"
+  },
+
+  "image#imgDG":{
+    "props":{
+      "blockClass":"imgDG",
+      "src":"assets/distroller-acerca-de-01-dekstop 1.png"
+    }
+  },
+
+  "flex-layout.row#textAbout":{
+    "props":{
+      "blockClass":"textAbout",
+      "horizontalAlign":"left"
+    },
+    "children":[
+      "rich-text#about-us"
+    ],
+    "title":"texto-about-desktop"
+  },
+  "flex-layout.row#textMision":{
+    "props":{
+      "blockClass":"textMision",
+      "fullWidth":true,
+      "horizontalAlign":"left"
+    },
+    "children":[
+      "flex-layout.col#mision-img",
+      "flex-layout.col#mision-text"
+    ],
+    "title":"texto-mision-desktop"
+  },
+  "flex-layout.col#mision-img":{
+    "props":{
+      "width":"45%",
+      "blockClass":"mision-img"
+    },
+    "children":[
+        "image#imgMision"
+    ]
+  },
+
+  "image#imgMision":{
+    "props":{
+      "blockClass":"imgMision",
+      "src":"assets/distroller-acerca-de-02-desktop 1.png"
+    }
+  },
+
+  "flex-layout.col#mision-text":{
+    "props":{
+      "blockClass":"mision-text"
+    },
+    "children":[
+      "rich-text#mision"
+    ]
+  },
+  "flex-layout.row#titleMision":{
+    "props":{
+      "horizontalAlign":"center",
+      "blockClass":"titleMision"
+    },
+    "children":[
+      "rich-text#title-mision"
+    ],
+    "title":"titulo-mision-desktop"
+  },
+  "flex-layout.row#titleAbout":{
+    "props":{
+      "horizontalAlign":"center",
+      "blockClass":"about-us"
+    },
+    "children":[
+      "rich-text#title-about-us"
+    ],
+    "title":"titulo-aboutus-desktop"
+  },
+  "rich-text#title-about-us": {
+    "props": {
+      "horizontalAlign":"left",
+      "text":
+      "# Distroller Güorld",
+      "blockClass": "title-about"
+    }
+  },
+  "rich-text#title-mision":{
+    "props": {
+      "text":
+      "# Misión y visión",
+      "blockClass": "title-mision"
+    }
+  },
+  "rich-text#about-us": {
+    "props": {
+      "text": "Distroller® es una marca exponente del diseño 102 por ciento mexicano, que no hace diferencia entre sexo o edad y se dispone a conquistar a todos por igual. Utiliza el folklore, la cultura, lo divertido y lo triste de la vida para crear un universo lleno de color y buen humor.\n\nCon siete líneas de negocio y arriba de 60 socios de licenciamiento, comercializa más de 2,000 productos en 1,500 puntos de venta incluyendo butiks propias, store-in-store y distribución en las principales tiendas departamentales y de autoservicio de México, España y Latinoamérica; colocándose como un ícono de irreverencia y jovialidad único en el mercado. Distroller hace de lo ordinario algo extraordinario.",
+      "blockClass": "about"
+    }
+  },
+  "rich-text#mision": {
+    "props": {
+      "text": "### Mision\nLa misión de Distroller consiste en la exploración constante de nuevas fronteras de diseño Mexicano, donde los productos más originales, coloridos y divertidos hablan por sí mismos; haciendo de la vida un lugar más amable y ligero para vivir\n\n### Vision\nCrear productos diseños y conceptos basados en la filosofía de ver el lado extraordinario en lo ordinario, en el que todas las \"especies\" son bienvenidas y en el que la diversión es una materia obligatoria y que se cursa forever. Lo logramos a través de un diseño original, colorido, 102% mexicano cuidando cada detalle. Distroller no educa, solo da su humilde opinión.",
+      "blockClass": "mision"
+    }
+  }
+}

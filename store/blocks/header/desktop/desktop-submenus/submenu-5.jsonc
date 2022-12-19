@@ -1,0 +1,44 @@
+{
+    "menu-item#outlet": {
+        "props": {
+            "id": "menu-item-juegos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Ofertas",
+                "text": "Ofertas"
+            },
+            "blockClass": "menu-prin-header"
+        },
+        "title":"outlet-header-desktop"
+    },
+
+
+
+
+
+
+
+
+
+    "menu-item#distrollerizate": {
+        "props": {
+            "id": "menu-item-distrollerizate",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/distrollerizate",
+                "noFollow": false,
+                "tagTitle": "Distrollerizate",
+                "text": "Distrollerizate"
+            },
+            "blockClass": "menu-distrollerizate"
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+  "store.custom#juego-mikro-viaje": {
+    "parent": { 
+      "header": "header#static"
+    },
+    "blocks": [
+      "responsive-layout.desktop#juego-mikro-viaje",
+      "responsive-layout.mobile#juego-mikro-viaje"
+    ]
+  },
+  "responsive-layout.desktop#juego-mikro-viaje": {
+    "children": [
+      "flex-layout.row#juego-title-desktop",
+      "flex-layout.row#juego-mikro-viaje--desktop"
+    ]
+  },
+
+  "responsive-layout.mobile#juego-mikro-viaje": {
+    "children": [
+      "flex-layout.row#juego-title-mobile",
+      "flex-layout.row#juego-regresar-mobile",
+      "flex-layout.row#juego-mikro-viaje--mobile"
+    ]
+  },
+
+
+  "flex-layout.row#juego-mikro-viaje--desktop": {
+    "children": [
+      "flex-layout.col#juego-mikro-viaje"
+    ],
+    "props": {
+      "paddingTop": 9,
+      "paddingBottom": 9,
+      "blockClass": "row-juego-mikro-viaje"
+    }
+  },
+  "flex-layout.row#juego-mikro-viaje--mobile": {
+    "children": [
+      "flex-layout.col#juego-mikro-viaje"
+    ],
+    "props": {
+      "paddingTop": 9,
+      "paddingBottom": 9,
+      "blockClass": "row-juego-mikro-viaje"
+    }
+  },
+  "flex-layout.col#juego-mikro-viaje": {
+    "children": [
+      "iframe#mikro-viaje"
+      // "IFrameGames"
+    ],
+    "props": {
+      "blockClass": "col-juego-mikro-viaje"
+    }
+  },
+
+  "iframe#mikro-viaje": {
+    "props": {
+      "src": "https://juegosdistroller.vicom.mx/mikromeritosmexico/",
+      "width": "100%",
+      "height": 615,
+      "blockClass": "iframe-mikro-viaje"
+    }
+  }
+}

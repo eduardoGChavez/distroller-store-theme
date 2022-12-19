@@ -1,0 +1,104 @@
+{
+  "store.custom#personajes-indiv-page": {
+    "children": [
+      "flex-layout.row#personaje-indiv-row-info",
+      "flex-layout.row#personajes",
+      "removeCards"
+    ]
+  },
+
+  "flex-layout.row#personajes":{
+    "props":{
+      "blockClass":"personajesIndiv"
+    },
+    "children":[
+      "flex-layout.col#personajes-prin-col-filtro",
+      "flex-layout.col#personajes-prin-col-content-indiv"
+    ]
+  },
+  
+  "flex-layout.col#personajes-prin-col-content-indiv":{
+    "children": [
+
+      "flex-layout.col#card-indiv-personaje1",
+      "flex-layout.col#card-indiv-personaje2",
+      "flex-layout.col#card-indiv-personaje3",
+      "flex-layout.col#card-indiv-personaje4",
+      "flex-layout.col#card-indiv-personaje5",
+      "flex-layout.col#card-indiv-personaje6",
+      "flex-layout.col#card-indiv-personaje7",
+      "flex-layout.col#card-indiv-personaje8",
+      "flex-layout.col#card-indiv-personaje9",
+      "flex-layout.col#card-indiv-personaje10",
+      "flex-layout.col#card-indiv-personaje11",
+      "flex-layout.col#card-indiv-personaje12"
+
+      // "flex-layout.row#card-indiv-personaje1",
+      // "flex-layout.row#card-indiv-personaje2",
+      // "flex-layout.row#card-indiv-personaje3",
+      // "flex-layout.row#card-indiv-personaje4"
+    ],
+    "props": {
+      "width": "68%",
+      "blockClass": "personajes-indiv-col-txt-a"
+    },
+    "title": "col-personajes"
+  },
+
+  "flex-layout.row#personaje-indiv-row-info": {
+    "children": [
+      "flex-layout.col#personajes-indiv-col-img",
+      "flex-layout.col#personajes-indiv-col-txt"
+    ],
+    "props": {
+      "blockClass": "personaje-indiv-row-info"
+    }
+  },
+  "flex-layout.col#personajes-indiv-col-img": {
+    "children": [
+      "image#personajes-indiv-col-img"
+    ],
+    "props": {
+      "width": "auto",
+      "blockClass": "personajes-indiv-col-img"
+    }
+  },
+  "image#personajes-indiv-col-img":{
+    "props":{
+      "src":"assets/personajes/aquamerito 2.svg",
+      "blockClass": "personajes-indiv-col-img"
+      // "link":{
+      //   "url":"https://twitter.com/distroller"
+      // },
+    }
+  },
+  "flex-layout.col#personajes-indiv-col-txt": {
+    "children": [
+      "rich-text#nombre-personaje-indiv",
+      "rich-text#info-personaje-indiv",
+      "rich-text#ver-product-personaje-indiv"
+    ],
+    "props": {
+      "width": "75%",
+      "blockClass": "personajes-indiv-col-txt"
+    }
+  },
+  "rich-text#nombre-personaje-indiv":{
+    "props":{
+      "text":"NombrePersonaje",
+      "blockClass":"nombre-personaje-indiv"
+    }
+  },
+  "rich-text#info-personaje-indiv":{
+    "props":{
+      "text":"Los Aquameritos son únicos dentro de las especies neonatales. Sabes por qué??? Llegaron a la Tierra en unos Gluevos que debes sumergir en el agua para que nazca tu pimpollo. Les encanta nadar y jugar en el agua. Además, si a algunos los metes al agua fría, sus orejas les cambian de color!!!",
+      "blockClass":"info-personaje-indiv"
+    }
+  },
+  "rich-text#ver-product-personaje-indiv":{
+    "props":{
+      "text":"[Ver Producto](/)",
+      "blockClass":"ver-product-personaje-indiv"
+    }
+  }
+}

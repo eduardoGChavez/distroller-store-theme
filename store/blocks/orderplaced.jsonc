@@ -1,0 +1,177 @@
+{
+  "order-placed": {
+    "blocks": ["op-header", "op-order"]
+  },
+  "op-header": {
+    "children": [
+      "op-section#confirmation",
+      "op-section#notices",
+      "op-summary-section",
+      "op-bank-invoice-section"
+    ]
+  },
+  "op-section#confirmation": {
+    "props": {
+      "name": "confirmation",
+      "marginBottom": 9,
+      "borderless": true
+    },
+    "children": [
+      // "op-confirmation-icon",
+      "flex-layout.row#img-orderplaced",
+      "op-confirmation-title",
+      "op-confirmation-message",
+      "flex-layout.row#confirmation-buttons"
+    ]
+  },
+  "flex-layout.row#img-orderplaced":{
+    "children":[
+      "flex-layout.col#img-confirmation-orderplaced"
+    ],
+    "props":{"blockClass":"imgPastel"}
+  },
+  "flex-layout.col#img-confirmation-orderplaced":{
+    "children":[
+      "image#img-confirmation-orderplaced"
+    ],"props":{
+      "horizontalAlign":"center",
+      "blockClass":"img-1-col"
+     }
+    },
+    "image#img-confirmation-orderplaced":{
+      "props":{
+        "src":"assets/order-placed/icon-success.svg",
+        "blockClass":"img-success-orderplaced"
+      }
+  },
+  "flex-layout.row#confirmation-buttons": {
+    "props": {
+      "blockClass": "confirmationButtons",
+      "marginTop": 8,
+      "marginBottom": 8,
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": ["flex-layout.col#confirmation-buttons"]
+  },
+  "flex-layout.col#confirmation-buttons": {
+    "children": ["op-print-button"]
+  },
+  "op-section#notices": {
+    "props": {
+      "name": "notices",
+      "marginBottom": 9,
+      "borderless": true
+    },
+    "children": ["op-notices"]
+  },
+  // each order section
+  "op-order": {
+    "children": [
+      "flex-layout.row#order-header",
+      "op-order-split-notice",
+      "op-order-customer",
+      "op-section#payments",
+      "op-section#pickup-packages",
+      "op-section#delivery-packages",
+      "op-order-takeaway-packages",
+      "op-order-total"
+    ]
+  },
+  // each order header
+  "flex-layout.row#order-header": {
+    "props": {
+      "fullWidth": true,
+      "colSizing": "auto",
+      "colGap": 5,
+      "marginBottom": 5
+    },
+    "children": [
+      "flex-layout.col#order-header-info",
+      "flex-layout.col#order-header-options"
+    ]
+  },
+  "flex-layout.col#order-header-info": {
+    "children": ["op-order-number", "op-order-datetime", "op-order-seller"]
+  },
+  "flex-layout.col#order-header-options": {
+    "children": ["responsive-layout.desktop#order-options-desktop"]
+  },
+  "responsive-layout.desktop#order-options-desktop": {
+    "children": ["flex-layout.row#orderplaced-buttons"]
+  },
+  "flex-layout.row#orderplaced-buttons": {
+    "children": [
+      "flex-layout.col#orderplaced-button-facturacion", 
+      "flex-layout.col#orderplaced-buttons"
+    ]
+  },
+  "flex-layout.col#orderplaced-button-facturacion": {
+    "children": ["rich-text#orderplaced-button-facturacion"],
+    "props": {"width": "33%"}
+  },
+  "rich-text#orderplaced-button-facturacion": {
+    "props": {
+      "text": "[Facturación](/facturacion)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "orderplaced-button-facturacion"
+    }
+  },
+  "flex-layout.col#orderplaced-buttons": {
+    "children": ["op-order-options"],
+    "props": {"width": "67%"}
+  },
+  // payment section
+  "op-section#payments": {
+    "props": {
+      "name": "paymentMethods"
+    },
+    "children": [
+      "op-order-payment",
+      "responsive-layout.mobile#order-options-mobile"
+    ]
+  },
+  // bottom of top section of order header
+  "responsive-layout.mobile#order-options-mobile": {
+    "children": ["flex-layout.row#ejemploprueba"]
+  },
+  "flex-layout.row#ejemploprueba": {
+    "children": [
+      "rich-text#orderplaced-mob-button-facturacion",
+      // "flex-layout.col#orderplaced-mob-button-facturacion", 
+      "op-order-options#mobile"
+    ]
+  },
+  "flex-layout.col#orderplaced-mob-button-facturacion": {
+    "children": ["rich-text#orderplaced-mob-button-facturacion"],
+    "props": {"width": "33%"}
+  },
+  "rich-text#orderplaced-mob-button-facturacion": {
+    "props": {
+      "text": "[Facturación](/facturacion)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "orderplaced-mob-button-facturacion"
+    }
+  },
+  "op-order-options#mobile": {
+    "props": {
+      "blockClass": "mobile",
+      "fullWidth": true
+    }
+  },
+  "op-section#pickup-packages": {
+    "props": {
+      "name": "pickupPackages"
+    },
+    "children": ["op-order-pickup-packages"]
+  },
+  "op-section#delivery-packages": {
+    "props": {
+      "name": "deliveryPackages"
+    },
+    "children": ["op-order-delivery-packages"]
+  }
+}

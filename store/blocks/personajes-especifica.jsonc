@@ -1,0 +1,447 @@
+{
+  "store.custom#personajes-especi-page": {
+    "children": [
+      "flex-layout.row#personaje-indiv-row-info",
+      "flex-layout.row#masPersonajes",
+      "flex-layout.row#personajesEspeci",
+      "flex-layout.row#recomendacionesEspe",
+      "flex-layout.row#shelf"
+    ]
+  },
+  "flex-layout.row#personajesEspeci":{
+    "props":{
+      "blockClass":"personajesEspec"
+    },
+    "children":[
+      "flex-layout.col#personajes-prin-col-content-Especi"
+    ]
+  },
+
+  "flex-layout.row#recomendacionesEspe":{
+    "props":{
+      "blockClass":"tiruloRecomendaciones"
+    },
+    "children":[
+      "rich-text#recomendacionesEspe"
+    ]
+  },
+  "rich-text#recomendacionesEspe":{
+    "props":{
+      "blockClass":"recomendaciones",
+      "text":"## También Te Recomendamos"
+    }
+  },
+
+  "flex-layout.row#masPersonajes":{
+    "props":{
+      "blockClass":"tiruloMasPersonajes"
+    },
+    "children":[
+      "rich-text#masPersonajes"
+    ]
+  },
+  "rich-text#masPersonajes":{
+    "props":{
+      "blockClass":"masPersonajes",
+      "text":"## Más Personajes"
+    }
+  },
+  
+  
+  "flex-layout.col#personajes-prin-col-content-Especi":{
+    "children": [
+      "flex-layout.col#card-indiv-personaje1",
+      "flex-layout.col#card-indiv-personaje2",
+      "flex-layout.col#card-indiv-personaje3",
+      "flex-layout.col#card-indiv-personaje4",
+      "flex-layout.col#card-indiv-personaje5",
+      "flex-layout.col#card-indiv-personaje6",
+      "flex-layout.col#card-indiv-personaje7",
+      "flex-layout.col#card-indiv-personaje8"
+    ],
+    "props": {
+      "width": "100%",
+      "blockClass": "personajes-indiv-col-txt-a"
+    }
+  },
+
+  "flex-layout.row#card-indiv-personaje1Especi":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "flex-layout.col#card-indiv-personaje1E",
+      "flex-layout.col#card-indiv-personaje2E",
+      "flex-layout.col#card-indiv-personaje3E",
+      "flex-layout.col#card-indiv-personaje4E"
+    ]
+  },
+
+  "flex-layout.row#card-indiv-personaje2Especi":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "flex-layout.col#card-indiv-personaje5E",
+      "flex-layout.col#card-indiv-personaje6E",
+      "flex-layout.col#card-indiv-personaje7E",
+      "flex-layout.col#card-indiv-personaje8E"
+    ]
+  },
+
+  "flex-layout.row#personaje-indiv-row-info": {
+    "children": [
+      "flex-layout.col#personajes-indiv-col-img",
+      "flex-layout.col#personajes-indiv-col-txt"
+    ],
+    "props": {
+      "blockClass": "personaje-indiv-row-info"
+    }
+  },
+  "flex-layout.col#personajes-indiv-col-img": {
+    "children": [
+      "image#personajes-indiv-col-img"
+    ],
+    "props": {
+      "width": "22%",
+      "blockClass": "personajes-indiv-col-img"
+    }
+  },
+  "image#personajes-indiv-col-img":{
+    "props":{
+      "src":"assets/personajes/aquamerito 2.svg",
+      "blockClass": "personajes-indiv-col-img"
+      // "link":{
+      //   "url":"https://twitter.com/distroller"
+      // },
+    }
+  },
+  "flex-layout.col#personajes-indiv-col-txt": {
+    "children": [
+      "rich-text#nombre-personaje-indiv",
+      "rich-text#info-personaje-indiv",
+      "rich-text#ver-product-personaje-indiv"
+    ],
+    "props": {
+      "width": "100%",
+      "blockClass": "personajes-indiv-col-txt"
+    }
+  },
+  "rich-text#nombre-personaje-indiv":{
+    "props":{
+      "text":"NombrePersonaje",
+      "blockClass":"nombre-personaje-indiv"
+    }
+  },
+  "rich-text#info-personaje-indiv":{
+    "props":{
+      "text":"Los Aquameritos son únicos dentro de las especies neonatales. Sabes por qué??? Llegaron a la Tierra en unos Gluevos que debes sumergir en el agua para que nazca tu pimpollo. Les encanta nadar y jugar en el agua. Además, si a algunos los metes al agua fría, sus orejas les cambian de color!!!",
+      "blockClass":"info-personaje-indiv"
+    }
+  },
+  "rich-text#ver-product-personaje-indiv":{
+    "props":{
+      "text":"[Ver Producto](/)",
+      "blockClass":"ver-product-personaje-indiv"
+    }
+  },
+    //8
+    "flex-layout.col#card-indiv-personaje8E":{
+      "props":{
+        "blockClass":"card-indiv-personaje"
+      },
+      "children":[
+        "image#personaje-indiv8E",
+        "rich-text#personaje-indiv8E",
+        "flex-layout.row#boton-indiv-personaje8E"
+      ]
+    },
+    "flex-layout.row#boton-indiv-personaje8E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje"
+      },
+      "children":[
+        "rich-text#boton-indiv-personaje8E"
+      ]
+    },
+    "rich-text#boton-indiv-personaje8E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje",
+        "text":"[Ver más](/href)"
+      }
+    },
+    "rich-text#personaje-indiv8E":{
+      "props":{
+        "blockClass":"persoanje-indiv",
+        "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      }
+    },
+    "image#personaje-indiv8E":{
+      "props":{
+        "blockClass":"personaje-indiv",
+        "src":"assets/personajes/aquamerito 2.svg"
+      }
+    },
+    //7
+    "flex-layout.col#card-indiv-personaje7E":{
+      "props":{
+        "blockClass":"card-indiv-personaje"
+      },
+      "children":[
+        "image#personaje-indiv7E",
+        "rich-text#personaje-indiv7E",
+        "flex-layout.row#boton-indiv-personaje7E"
+      ]
+    },
+    "flex-layout.row#boton-indiv-personaje7E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje"
+      },
+      "children":[
+        "rich-text#boton-indiv-personaje7E"
+      ]
+    },
+    "rich-text#boton-indiv-personaje7E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje",
+        "text":"[Ver más](/href)"
+      }
+    },
+    "rich-text#personaje-indiv7E":{
+      "props":{
+        "blockClass":"persoanje-indiv",
+        "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      }
+    },
+    "image#personaje-indiv7E":{
+      "props":{
+        "blockClass":"personaje-indiv",
+        "src":"assets/personajes/aquamerito 2.svg"
+      }
+    },
+  
+  
+    //6
+    "flex-layout.col#card-indiv-personaje6E":{
+      "props":{
+        "blockClass":"card-indiv-personaje"
+      },
+      "children":[
+        "image#personaje-indiv6E",
+        "rich-text#personaje-indiv6E",
+        "flex-layout.row#boton-indiv-personaje6E"
+      ]
+    },
+    "flex-layout.row#boton-indiv-personaje6E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje"
+      },
+      "children":[
+        "rich-text#boton-indiv-personaje6E"
+      ]
+    },
+    "rich-text#boton-indiv-personaje6E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje",
+        "text":"[Ver más](/href)"
+      }
+    },
+    "rich-text#personaje-indiv6E":{
+      "props":{
+        "blockClass":"persoanje-indiv",
+        "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      }
+    },
+    "image#personaje-indiv6E":{
+      "props":{
+        "blockClass":"personaje-indiv",
+        "src":"assets/personajes/aquamerito 2.svg"
+      }
+    },
+    //5
+    "flex-layout.col#card-indiv-personaje5E":{
+      "props":{
+        "blockClass":"card-indiv-personaje"
+      },
+      "children":[
+        "image#personaje-indiv5E",
+        "rich-text#personaje-indiv5E",
+        "flex-layout.row#boton-indiv-personaje5E"
+      ]
+    },
+    "flex-layout.row#boton-indiv-personaje5E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje"
+      },
+      "children":[
+        "rich-text#boton-indiv-personaje5E"
+      ]
+    },
+    "rich-text#boton-indiv-personaje5E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje",
+        "text":"[Ver más](/href)"
+      }
+    },
+    "rich-text#personaje-indiv5E":{
+      "props":{
+        "blockClass":"persoanje-indiv",
+        "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      }
+    },
+    "image#personaje-indiv5E":{
+      "props":{
+        "blockClass":"personaje-indiv",
+        "src":"assets/personajes/aquamerito 2.svg"
+      }
+    },
+    //4
+    "flex-layout.col#card-indiv-personaje4E":{
+      "props":{
+        "blockClass":"card-indiv-personaje"
+      },
+      "children":[
+        "image#personaje-indiv4E",
+        "rich-text#personaje-indiv4E",
+        "flex-layout.row#boton-indiv-personaje4E"
+      ]
+    },
+    "flex-layout.row#boton-indiv-personaje4E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje"
+      },
+      "children":[
+        "rich-text#boton-indiv-personaje4E"
+      ]
+    },
+    "rich-text#boton-indiv-personaje4E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje",
+        "text":"[Ver más](/href)"
+      }
+    },
+    "rich-text#personaje-indiv4E":{
+      "props":{
+        "blockClass":"persoanje-indiv",
+        "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      }
+    },
+    "image#personaje-indiv4E":{
+      "props":{
+        "blockClass":"personaje-indiv",
+        "src":"assets/personajes/aquamerito 2.svg"
+      }
+    },
+  
+    //3
+    "flex-layout.col#card-indiv-personaje3E":{
+      "props":{
+        "blockClass":"card-indiv-personaje"
+      },
+      "children":[
+        "image#personaje-indiv3E",
+        "rich-text#personaje-indiv3E",
+        "flex-layout.row#boton-indiv-personaje3E"
+      ]
+    },
+    "flex-layout.row#boton-indiv-personaje3E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje"
+      },
+      "children":[
+        "rich-text#boton-indiv-personaje3E"
+      ]
+    },
+    "rich-text#boton-indiv-personaje3E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje",
+        "text":"[Ver más](/href)"
+      }
+    },
+    "rich-text#personaje-indiv3E":{
+      "props":{
+        "blockClass":"persoanje-indiv",
+        "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      }
+    },
+    "image#personaje-indiv3E":{
+      "props":{
+        "blockClass":"personaje-indiv",
+        "src":"assets/personajes/aquamerito 2.svg"
+      }
+    },
+    //2
+    "flex-layout.col#card-indiv-personaje2E":{
+      "props":{
+        "blockClass":"card-indiv-personaje"
+      },
+      "children":[
+        "image#personaje-indiv2E",
+        "rich-text#personaje-indiv2E",
+        "flex-layout.row#boton-indiv-personaje2E"
+      ]
+    },
+    "flex-layout.row#boton-indiv-personaje2E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje"
+      },
+      "children":[
+        "rich-text#boton-indiv-personaje2E"
+      ]
+    },
+    "rich-text#boton-indiv-personaje2E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje",
+        "text":"[Ver más](/href)"
+      }
+    },
+    "rich-text#personaje-indiv2E":{
+      "props":{
+        "blockClass":"persoanje-indiv",
+        "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      }
+    },
+    "image#personaje-indiv2E":{
+      "props":{
+        "blockClass":"personaje-indiv",
+        "src":"assets/personajes/aquamerito 2.svg"
+      }
+    },
+    //1
+    "flex-layout.col#card-indiv-personaje1E":{
+      "props":{
+        "blockClass":"card-indiv-personaje"
+      },
+      "children":[
+        "image#personaje-indiv1E",
+        "rich-text#personaje-indiv1E",
+        "flex-layout.row#boton-indiv-personaje1E"
+      ]
+    },
+    "flex-layout.row#boton-indiv-personaje1E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje"
+      },
+      "children":[
+        "rich-text#boton-indiv-personaje1E"
+      ]
+    },
+    "rich-text#boton-indiv-personaje1E":{
+      "props":{
+        "blockClass":"boton-indiv-personaje",
+        "text":"[Ver más](/href)"
+      }
+    },
+    "rich-text#personaje-indiv1E":{
+      "props":{
+        "blockClass":"persoanje-indiv",
+        "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      }
+    },
+    "image#personaje-indiv1E":{
+      "props":{
+        "blockClass":"personaje-indiv",
+        "src":"assets/personajes/aquamerito 2.svg"
+      }
+    }
+}

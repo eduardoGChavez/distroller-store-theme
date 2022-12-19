@@ -1,0 +1,143 @@
+{
+  "store.custom#juego-quien-es": {
+    "parent": { 
+      "header": "header#static"
+    },
+    "blocks": [
+      "responsive-layout.desktop#juego-quien-es",
+      "responsive-layout.mobile#juego-quien-es"
+    ]
+  },
+  "responsive-layout.desktop#juego-quien-es": {
+    "children": [
+      "flex-layout.row#juego-title-desktop",
+      "flex-layout.row#juego-quien-es--desktop"
+    ]
+  },
+
+  "flex-layout.row#juego-title-desktop": {
+    "children": [
+      "flex-layout.col#col1-juego-title-desktop",
+      "flex-layout.col#col2-juego-title-desktop",
+      "flex-layout.col#col3-juego-title-desktop"
+    ]
+  },
+  "flex-layout.col#col1-juego-title-desktop": {
+    "children": [
+      "flex-layout.row#juego-regresar-mobile"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "width": "30%"
+    }
+  },
+  "flex-layout.col#col2-juego-title-desktop": {
+    "children": [
+      "rich-text#juegos-title-indiv"
+    ]
+  },
+  "flex-layout.col#col3-juego-title-desktop": {
+    "children": [
+
+    ],
+    "props": {
+      "width": "30%"
+    }
+  },
+
+  "responsive-layout.mobile#juego-quien-es": {
+    "children": [
+      "flex-layout.row#juego-title-mobile",
+      "flex-layout.row#juego-regresar-mobile",
+      "flex-layout.row#juego-quien-es--mobile"
+    ]
+  },
+
+  "flex-layout.row#juego-title-mobile": {
+    "children": [
+      "rich-text#juegos-title-indiv"
+    ],
+    "props": {
+      "blockClass": "juegos-title-container-indiv"
+    }
+  },
+  "rich-text#juegos-title-indiv":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":"juegos-title-indiv",
+      "text":"¿Quién es Quién?"
+    }
+  },
+
+  "flex-layout.row#juego-regresar-mobile": {
+    "children": [
+      "image#juegos-arrow-left",
+      "rich-text#juegos-text-regresar-indiv"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "juego-regresar"
+    }
+  },
+  "image#juegos-arrow-left":{
+    "props":{
+      "blockClass": "juegos-arrow-left",
+      "src":"assets/juegos/arrow-left.svg",
+      // "width":"100%",
+      "link":{
+        "url":"/juegos"
+      }
+    }
+  },
+  "rich-text#juegos-text-regresar-indiv":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":"juegos-regresar-juegos",
+      "text":"[Regresar a Juegos](/juegos)"
+    }
+  },
+
+
+  "flex-layout.row#juego-quien-es--desktop": {
+    "children": [
+      "flex-layout.col#juego-quien-es"
+    ],
+    "props": {
+      "paddingTop": 9,
+      "paddingBottom": 9,
+      "blockClass": "row-juego-quien-es"
+    }
+  },
+  "flex-layout.row#juego-quien-es--mobile": {
+    "children": [
+      "flex-layout.col#juego-quien-es"
+    ],
+    "props": {
+      "paddingTop": 9,
+      "paddingBottom": 9,
+      "blockClass": "row-juego-quien-es"
+    }
+  },
+  "flex-layout.col#juego-quien-es": {
+    "children": [
+      "iframe#quien-es-quien"
+      // "IFrameGames"
+    ],
+    "props": {
+      "blockClass": "col-juego-quien-es"
+    }
+  },
+
+  "iframe#quien-es-quien": {
+    "props": {
+      "src": "https://juegosdistroller.vicom.mx/quien-es-quien/",
+      "width": "100%",
+      "height": 615,
+      "blockClass": "iframe-quien-es-quien"
+    }
+  }
+}

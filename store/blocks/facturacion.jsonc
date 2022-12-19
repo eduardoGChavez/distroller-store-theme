@@ -1,0 +1,337 @@
+{
+  "store.custom#facturacion": {
+    "children": [
+      "flex-layout.row#text-facturacion",
+      "flex-layout.row#form-facturacion"
+    ]
+  },
+  "flex-layout.row#text-facturacion": {
+    "props": {
+      "blockClass": "text-facturacion"
+    },
+    "children": [
+      "flex-layout.col#text-facturacion"
+    ]
+  },
+
+  "flex-layout.col#text-facturacion": {
+    "children": [
+      "rich-text#title-facturacion",
+      "rich-text#text-facturacion"
+    ]
+  },
+  "rich-text#title-facturacion": {
+    "props": {
+      "text": "## Facturación",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":"title-facturacion"
+    }
+  },
+  "rich-text#text-facturacion":{
+    "props":{
+      "blockClass":"text-facturacion",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"Favor de llenar los datos solicitados. Al generar la factura se te enviará vía correo electrónico."
+    }
+  },
+  "flex-layout.row#form-facturacion": {
+    "children": [
+      "form#facturacion"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "form-facturacion"
+    }
+  },
+  /*----------------- Inicio de Formulario--------------------*/
+  "form#facturacion": {
+    "props": {
+      "entity": "dataBilling",
+      "schema": "dataBilling"
+    },
+    "children": [
+      "flex-layout.row#numPedido",
+      "flex-layout.row#razon-rfc",
+      "flex-layout.row#correo-telefono",
+      "flex-layout.row#calle-numCasa-cp",
+      "flex-layout.row#entreCalle-colonia",
+      "flex-layout.row#ciudad-estado",
+      "flex-layout.row#cfdi-pago",
+      "form-submit#facturacion"
+    ],
+    "blocks": [
+      "form-success#facturacion"
+    ]
+  },
+  "form-success#facturacion": {
+    "children": [
+      "rich-text#successSubmit-facturacion"
+    ]
+  },
+  "rich-text#successSubmit-facturacion": {
+    "props": {
+      "text": "Mensaje enviado correctamente!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#numPedido": {
+    "children": [
+      "flex-layout.col#numPedido"
+    ]
+  },
+  "flex-layout.col#numPedido": {
+    "children": [
+      "form-input.text#numPedido"
+    ],
+    "props": {
+      "width": "50%",
+      "blockClass": "form-input__numPedido"
+    }
+  },
+  "form-input.text#numPedido": {
+    "props": {
+      "pointer": "#/properties/numPedido",
+      "label": "Número de Pedido:",
+      "placeholder": "0000000000000-00"
+    }
+  },
+  "flex-layout.row#razon-rfc": {
+    "children": [
+      "flex-layout.col#razonSocial",
+      "flex-layout.col#rfc"
+    ]
+  },
+  "flex-layout.col#razonSocial": {
+    "children": [
+      "form-input.text#razonSocial"
+    ],
+    "props": {
+      "blockClass": "form-input__razon-social"
+    }
+  },
+  "form-input.text#razonSocial": {
+    "props": {
+      "pointer": "#/properties/razonSocial",
+      "label": "Razón Social:",
+      "placeholder": "Empresa SA de CV"
+    }
+  },
+  "flex-layout.col#rfc": {
+    "children": [
+      "form-input.text#rfc"
+    ],
+    "props": {
+      "blockClass": "form-input__rfc"
+    }
+  },
+  "form-input.text#rfc": {
+    "props": {
+      "pointer": "#/properties/rfc",
+      "label": "RFC:",
+      "placeholder": "XXX1902127X3"
+    }
+  },
+  "flex-layout.row#correo-telefono": {
+    "children": [
+      "flex-layout.col#correo",
+      "flex-layout.col#telefono"
+    ]
+  },
+  "flex-layout.col#correo": {
+    "children": [
+      "form-input.text#correo"
+    ],
+    "props": {
+      "blockClass": "form-input__correo"
+    }
+  },
+  "form-input.text#correo": {
+    "props": {
+      "pointer": "#/properties/correo",
+      "label": "Correo Electrónico:",
+      "placeholder": "coreo@ejemplo.com"
+    }
+  },
+  "flex-layout.col#telefono": {
+    "children": [
+      "form-input.text#telefono"
+    ],
+    "props": {
+      "blockClass": "form-input__telefono"
+    }
+  },
+  "form-input.text#telefono": {
+    "props": {
+      "pointer": "#/properties/telefono",
+      "label": "Teléfono:",
+      "placeholder": "0000000000"
+    }
+  },
+  "flex-layout.row#calle-numCasa-cp": {
+    "children": [
+      "flex-layout.col#calle",
+      "flex-layout.col#numCasa",
+      "flex-layout.col#cp"
+    ]
+  },
+  "flex-layout.col#calle": {
+    "children": [
+      "form-input.text#calle"
+    ],
+    "props": {
+      "width": "50%",
+      "blockClass": "form-input__calle"
+    }
+  },
+  "form-input.text#calle": {
+    "props": {
+      "pointer": "#/properties/calle",
+      "label": "Calle:",
+      "placeholder": "Calle"
+    }
+  },
+  "flex-layout.col#numCasa": {
+    "children": [
+      "form-input.text#numCasa"
+    ],
+    "props": {
+      "blockClass": "form-input__numCasa"
+    }
+  },
+  "form-input.text#numCasa": {
+    "props": {
+      "pointer": "#/properties/numCasa",
+      "label": "Número de Casa:",
+      "placeholder": "Número"
+    }
+  },
+  "flex-layout.col#cp": {
+    "children": [
+      "form-input.text#cp"
+    ],
+    "props": {
+      "blockClass": "form-input__cp"
+    }
+  },
+  "form-input.text#cp": {
+    "props": {
+      "pointer": "#/properties/cp",
+      "label": "Código Postal:",
+      "placeholder": "Código postal"
+    }
+  },
+  "flex-layout.row#entreCalle-colonia": {
+    "children": [
+      "flex-layout.col#entreCalle",
+      "flex-layout.col#colonia"
+    ]
+  },
+  "flex-layout.col#entreCalle": {
+    "children": [
+      "form-input.text#entreCalle"
+    ],
+    "props": {
+      "blockClass": "form-input__entreCalle"
+    }
+  },
+  "form-input.text#entreCalle": {
+    "props": {
+      "pointer": "#/properties/entreCalle",
+      "label": "Entre Calles o Intersecciones:",
+      "placeholder": "Entre calles"
+    }
+  },
+  "flex-layout.col#colonia": {
+    "children": [
+      "form-input.text#colonia"
+    ],
+    "props": {
+      "blockClass": "form-input__colonia"
+    }
+  },
+  "form-input.text#colonia": {
+    "props": {
+      "pointer": "#/properties/colonia",
+      "label": "Colonia:",
+      "placeholder": "Colonia"
+    }
+  },
+  "flex-layout.row#ciudad-estado": {
+    "children": [
+      "flex-layout.col#ciudad",
+      "flex-layout.col#estado"
+    ]
+  },
+  "flex-layout.col#ciudad": {
+    "children": [
+      "form-input.text#ciudad"
+    ],
+    "props": {
+      "blockClass": "form-input__ciudad"
+    }
+  },
+  "form-input.text#ciudad": {
+    "props": {
+      "pointer": "#/properties/ciudad",
+      "label": "Ciudad:",
+      "placeholder": "Ciudad (Municipio)"
+    }
+  },
+  "flex-layout.col#estado": {
+    "children": [
+      "form-input.dropdown#estado"
+    ],
+    "props": {
+      "blockClass": "form-input__estado"
+    }
+  },
+  "form-input.dropdown#estado": {
+    "props": {
+      "label": "Estado",
+      "pointer": "#/properties/estado"
+    }
+  },
+  "flex-layout.row#cfdi-pago": {
+    "children": [
+      "flex-layout.col#cfdi",
+      "flex-layout.col#pago"
+    ]
+  },
+  "flex-layout.col#cfdi": {
+    "children": [
+      "form-input.dropdown#cfdi"
+    ],
+    "props": {
+      "blockClass": "form-input__cfdi"
+    }
+  },
+  "form-input.dropdown#cfdi": {
+    "props": {
+      "label": "Uso de CFDI",
+      "pointer": "#/properties/cfdi"
+    }
+  },
+  "flex-layout.col#pago": {
+    "children": [
+      "form-input.dropdown#pago"
+    ],
+    "props": {
+      "blockClass": "form-input__pago"
+    }
+  },
+  "form-input.dropdown#pago": {
+    "props": {
+      "label": "Forma de Pago",
+      "pointer": "#/properties/pago"
+    }
+  },
+  "form-submit#facturacion": {
+    "props": {
+      "label": "Enviar",
+      "blockClass":"botonEnviar"
+    }
+  }
+}

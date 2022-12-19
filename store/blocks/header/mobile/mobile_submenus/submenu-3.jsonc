@@ -1,0 +1,77 @@
+{
+  "menu-item#mobile_menu-3": {
+    "props": {
+      "id": "menu-item-chiki-pun-taun",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Chiki Pun Taun",
+        "text": "Chiki Pun Taun"
+      },
+      "blockClass": "mob-menu-prin-header"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile_menu-3"
+    ],
+    "title":"chikitiPunTaun-header-mobile"
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile_menu-3": {
+    "props": {
+      "width": "auto",
+      "blockClass": "mobile-submenu-3"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#mobile_menu-3"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_menu-3": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#chikibrijes",
+      "menu-item#chikihadas",
+      "menu-item#monstruoAntipesadillas",
+      "menu-item#ratonPerez",
+      "menu-item#Chikiti-ver-todos"
+    ]
+  }
+
+
+
+
+  // "menu-item#mobile_menu-3": {
+  //   "props": {
+  //     "id": "menu-item-channel",
+  //     "type": "custom",
+  //     "iconId": null,
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "",
+  //       "noFollow": false,
+  //       "tagTitle": "Distroller Channel",
+  //       "text": "Distroller Channel"
+  //     },
+  //     "blockClass": "mob-menu-prin-header"
+  //   }
+  //   // "blocks":["vtex.menu@2.x:submenu.accordion#mobile_menu-3"]
+  // }
+  // "vtex.menu@2.x:submenu.accordion#mobile_menu-3":{
+  //   "children":[
+  //     "vtex.menu@2.x:menu#mobile_submenu-3"
+  //   ]
+  // },
+  // "vtex.menu@2.x:menu#mobile_submenu-3":{
+  //   "props":{
+  //     "blockClass": "submenuAccordion",
+  //     "categoryId": 46,
+  //     "orientation": "vertical"
+  //   }
+  // }
+}

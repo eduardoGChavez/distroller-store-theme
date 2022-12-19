@@ -1,0 +1,172 @@
+{
+    "menu-item#chikiPunTaun": {
+        "props": {
+            "id": "menu-item-productos3",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Chiki Pun Taun",
+                "text": "Chiki Pun Taun"
+            },
+            "blockClass": "menu-prin-header"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#product3"
+        ],
+        "title":"chikitiPunTaun-header-desktop"
+    },
+    "vtex.menu@2.x:submenu#product3": {
+        "props": {
+            "width": "auto",
+            "blockClass": "cont-submenu-desktop"
+        },
+        "children": [
+            // "flex-layout.row#producto-img"
+            "vtex.menu@2.x:menu#producto3",
+            "vtex.menu@2.x:menu#image-product3"
+        ]
+    },
+
+    "vtex.menu@2.x:menu#producto3": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "col-desk-menu-items"
+        },
+        "children": [
+            "menu-item#chikibrijes",
+            "menu-item#chikihadas",
+            "menu-item#monstruoAntipesadillas",
+            "menu-item#ratonPerez"
+        ]
+    },
+
+    "menu-item#chikibrijes": {
+        "props": {
+            "id": "menu-item-producto-1-3",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Chikibrijes",
+                "text": "Chikibrijes"
+            }
+        }
+    },
+    "menu-item#chikihadas": {
+        "props": {
+            "id": "menu-item-producto-2-3",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Chikihadas",
+                "text": "Chikihadas"
+            }
+        }
+    },
+    "menu-item#monstruoAntipesadillas": {
+        "props": {
+            "id": "menu-item-producto-3-3",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Monstruo antipesadillas",
+                "text": "Monstruo antipesadillas"
+            }
+        }
+    },
+    "menu-item#ratonPerez": {
+        "props": {
+            "id": "menu-item-producto-4-3",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Ratón Pérez",
+                "text": "Ratón Pérez"
+            }
+        }
+    },
+    "menu-item#Chikiti-ver-todos": {
+        "props": {
+            "id": "menu-item-producto-5-3",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Ver todos",
+                "text": "Ver todos"
+            }
+        }
+    },
+
+
+
+
+    "vtex.menu@2.x:menu#image-product3": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#banerProductos3"
+        ]
+    },
+
+    
+    
+    "flex-layout.row#producto-img3": {
+        "children": [
+            "vtex.menu@2.x:menu#producto3",
+            "vtex.menu@2.x:menu#image-product3"
+        ],
+        "props": {
+            "width": "auto",
+            "blockClass": "row-cont-items-image3"
+        }
+    },
+
+    "menu-item#banerProductos3": {
+        "props": {
+            "id": "menu-item-producto-3",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false
+            }
+        },
+        "children":[
+            "image#banerProductos3"
+        ]
+    },
+
+    "image#banerProductos3": {
+        "props": {
+            "maxWidth": "180px",
+            "maxHeight": "180px",
+            "src": "assets/header/img-prueba-header.png"
+        }
+    }
+}

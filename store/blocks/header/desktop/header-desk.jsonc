@@ -1,0 +1,585 @@
+{
+    /* ------------------------------------- Inicio Notification Bar ------------------------------------- */
+    "flex-layout.row#2-desktop": {
+        "children": [
+            "flex-layout.col#pais",
+            // "flex-layout.col#redes",
+            "flex-layout.col#txtNotBar",
+            // "flex-layout.col#newsletter"
+            "flex-layout.col#notbar__button-contact"
+        ],
+        "props": {
+            "maxHeight": "40px",
+            "height": 40,
+            "blockClass": "notificationBar"
+        }
+    },
+    
+    // ---------- Cambiar Pais ----------
+    "flex-layout.col#pais": {
+        "children": ["overlay-trigger#pais"],
+        "props": {
+            "horizontalAlign": "center"
+        },
+        "title":"pais-desktop"
+    },
+    "overlay-trigger#pais": {
+        "children": [
+            "rich-text#txtPais",
+            "overlay-layout#pais"    
+        ],
+        "props": {
+            "placement": "bottom",
+            "blockClass": "overlay-trigger-pais"
+        }
+    },
+    "rich-text#txtPais": {
+        "props": {
+            "text": "Cambiar país",
+            "blockClass": "txtNotBar"
+        }
+      },
+      "overlay-layout#pais": {
+        "props": {
+            "placement": "bottom",
+            "maxHeight": "152px",
+            "height": 152,
+            "blockClass": "contenedor-pais"
+        },
+        "children": [
+            "rich-text#chile",
+            "rich-text#colombia",
+            "rich-text#espana",
+            "rich-text#peru",
+            "rich-text#argentina",
+            "rich-text#usa"
+        ],
+        "title":"overlay-paises"
+      },
+      "rich-text#chile": {
+        "props": {
+          "text": "[Chile](https://chile.distroller.com/)",
+          "blockClass": "overlay-chile"
+        }
+      },
+      "rich-text#colombia": {
+        "props": {
+          "text": "[Colombia](https://colombia.distroller.com/)",
+          "blockClass": "overlay-colombia"
+        }
+      },
+      "rich-text#espana": {
+        "props": {
+          "text": "[España](https://espana.distroller.com/)",
+          "blockClass": "overlay-espana"
+        }
+      },
+      "rich-text#peru": {
+        "props": {
+          "text": "[Perú](https://peru.distroller.com/)",
+          "blockClass": "overlay-peru"
+        }
+      },
+      "rich-text#argentina": {
+        "props": {
+          "text": "[Argentina](https://argentina.distroller.com/)",
+          "blockClass": "overlay-argentina"
+        }
+      },
+      "rich-text#usa": {
+        "props": {
+          "text": "[United States](https://distrollerusa.com/)",
+          "blockClass": "overlay-usa"
+        }
+      },
+
+    // ---------- Redes sociales ----------
+    "flex-layout.col#redes": {
+        "children": [
+            "flex-layout.row#txtIcons"
+        ],
+        "props": {
+            "verticalAlign": "middle"
+        },
+        "title":"titulo-redes"
+    },
+    "flex-layout.row#txtIcons": {
+        "children": [
+            "rich-text#txtRedes",
+            "flex-layout.col#facebook-NotBar",
+            "flex-layout.col#instagram-NotBar",
+            "flex-layout.col#youtube-NotBar",
+            "flex-layout.col#tiktok-NotBar",
+            "flex-layout.col#pinteres-NotBar",
+            "flex-layout.col#spotify-NotBar",
+            "flex-layout.col#twitter-NotBar"
+            // "image#facebook-NotBar",
+            // "image#instagram-NotBar",
+            // "image#youtube-NotBar",
+            // "image#tiktok-NotBar",
+            // "image#pinteres-NotBar",
+            // "image#spotify-NotBar",
+            // "image#twitter-NotBar"
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "maxHeight": "152px",
+            "height": 152
+        }
+    },
+    "rich-text#txtRedes": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Redes Sociales",
+            "blockClass": "txtNotBar"
+        }
+    },
+    "flex-layout.col#facebook-NotBar": {
+        "children": [
+            "image#facebook-NotBar"
+        ], "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "image#facebook-NotBar": {
+        "props": {
+            "src": "assets/icons-notificationbar/icon-facebook.svg",
+            "link": {
+                "url": "https://www.facebook.com/distroller"
+            },
+            "maxHeight": 24,
+            "blockClass": "icon-notBar"
+        }
+    },
+    "flex-layout.col#instagram-NotBar": {
+        "children": [
+            "image#instagram-NotBar"
+        ], "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "image#instagram-NotBar": {
+        "props": {
+            "src": "assets/icons-notificationbar/icon-instagram.svg",
+            "link": {
+                "url": "https://www.instagram.com/distrollergram"
+            },
+            "maxHeight": 20,
+            "blockClass": "icon-notBar"
+        }
+    },
+    "flex-layout.col#youtube-NotBar": {
+        "children": [
+            "image#youtube-NotBar"
+        ], "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "image#youtube-NotBar": {
+        "props": {
+            "src": "assets/icons-notificationbar/icon-youtube.svg",
+            "link": {
+                "url": "https://www.youtube.com/user/distrollertube"
+            },
+            "maxHeight": 16,
+            "blockClass": "icon-notBar"
+        }
+    },
+    "flex-layout.col#tiktok-NotBar": {
+        "children": [
+            "image#tiktok-NotBar"
+        ], "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "image#tiktok-NotBar": {
+        "props": {
+            "src": "assets/icons-notificationbar/icon-tiktok.svg",
+            "link": {
+                "url": "https://www.tiktok.com/@distrolleroficial?lang=es"
+            },
+            "maxHeight": 20,
+            "blockClass": "icon-notBar"
+        }
+    },
+    "flex-layout.col#pinteres-NotBar": {
+        "children": [
+            "image#pinteres-NotBar"
+        ], "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "image#pinteres-NotBar": {
+        "props": {
+            "src": "assets/icons-notificationbar/icon-pinteres.svg",
+            "link": {
+                "url": "https://www.pinterest.com.mx/distroller"
+            },
+            "maxHeight": 24,
+            "blockClass": "icon-notBar"
+        }
+    },
+    "flex-layout.col#spotify-NotBar": {
+        "children": [
+            "image#spotify-NotBar"
+        ], "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "image#spotify-NotBar": {
+        "props": {
+            "src": "assets/icons-notificationbar/icon-spotify.svg",
+            "link": {
+                "url": "https://open.spotify.com/artist/0tXUJeSaYStaOHUetQMhSA"
+            },
+            "maxHeight": 24,
+            "blockClass": "icon-notBar"
+        }
+    },
+    "flex-layout.col#twitter-NotBar": {
+        "children": [
+            "image#twitter-NotBar"
+        ], "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "image#twitter-NotBar": {
+        "props": {
+            "src": "assets/icons-notificationbar/icon-twitter.svg",
+            "link": {
+                "url": "https://twitter.com/distroller"
+            },
+            "maxHeight": 19,
+            "blockClass": "icon-notBar"
+        }
+    },
+    
+    // ---------- Envios gratis ----------
+    "flex-layout.col#txtNotBar": {
+        "children": [
+            "rich-text#txtNotBar"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "blockClass": "envios-gratis"
+        },
+        "title":"texto-barra-notificaciones-desktop"
+    },
+    "rich-text#txtNotBar": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Meses sin intereses y envío gratis en compras mayores a $799",
+            "blockClass": "txtNotBar"
+        }
+    },
+
+    // ---------- Newsletter ----------
+    "flex-layout.col#newsletter": {
+        "children": ["overlay-trigger#newsletter"],
+        "props": {
+            "horizontalAlign": "right",
+            "verticalAlign": "middle"
+        },
+        "title":"overlay-newsletter-header-desktop"
+    },
+    "overlay-trigger#newsletter": {
+        "children": [
+            "rich-text#txtNewsletter",
+            "overlay-layout#newsletter"    
+        ],
+        "props": {
+            "placement": "bottom",
+            "blockClass": "overlay-trigger-newsletter"
+        }
+    },
+    "rich-text#txtNewsletter": {
+        "props": {
+            "text": "NEWSLETTER",
+            "blockClass": "txtNotBar"
+        }
+      },
+      "overlay-layout#newsletter": {
+        "props": {
+            "placement": "bottom",
+            "blockClass": "mob-contenedor-newsletter",
+            "offsets": {
+                "skidding": -320
+            }
+        },
+        "children": ["newsletter-form#notification-bar"]
+      },
+
+        
+    "newsletter-form#notification-bar": {
+        "children": [
+            "flex-layout.row#newsletter-header"
+        ], 
+        "props": {
+            "blockClass": "mob-newsletter-header"
+        }
+    },
+    "flex-layout.row#newsletter-header": {
+        "children": [
+            "flex-layout.row#text_newsletter-header",
+            "flex-layout.row#email_newsletter-header",
+            "flex-layout.row#button_newsletter-header"
+            // "rich-text#newsletter-header",
+            // "newsletter-input-email#header",
+            // "newsletter-submit#header"
+        ],
+        "title":"newsletter-header-desktop"
+    },
+    "flex-layout.row#text_newsletter-header": {
+        "children": [
+            "rich-text#newsletter-header"
+        ],
+        "props": {
+            "width": "40%",
+            "verticalAlign": "center",
+            "blockClass": "mob-newsletterTxt-header"
+        }
+    },
+    "flex-layout.row#email_newsletter-header": {
+        "children": [
+            "newsletter-input-email#header"
+        ],
+        "props": {
+            "width": "35%",
+            "verticalAlign": "center",
+            "blockClass": "mob-newsletterEmail-header"
+        }
+    },
+    "flex-layout.row#button_newsletter-header": {
+        "children": [
+            "newsletter-submit#header"
+        ],
+        "props": {
+            "width": "25%",
+            "verticalAlign": "center",
+            "blockClass": "mob-newsletterButton-header"
+        }
+    },
+    "rich-text#newsletter-header": {
+        "props": {
+            "text": "Some nice copy \nfor your NEWSLETTER",
+            "blockClass": "mob-text-newsletter-header"
+        }
+    },
+    "newsletter-input-email#header": {
+        "props": {
+            "placeholderText": "your email",
+            "blockClass": "mob-email-header"
+        }
+    },
+    "newsletter-submit#header": {
+        "props": {
+            "submitButtonLabel": "SUBSCRIBE",
+            "blockClass": "mob-button-header"
+        }
+    },
+    // ---------- Button Contact ----------
+    
+    "flex-layout.col#notbar__button-contact": {
+        "children": [
+            "rich-text#notbar__boton-contacto"
+        ],
+        "props": {
+            "horizontalAlign": "right",
+            "verticalAlign": "middle",
+            "blockClass": "notbar__button-contact"
+        },
+        "title":"boton-contacto"
+    },
+    "rich-text#notbar__boton-contacto": {
+        "props": {
+            "text": "[Contacto](/contact-us)",
+            "blockClass": "notbar__button-contact"
+        }
+    },
+    /* ------------------------------------- Fin Notification Bar ------------------------------------- */
+
+    /* ------------------------------------- Inicio Header ------------------------------------- */
+    "flex-layout.row#3-desktop": {
+        "props": {
+            "horizontalAlign": "right",
+            "blockClass": "header-desk"
+        },
+        "children": [
+            // "flex-layout.col#logo-desktop",
+            "flex-layout.col#logo-desk",
+            "flex-layout.col#search-menu"
+        ]
+    },
+    "flex-layout.col#logo-desk": {
+        "children": [
+            "logo#header"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "width": "25%"
+        },
+        "title":"logo-header-desktop"
+    },
+    "logo#header": {
+        "props": {
+            "title": "Logo",
+            "href": "/",
+            "url": "assets/header/logo-distroller.svg",
+            "width": 215,
+            // "height": 112,
+            "mobileWidth": 168,
+            "mobileHeight": 73,
+            "blockClass": "logo-Header"
+        }
+    },
+    "flex-layout.col#search-menu": {
+        "children": [
+            "flex-layout.row#search-bar",
+            "flex-layout.row#menu"
+            // "vtex.menu@2.x:menu#category-menu"
+        ],
+        "title":"menu-busqueda"
+    },
+    "flex-layout.row#search-bar": {
+        "children": [
+            "flex-layout.col#spacer-header",
+            "flex-layout.col#desk-searchBar",
+            "flex-layout.col#spacer-header",
+            "flex-layout.col#desk-login",
+            "flex-layout.col#desk-sucursales",
+            "flex-layout.col#desk-minicart"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            // "preventVerticalStretch": true,
+            // "horizontalAlign": "center",
+            // "width": "60%",
+            "blockClass": "row-searchBar"
+            // "fullWidth": true
+        }
+    },
+    "flex-layout.col#spacer-header": {
+      "props": {
+        "width": "grow"
+      }
+    },
+    "flex-layout.col#desk-searchBar": {
+        "children": [
+            // "flex-layout.col#spacer",
+            "flex-layout.row#desk-searchBar"
+            // "flex-layout.col#spacer"
+        ], 
+        "props":{
+            "width":"100%"
+        },
+        "title":"searchbar-desktop"
+    },
+    "flex-layout.row#desk-searchBar": {
+        "children": ["search-bar"]
+    },
+    "search-bar": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "placeholder": "Busca tu articulo favorito",
+            "horizontalAlign":"center",
+            "blockClass": "searchBar",
+            "openAutocompleteOnFocus": true
+        }
+    },
+    "autocomplete-result-list.v2": {
+        "blocks": ["product-summary.shelf"]
+    },
+    "flex-layout.col#desk-login": {
+        "children": ["login"],
+        "props": {
+            "verticalAlign": "middle"
+        },
+        "title":"login-desktop"
+    },
+    "login": {
+        "props": {
+            "accessCodeTitle": "Accede con código de acceso",
+            "logInButtonBehavior": "popover"
+        }
+    },
+    "flex-layout.col#desk-sucursales": {
+        "children": ["rich-text#sucursales"],
+        "title":"sucursales-desktop"
+    },
+    "rich-text#sucursales": {
+        "props": {
+            "text": "[Mis Favoritos](/account#/wishlist)",
+            "blockClass": "txtMisFavoritos"
+        }
+    },
+    "flex-layout.col#desk-minicart": {
+        "children": ["minicart.v2"],
+        "title":"minicart-desktop"
+    },
+    "minicart.v2": {
+        "props": {
+            "MinicartIcon": "icon-cart#minicart-icon"
+        },
+        "children": [
+            "minicart-base-content"
+        ],
+        "title":"minicart"
+    },
+    "rich-text#carrito":{
+        "props":{
+            "text": "carrito"
+        }
+    },
+    "icon-cart#minicart-icon": {
+        "props": {
+            "src": "assets/header/icon-minicart.svg",
+            "size": 22, 
+            "iconLabel": "xd"
+        }
+    },
+    "flex-layout.row#menu": {
+        "children": [
+            "vtex.menu@2.x:menu#category-menu"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "horizontalAlign": "right",
+            "width": "100%",
+            "blockClass": "row-menu"
+        },
+        "title":"menu-header-desktop"
+    },
+    /* ------------------------------------- Fin Header ------------------------------------- */
+    
+    "sticky-layout#4-desktop": {
+        "props": {
+        "blockClass": "sticky-header-desk"
+        },
+        "children": ["flex-layout.row#4-desktop"]
+    },
+    "flex-layout.row#4-desktop": {
+        "props": {
+        "blockClass": "static-header-desk"
+        // "horizontalAlign": "center",
+        // "verticalAlign": "center",
+        // "preventHorizontalStretch": true,
+        // "preventVerticalStretch": true,
+        // "fullWidth": true
+        },
+        "children": [
+            "flex-layout.row#3-desktop"
+        // "flex-layout.col#logo-desktop",
+        // "flex-layout.col#category-menu",
+        // "flex-layout.col#spacer",
+        // "search-bar",
+        // "locale-switcher",
+        // "login",
+        // "minicart.v2"
+        ]
+    }
+}

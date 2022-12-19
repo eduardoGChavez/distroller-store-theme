@@ -1,0 +1,286 @@
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+  border-radius: 50%;
+}
+
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 40em) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  }
+}
+
+.nameContainer {
+  justify-content: start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2E2E2E;
+}
+
+.container {
+  text-align: start;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  border-radius: 0.25rem;
+}
+
+
+/* Product Summary  */
+:global(.vtex-product-summary-2-x-container):hover {
+  box-shadow: 3px 3px 3px #8E3392;
+}
+
+:global(.vtex-product-highlights-2-x-productHighlightText) {
+  font-family: 'Billy';
+  font-style: normal;
+  font-weight: normal;;
+  line-height: 24px;
+  color: #FFFFFF;
+
+  padding: 3px 8px 3px 8px;
+
+  border-radius: 0px;
+  background: #E42990;
+}
+
+@media (min-width: 1026px) {
+  :global(.vtex-product-highlights-2-x-productHighlightText) {
+    font-size: 24px;
+    position: relative;
+    top: -45px;
+  }
+}
+
+
+:global(.vtex-wish-list-1-x-wishlistIconContainer) :global(.vtex-button) {
+  border: 0px
+}
+:global(.vtex-wish-list-1-x-wishlistIconContainer) :global(.vtex-button)
+:global(.vtex-button__label) {
+  padding: 0px !important;
+}
+
+:global(.vtex-search-result-3-x-searchResultContainer)
+:global(.vtex-wish-list-1-x-wishlistIconContainer)
+:global(.vtex-button)
+:global(.vtex-button__label)
+:global(.vtex-wish-list-1-x-wishlistIcon),
+:global(.vtex-product-summary-2-x-clearLink--gridLayout)
+:global(.vtex-wish-list-1-x-wishlistIconContainer)
+:global(.vtex-button)
+:global(.vtex-button__label)
+:global(.vtex-wish-list-1-x-wishlistIcon),
+:global(.vtex-stack-layout-0-x-stackItem--product)
+:global(.vtex-wish-list-1-x-wishlistIconContainer)
+:global(.vtex-button)
+:global(.vtex-button__label)
+:global(.vtex-wish-list-1-x-wishlistIcon){
+  content: url(assets/home/icon-wish.svg);
+  background-repeat: no-repeat;
+  padding: 0px;
+  z-index: 997;
+  position: relative;
+  left: -15px;
+}
+
+:global(.vtex-product-summary-2-x-container) :global(.vtex-product-summary-2-x-element) {
+  padding: 10px;
+}
+:global(.vtex-product-summary-2-x-nameContainer) {
+  /* min-height: 84px; */
+  padding-bottom: 9px;
+}
+
+@media (max-width: 1080px) {
+  :global(.vtex-product-summary-2-x-nameContainer) {
+    min-height: 84px;
+  } 
+}
+:global(.vtex-product-summary-2-x-nameContainer--summaryListDesktop),
+:global(.vtex-product-summary-2-x-nameContainer--summaryListMobile) {
+  min-height: 0px;
+}
+:global(.vtex-product-summary-2-x-productBrand) {
+  font-family: 'Billy';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  color: #000000;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--desc-row) :global(.vtex-flex--customShortDescription) {
+  font-family: 'SparkyBillyLight';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: flex-end;
+  color: #000000;  
+}
+:global(.vtex-product-summary-2-x-container--gridLayout)
+:global(.vtex-flex-layout-0-x-flexRowContent--desc-row) :global(.vtex-flex--customShortDescription) {
+  margin: 9px 0px 9px 0px;
+}
+:global(.vtex-product-price-1-x-listPriceValue--summary) {
+  font-family: 'SparkyBillyLight';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #C4C4C4;
+  /* text-decoration: line-through; */
+  text-decoration-color: #C4C4C4;
+}
+:global(.vtex-product-price-1-x-savings--summary) {
+  display: none;
+}
+:global(.vtex-product-price-1-x-sellingPriceValue--summary) {
+  /* justify-content: center; */
+  font-size: 24px;
+  color: #8E3392;
+  font-family: 'SparkyBillyLight';
+}
+
+/* Button */
+:global(.vtex-search-1-x-tileListItem) :global(.vtex-product-summary-2-x-buyButtonContainer) :global(.vtex-button),
+:global(.vtex-product-summary-2-x-container) :global(.vtex-flex-layout-0-x-flexRowContent--row-add-btn-cart) :global(.vtex-button) {
+  background-color: #8E3392;
+  border-radius: 5px;
+  border: 0px;
+  width: 100%;
+}
+
+:global(.vtex-product-summary-2-x-element--gridLayout) :global(.vtex-flex-layout-0-x-flexRowContent--row-add-btn-cart) 
+:global(.vtex-button),
+:global(.vtex-product-summary-2-x-element--gridLayout) :global(.vtex-flex-layout-0-x-flexRowContent--row-add-btn-cart) :global(.vtex-button) 
+:global(.vtex-button__label) {
+  padding: 0px;
+  height: 36px;
+  min-height: 36px !important;
+}
+
+:global(.vtex-search-1-x-tileListItem) :global(.vtex-product-summary-2-x-buyButtonContainer) :global(.vtex-button):hover,
+:global(.vtex-product-summary-2-x-container) :global(.vtex-flex-layout-0-x-flexRowContent--row-add-btn-cart) :global(.vtex-button):hover {
+  background-color: #E42990;
+}
+:global(.vtex-search-1-x-tileListItem) :global(.vtex-product-summary-2-x-buyButtonContainer) :global(.vtex-button) :global(.vtex-button__label),
+:global(.vtex-product-summary-2-x-container) :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  font-family: "SparkyBillyLight";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--producto) {
+  padding-bottom: 10px;
+}
+
+:global(.vtex-product-summary-2-x-container--gridLayout)
+:global(.vtex-flex-layout-0-x-flexRowContent--preciobase) {
+  margin: 9px 0px 18px 0px;
+}
+
+/* Mobile */
+@media (max-width:1025px) {
+  :global(.vtex-product-summary-2-x-container--gridLayout) :global(.vtex-product-highlights-2-x-productHighlightWrapper--collection) {
+    top: -31px;
+  }
+
+  :global(.vtex-product-summary-2-x-nameContainer) {
+    height: 100%;
+    justify-content: center;
+  }
+
+  :global(.vtex-product-summary-2-x-brandName),
+  :global(.vtex-flex-layout-0-x-flexRowContent--desc-row) :global(.vtex-flex--customShortDescription),
+  :global(.vtex-product-price-1-x-listPrice--summary) {
+    text-align: center;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--preciobase) {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  :global(.vtex-search-result-3-x-totalProducts--layout) {
+    padding: 0px;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--productRating) {
+    height: auto;
+    margin: 0px !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--productRating) :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    margin: auto ;
+    width: auto !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexColChild--productRating) {
+    margin: 0 auto 0 auto;
+  }
+
+
+
+  /* Product summary list */ 
+  :global(.vtex-store-components-3-x-productBrandName--summaryListMobile) {
+    font-family: "SparkyBillyLight";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000 !important;
+  }
+
+  :global(.vtex-product-summary-2-x-nameContainer--summaryListMobile) {
+    font-family: "Billy";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #000000;
+  }
+
+  :global(.vtex-product-summary-2-x-containerNormal--listLayout) :global(.vtex-stack-layout-0-x-stackItem) :global(.vtex-button) {
+    left: 125px;
+  }
+}
+
+@media (max-width: 639px) {
+  :global(.vtex-reviews-and-ratings-2-x-inlineContainer) {
+    width: auto !important;
+    margin: auto !important;
+  }
+
+  :global(.vtex-product-summary-2-x-container--gridLayout) :global(.vtex-wish-list-1-x-wishlistIconContainer) :global(.vtex-button) {
+    position: relative;
+    left: 90%;
+  }
+}
+
+:global(.vtex-login-2-x-inputContainerAccessCode)
+:global(.vtex-input-prefix__group)
+:global(.vtex-styleguide-9-x-hideDecorators){
+  font-size: 12px!important
+}

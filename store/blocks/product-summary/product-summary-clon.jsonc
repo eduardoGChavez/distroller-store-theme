@@ -1,0 +1,19 @@
+{
+  "product-summary.shelf#desk-1": {
+    "children": [
+
+      "flex-layout.row#highlight-wish",
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "flex-layout.row#product-summary-description",
+      "product-summary-space",
+      "flex-layout.row#productRating",
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings",
+      "flex-layout.row#row-add-btn"
+    ],
+    "props": {
+      "blockClass": "gridLayout"
+    }
+  }
+}

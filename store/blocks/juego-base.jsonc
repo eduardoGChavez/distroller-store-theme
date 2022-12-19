@@ -1,0 +1,36 @@
+{
+  "store.custom#juego-base": {
+    "parent": { 
+      "header": "header#static"
+    },
+    "children": [
+      "flex-layout.row#script-juegos"
+    ]
+  },
+  "flex-layout.row#script-juegos": {
+    "children": [
+      "flex-layout.col#script-juegos"
+    ],
+    "props": {
+      "blockClass": "row-games"
+    }
+  },
+  "flex-layout.col#script-juegos": {
+    "children": [
+      "iframe"
+      // "IFrameGames"
+    ],
+    "props": {
+      "blockClass": "col-games"
+    }
+  },
+
+  "iframe": {
+    "props": {
+      "src": "https://juegosdistroller.vicom.mx/ksi-mision-espacial/ksi-mision-espacial.php",
+      "width": "100%",
+      "height": 615,
+      "blockClass": "ksi-mision-especial"
+    }
+  }
+}

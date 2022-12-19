@@ -1,0 +1,267 @@
+{
+    "menu-item#bebesNeonatos": {
+        "props": {
+            "id": "menu-item-productos1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Neonatos",
+                "text": "Neonatos"
+            },
+            "blockClass": "menu-prin-header"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#product1"
+        ],
+        "title":"bebesNeonatos-header-desktop"
+    },
+    "vtex.menu@2.x:submenu#product1": {
+        "props": {
+            "width": "auto",
+            "blockClass": "cont-submenu-desktop"
+        },
+        "children": [
+            // "flex-layout.row#producto-img"
+            "vtex.menu@2.x:menu#producto1",
+            "vtex.menu@2.x:menu#image-product1"
+        ]
+    },
+
+    "vtex.menu@2.x:menu#producto1": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "col-desk-menu-items"
+        },
+        "children": [
+            "menu-item#ksimeritos",
+            "menu-item#aquameritos",
+            "menu-item#mikromeritos",
+            "menu-item#emoshionatos",
+            "menu-item#volameritos",
+            "menu-item#sigotos",
+            "menu-item#prematuros",
+            "menu-item#espumantis",
+            "menu-item#neoflobbies",
+            "menu-item#kkitos"
+        ]
+    },
+
+    "menu-item#ksimeritos": {
+        "props": {
+            "id": "menu-item-producto-1-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Ksi-meritos",
+                "text": "Ksi-meritos"
+            }
+        }
+    },
+    "menu-item#aquameritos": {
+        "props": {
+            "id": "menu-item-producto-2-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Aquameritos",
+                "text": "Aquameritos"
+            }
+        }
+    },
+    "menu-item#mikromeritos": {
+        "props": {
+            "id": "menu-item-producto-3-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Mikromeritos",
+                "text": "Mikromeritos"
+            }
+        }
+    },
+    "menu-item#emoshionatos": {
+        "props": {
+            "id": "menu-item-producto-4-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Emoshionatos",
+                "text": "Emoshionatos"
+            }
+        }
+    },
+    "menu-item#volameritos": {
+        "props": {
+            "id": "menu-item-producto-5-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Volameritos",
+                "text": "Volameritos"
+            }
+        }
+    },
+    "menu-item#sigotos": {
+        "props": {
+            "id": "menu-item-producto-6-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Sigotos",
+                "text": "Sigotos"
+            }
+        }
+    },
+    "menu-item#prematuros": {
+        "props": {
+            "id": "menu-item-producto-7-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Prematuros",
+                "text": "Prematuros"
+            }
+        }
+    },
+    "menu-item#espumantis": {
+        "props": {
+            "id": "menu-item-producto-8-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Espumantis",
+                "text": "Espumantis"
+            }
+        }
+    },
+    "menu-item#neoflobbies": {
+        "props": {
+            "id": "menu-item-producto-9-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Neoflobbies",
+                "text": "Neoflobbies"
+            }
+        }
+    },
+    "menu-item#kkitos": {
+        "props": {
+            "id": "menu-item-producto-10-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "K-kitos",
+                "text": "K-kitos"
+            }
+        }
+    },
+    "menu-item#neonatos-ver-todos": {
+        "props": {
+            "id": "menu-item-producto-11-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Ver todos",
+                "text": "Ver todos"
+            }
+        }
+    },
+
+
+
+    "vtex.menu@2.x:menu#image-product1": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#banerProductos1"
+        ]
+    },
+
+    
+    
+    "flex-layout.row#producto-img1": {
+        "children": [
+            "vtex.menu@2.x:menu#producto1",
+            "vtex.menu@2.x:menu#image-product1"
+        ],
+        "props": {
+            "width": "auto",
+            "blockClass": "row-cont-items-image1"
+        }
+    },
+
+    "menu-item#banerProductos1": {
+        "props": {
+            "id": "menu-item-producto-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false
+            }
+        },
+        "children":[
+            "image#banerProductos1"
+        ]
+    },
+
+    "image#banerProductos1": {
+        "props": {
+            "maxWidth": "180px",
+            "maxHeight": "180px",
+            "src": "assets/header/img-prueba-header.png"
+        }
+    }
+}

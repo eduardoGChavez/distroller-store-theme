@@ -1,0 +1,1916 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop",
+      // "responsive-layout.tablet",
+      "responsive-layout.mobile"
+    ]
+  },
+
+  "responsive-layout.desktop": {
+    "children": [
+      "flex-layout.row#promoInfo",
+      // "info-card#homeDesktop",
+      "flex-layout.row#title-category",
+      "flex-layout.row#category",
+      "flex-layout.row#title-recomendados",
+      "flex-layout.row#shelf-recomendaciones",
+      "flex-layout.row#rowGifcard",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#taniaInfo",
+      // "flex-layout.row#infoPagos-master",
+      "flex-layout.row#metodosDePago",
+      // "flex-layout.row#newsletter-home",
+      "back-to-top-button"
+      // "back-to-top-button"
+      // "image#whatsapp"
+    ]
+  },
+  "image#whatsapp":{
+    "props":{
+      "blockClass":"whatsapp",
+      "src":"assets/whatsapp.png",
+      "link": {
+        "url": "https://api.whatsapp.com/send?phone=+18589970533"
+      }
+    }
+  },
+  
+  "flex-layout.row#promoInfo":{
+    "props":{
+      "blockClass":"promoInfo"
+    },
+    "children":[
+      // "info-card#homeDesktop"
+      "image#promoInfo"
+      // "slider-layout#promoInfo"
+    ],
+    "title":"infocard-top-home-desktop"
+  },
+  "image#promoInfo": {
+    "props": {
+      "blockClass": "sliderHomeDesktop-1",
+      "src": "assets/AQUAW3_BANNERHOME_1440X400.jpg",
+      "link":{
+        "url":""
+      }
+    }
+  },
+  "flex-layout.row#taniaInfo":{
+    "props":{
+      "blockClass":"taniaInfo"
+    },
+    "children":[
+      // "info-card#tania"
+      "image#tania"//,
+      // "flex-layout.col#botonInfoCard"
+    ],
+    "title":"infocard-tania-desktop"
+  },
+
+  "flex-layout.col#botonInfoCard":{
+    "props":{
+      "width":"0%",
+      "blockClass":"botonInfoCard"
+    },
+    "children":[
+      "rich-text#botonInfoCard"
+    ]
+  },
+  "rich-text#botonInfoCard":{
+    "props":{
+      "blockClass":"botonInfoCardTexto",
+      "text":"[texto](/)"
+    }
+  },
+
+
+  "image#tania":{
+    "props": {
+      "blockClass": "homeBannerNo2",
+      "src": "assets/SORPRESITOS_BANNERHOMEFIJO_939X537.jpg",
+      "link":{
+        "url":""
+      }
+    }
+  },
+
+  "info-card#tania": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "maxHeight":"100%",
+      "imageUrl": "assets/tania-infocard.png",
+      "headline": "Discover<br>TANIA",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/sale",
+      "blockClass": "taniaInfo",
+      "textAlignment": "center"
+    }
+  },
+  
+
+
+  "flex-layout.row#shelf-producto": {
+    "children": ["list-context.product-list#producto"]
+  },
+  "list-context.product-list#producto": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-producto"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-producto": {
+    "props": {
+      "showNavigationArrows":"never",
+      "showPaginationDots":"never",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "producto"
+    }
+  },
+
+  "flex-layout.row#rowGifcard":{
+    "props":{
+      "blockClass":"rowGiftcard"
+  },
+  "children":[
+      "flex-layout.col#giftCard-1",
+      "flex-layout.col#giftCard-2"
+    ],
+    "title":"giftcard-home-desktop"
+  },
+  "flex-layout.col#giftCard-1":{
+    "props":{
+      "width":"80%",
+      "blockClass":"giftCard-1"
+    },
+    "children":[
+      // "info-card#giftCard"
+      "image#banner2-home"
+    ]
+  },
+  "flex-layout.col#giftCard-2":{
+    "props":{
+      "width":"25%",
+      "blockClass":"giftCard-2"
+    },
+    "children":[
+      "flex-layout.row#shelf-producto"
+    ]
+  },
+  "info-card#giftCard": {
+    "props": {
+      "id": "infoCard-diftCard",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "textAlignment": "center",
+      "width": "100%",
+      "imageUrl": "assets/giftCard.png",
+      "headline": "Nice<br>Text",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/sale",
+      "blockClass": "infoCard-giftCard"
+    }
+  },
+  "image#banner2-home":{
+    "props":{
+      "blockClass":"image-banner2-home",
+      "src":"assets/giftCard.png",
+      "width":"100%",
+      "link": {
+        "url": "/accesorios"
+      }
+    }
+  },
+
+
+  "slider-layout#text-test": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "flex-layout.row#title-recomendados": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "recomendadosTitulo"
+    },
+    "children": ["rich-text#recomendadosTitulo"],
+    "title":"titulo-lo-mas-top"
+  },
+  "rich-text#recomendadosTitulo": {
+    "props": {
+      "blockClass": "recomendadosTitulo",
+      "text": "# Lo más top",
+      "font": "t-heading-1"
+    }
+  },
+
+  "slider-layout#promoInfo": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "fullWidth": true,
+      "showPaginationDots": "never"
+    },
+    "children": [
+      "info-card#homeDesktop",
+      "info-card#homeDesktop",
+      "info-card#homeDesktop"
+    ]
+  },
+
+  "info-card#homeDesktop": {
+    "props": {
+      "id": "sliderDesktop1",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "textAlignment": "center",
+      "width": "100%",
+      "imageUrl": "assets/slider.jpg",
+      "headline": "TEXT",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/sale",
+      "blockClass": "sliderHomeDesktop-1"
+    }
+  },
+
+  "flex-layout.row#title-category": {
+    "props": {
+      "blockClass": "titulo-categoria"
+    },
+    "children": ["rich-text#titulo-categoria"],
+    "title":"titulo-famili-desktop"
+  },
+  "rich-text#titulo-categoria": {
+    "props": {
+      "fullWidth": true,
+      "width": "100%",
+      "blockClass": "texto-categoria",
+      "text": "# Distroller Fámili",
+      "font": "t-heading-1"
+    }
+  },
+  "flex-layout.row#category": {
+    "props": {
+      "blockClass": "categoriasCols"
+    },
+    "children": [
+      "flex-layout.col#categoria1",
+      "flex-layout.col#categoria2",
+      "flex-layout.col#categoria3",
+      "flex-layout.col#categoria4",
+      "flex-layout.col#categoria5"
+    ],
+    "title":"categorias-categoria-desktop"
+  },
+  //1
+  "flex-layout.row#categoria1": {
+    "children": [
+      "flex-layout.col#categoria1"
+    ],
+    "props": {
+      "blockClass": ["row-cat", "row-cat1"]
+    }
+  },
+  "flex-layout.col#categoria1": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "cat1"
+    },
+    "children": [
+      "image#cat1-1",
+      // "rich-text#categoryText1"
+      "flex-layout.row#button1"
+    ]
+  },
+
+  "flex-layout.row#button1": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "boton1"
+    },
+    "children": ["flex-layout.col#boton1"]
+  },
+  "flex-layout.col#boton1": {
+    "props": {
+      "blockClass": "boton1"
+    },
+    "children": ["rich-text#boton1"]
+  },
+  "rich-text#boton1": {
+    "props": {
+      "blockClass": ["buttonBannerCat", "buttonBannerCat1"],
+      // "blockClass": "botonText1",
+      "text": "[VER NEONATOS](/neonatos)"
+    }
+  },
+
+  // "image#cat1": {
+  //   "props": {
+  //     "blockClass": "categoryImg1",
+  //     "src": "assets/home/categoria1.jpg"
+  //   }
+  // },
+
+  "image#cat1-1": {
+    "props": {
+      "blockClass": "categoryImg1",
+      "src": "assets/home/banner_neonatos.jpg",
+      "link":{
+        "url":"/neonatos"
+      }
+    }
+  },
+  "rich-text#categoryText1": {
+    "props": {
+      "blockClass": "categoryText1",
+      "text": "### Neonatos\nText"
+    }
+  },
+  //2
+  "flex-layout.row#categoria2": {
+    "children": [
+      "flex-layout.col#categoria2"
+    ],
+    "props": {
+      "blockClass": ["row-cat", "row-cat2"]
+    }
+  },
+  "flex-layout.col#categoria2": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "cat2"
+    },
+    "children": [
+      "image#cat2",
+      // "rich-text#categoryText2",
+      "flex-layout.row#button2"
+    ]
+  },
+
+  "flex-layout.row#button2": {
+    "props": {
+      "blockClass": "boton2"
+    },
+    "children": ["flex-layout.col#boton2"]
+  },
+  "flex-layout.col#boton2": {
+    "props": {
+      "blockClass": "boton2"
+    },
+    "children": ["rich-text#boton2"]
+  },
+  "rich-text#boton2": {
+    "props": {
+      "blockClass": ["buttonBannerCat", "buttonBannerCat2"],
+      // "blockClass": "botonText2",
+      "text": "[VER CHAMOY Y AMIGUIS](/chamoy-y-amiguis)"
+    }
+  },
+  "image#cat2": {
+    "props": {
+      "blockClass": "categoryImg2",
+      "src": "assets/home/banner_chamoy.jpg",
+      "link":{
+        "url":"/chamoy-y-amiguis"
+      }
+    }
+  },
+  "rich-text#categoryText2": {
+    "props": {
+      "blockClass": "categoryText2",
+      "text": "### Chamoy\nText"
+    }
+  },
+  //3
+  "flex-layout.row#categoria3": {
+    "children": [
+      "flex-layout.col#categoria3"
+    ],
+    "props": {
+      "blockClass": ["row-cat", "row-cat3"]
+    }
+  },
+  "flex-layout.col#categoria3": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "cat3"
+    },
+    "children": [
+      "image#cat3",
+      // "rich-text#categoryText3",
+      "flex-layout.row#button3"
+    ]
+  },
+
+  "flex-layout.row#button3": {
+    "props": {
+      "blockClass": "boton3"
+    },
+    "children": ["flex-layout.col#boton3"]
+  },
+  "flex-layout.col#boton3": {
+    "props": {
+      "blockClass": "boton3"
+    },
+    "children": ["rich-text#boton3"]
+  },
+  "rich-text#boton3": {
+    "props": {
+      "blockClass": ["buttonBannerCat", "buttonBannerCat3"],
+      // "blockClass": "botonText3",
+      "text": "[VER CHIKITI PUN TAUN](/chikiti-pun-taun)"
+    }
+  },
+  "image#cat3": {
+    "props": {
+      "blockClass": "categoryImg3",
+      "src": "assets/home/banner_chikiti.jpg",
+      "link":{
+        "url":"/chikiti-pun-taun"
+      }
+    }
+  },
+  "rich-text#categoryText3": {
+    "props": {
+      "blockClass": "categoryText3",
+      "text": "### Chikiti\nText"
+    }
+  },
+  //4
+  "flex-layout.row#categoria4": {
+    "children": [
+      "flex-layout.col#categoria4"
+    ],
+    "props": {
+      "blockClass": ["row-cat", "row-cat4"]
+    }
+  },
+  "flex-layout.col#categoria4": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "cat4"
+    },
+    "children": [
+      "image#cat4",
+      // "rich-text#categoryText4",
+      "flex-layout.row#button4"
+    ]
+  },
+
+  "flex-layout.row#button4": {
+    "props": {
+      "blockClass": "boton4"
+    },
+    "children": ["flex-layout.col#boton4"]
+  },
+  "flex-layout.col#boton4": {
+    "props": {
+      "blockClass": "boton4"
+    },
+    "children": ["rich-text#boton4"]
+  },
+  "rich-text#boton4": {
+    "props": {
+      "blockClass": ["buttonBannerCat", "buttonBannerCat4"],
+      // "blockClass": "botonText4",
+      "text": "[VER MEXICAN PAGÜER](/mexican-Pagüer)"
+    }
+  },
+  "image#cat4": {
+    "props": {
+      "blockClass": "categoryImg4",
+      "src": "assets/home/banner_accesorios.jpg",
+      "link":{
+        "url":"/ropa-y-accesorios-para-ti"
+      }
+    }
+  },
+  "rich-text#categoryText4": {
+    "props": {
+      "blockClass": "categoryText4",
+      "text": "### Mexican Pagüer\nText"
+    }
+  },
+  //5
+  "flex-layout.row#categoria5": {
+    "children": [
+      "flex-layout.col#categoria5"
+    ],
+    "props": {
+      "blockClass": ["row-cat", "row-cat5"]
+    }
+  },
+  "flex-layout.col#categoria5": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "cat5"
+    },
+    "children": [
+      "image#cat5",
+      // "rich-text#categoryText5",
+      "flex-layout.row#button5"
+    ]
+  },
+
+  "flex-layout.row#button5": {
+    "props": {
+      "blockClass": "boton5"
+    },
+    "children": ["flex-layout.col#boton5"]
+  },
+  "flex-layout.col#boton5": {
+    "props": {
+      "blockClass": "boton5"
+    },
+    "children": ["rich-text#boton5"]
+  },
+  "rich-text#boton5": {
+    "props": {
+      "blockClass": ["buttonBannerCat", "buttonBannerCat5"],
+      // "blockClass": "botonText5",
+      "text": "[VER VIRGENCITA PLIS](/virgencita-plis)"
+    }
+  },
+  "image#cat5": {
+    "props": {
+      "blockClass": "categoryImg5",
+      "src": "assets/home/banner_ofertas.jpg",
+      "link":{
+        "url":"/ofertas"
+      }
+    }
+  },
+  "rich-text#categoryText5": {
+    "props": {
+      "blockClass": "categoryText5",
+      "text": "### Virgencita Plis\nText"
+    }
+  },
+
+  "flex-layout.row#infoPagos-master": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "master-inforPagos"
+    },
+    "children": [
+      // "image#icono1",
+      // "flex-layout.col#texto1",
+      // "image#icono2",
+      // "flex-layout.col#texto2",
+      // "image#icono3",
+      // "flex-layout.col#texto3"
+
+
+      // "flex-layout.col#icono1",
+      // "flex-layout.col#texto1",
+      // "flex-layout.col#icono2",
+      // "flex-layout.col#texto2",
+      // "flex-layout.col#icono3",
+      // "flex-layout.col#texto3"//,
+
+      "flex-layout.col#colFoot1",
+      "flex-layout.col#colFoot2",
+      "flex-layout.col#colFoot3"
+
+      // "flex-layout.col#spacer"
+      
+    ]
+  },
+
+  "flex-layout.col#colFoot1":{
+    "props":{
+      "width":"23%",
+      "blockClass":"colFoot1"
+    },
+    "children":[
+      "image#icono1",
+      "flex-layout.col#texto1"
+    ]
+  },
+
+  "flex-layout.col#colFoot2":{
+    "props":{
+      "width":"23%",
+      "blockClass":"colFoot2"
+    },
+    "children":[
+      "image#icono2",
+      "flex-layout.col#texto2"
+    ]
+  },
+
+
+  "flex-layout.col#colFoot3":{
+    "props":{
+      "width":"23%",
+      "blockClass":"colFoot3"
+    },
+    "children":[
+      "image#icono3",
+      "flex-layout.col#texto3"
+    ]
+  },
+
+
+  "flex-layout.col#spacer":{
+    "props":{
+      "blockClass":"spacer",
+      "width":"39%"
+    }
+  },
+  "flex-layout.col#spacerPersonaje":{
+    "props":{
+      "blockClass":"spacerPersonaje"
+      // "width":"33%"
+    }
+  },
+  ///////////////////////////////////////////////////////////////////////////////// 1
+  "flex-layout.col#icono1": {
+    "props": {
+      // "width": "10%",
+      "horizontalAlign": "left",
+      "blockClass": "icono1"
+    },
+    "children": ["image#icono1"]
+  },
+  "image#icono1": {
+    "props": {
+      
+      "horizontalAlign": "left",
+      "blockClass": "icono1",
+      "src": "assets/f1.png"
+    }
+  },
+  "flex-layout.col#texto1": {
+    "props": {
+      // "width": "10%",//20
+      "horizontalAlign": "left",
+      "blockClass": "texto1"
+    },
+    "children": ["rich-text#texto1"]
+  },
+  "rich-text#texto1": {
+    "props": {
+      "blockClass": ":texto2",
+      "text": "Pagos con Tarjeta"
+    }
+  },
+
+  ///////////////////////////////////////////////////////////////////////////////// 2
+  "rich-text#texto2": {
+    "props": {
+      "blockClass": ":texto2",
+      "text": "Sitio 100% Seguro"
+    }
+  },
+  "flex-layout.col#icono2": {
+    "props": {
+      // "width": "10%",
+      "horizontalAlign": "left",
+      "blockClass": "icono2"
+    },
+    "children": ["image#icono2"]
+  },
+  "image#icono2": {
+    "props": {
+      "blockClass": "icono2",
+      "src": "assets/f3.png"
+    }
+  },
+  "flex-layout.col#texto2": {
+    "props": {
+      // "width": "10%",//20
+      "horizontalAlign": "left",
+      "blockClass": "texto2"
+    },
+    "children": ["rich-text#texto2"]
+  },
+
+  /////////////////////////////////////////////////////////////////////////////////// 3
+  "flex-layout.col#icono3": {
+    "props": {
+      // "width": "10%",
+      "horizontalAlign": "left",
+      "blockClass": "icono3"
+    },
+    "children": ["image#icono3"]
+  },
+  "image#icono3": {
+    "props": {
+      "blockClass": "icono3",
+      "src": "assets/f5.png"
+    }
+  },
+  "flex-layout.col#texto3": {
+    "props": {
+      // "width": "10%",
+      "blockClass": "texto3"//,
+      // "horizontalAlign":"left"
+    },
+    "children": ["rich-text#texto3"]
+  },
+  "rich-text#texto3": {
+    "props": {
+      "blockClass": ":texto3",
+      "text": "Ofertas exclusivas en linea"
+    }
+  },
+
+  // "responsive-layout.tablet": {
+  //   "children": [
+  //     "list-context.image-list#demo",
+  //     /* You can make references to blocks defined in other files.
+  //      * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+  //     "__fold__.experimentalLazyAssets",
+  //     "flex-layout.row#deals",
+  //     "rich-text#shelf-title",
+  //     "flex-layout.row#shelf",
+  //     "info-card#home",
+  //     "rich-text#question",
+  //     "rich-text#link",
+  //     "flex-layout.row#newsletter-mobile",
+  //     "back-to-top-button"
+  //   ]
+  // },
+  "flex-layout.row#row-banner-mobile": {
+    "children": [
+      "flex-layout.col#col-banner-mobile"
+    ],
+    "props": {
+      "blockClass": "bannerMobile"
+    },
+    "title":"banner-top-mobile"
+  },
+  "flex-layout.col#col-banner-mobile": {
+    "children": [
+      // "info-card#homeMobile",
+      "image#img-banner-mobile",
+      "rich-text#button-banner-mobile"
+    ],
+    "props": {
+      "blockClass": "bannerMobile"
+    }
+  },
+  "image#img-banner-mobile": {
+    "props": {
+      "link": {
+        "url": "/"
+      },
+      "width": "100%",
+      "blockClass": "",
+      "src": "assets/sliderMobile.svg"
+    }
+  },
+  "rich-text#button-banner-mobile": {
+    "props": {
+      "text":"[Comprar](/sale)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "buttonBannerMobile"
+    }
+  },
+  "responsive-layout.mobile": {
+    "children": [
+      // "flex-layout.row#enviosMexico",
+      // "flex-layout.row#promoInfo-mobile",
+      "flex-layout.row#row-banner-mobile",
+      // "rich-text#botonPrueba",
+      // "flex-layout.row#prueba",
+
+      "flex-layout.row#title-category-mobile",
+      // "slider-layout#categoriasSlider",
+      // "flex-layout.row#category",
+      "slider-layout#bannersCategorias",
+      "flex-layout.row#title-newest",
+      "flex-layout.row#shelf-newest",
+      "flex-layout.row#promoBanner",
+      "flex-layout.row#title-top",
+      "flex-layout.row#shelf-top",
+      "__fold__.experimentalLazyAssets",
+      "flex-layout.row#taniaInfo-mobile",
+      // "flex-layout.row#info-pago1-img",
+      // "flex-layout.row#info-pago1",
+      // "flex-layout.row#info-pago2-img",
+      // "flex-layout.row#info-pago2",
+      // "flex-layout.row#info-pago3-img",
+      // "flex-layout.row#info-pago3",
+      "slider-layout#formasDePago",
+      
+      // "flex-layout.row#newsletter-mobile",
+      "back-to-top-button"
+    ]
+  },
+
+  "flex-layout.row#textoBottom":{
+    "props":{
+      "blockClass":"bottom",
+      "horizontalAlign":"center"
+    },
+    "children":[
+      "rich-text#bottom"
+    ]
+  },
+  "rich-text#bottom":{
+    "props":{
+      "blockClass":"bottomText",
+      "text":"Suscríbete pa' estar enteradísim@ de lo más nuevo de Distroller"
+    }
+  },
+
+
+  "flex-layout.row#enviosMexico":{
+    "props":{
+      "blockClass":"enviosMexico"
+    },
+    "children":[
+      "rich-text#enviosMexico"
+    ]
+  },
+  "rich-text#enviosMexico":{
+    "props":{
+      "blockClass":"enviosMexico",
+      "text":"ENVIOS A TODO MEXICO"
+    }
+  },
+  "flex-layout.row#title-category-mobile": {
+    "props": {
+      "blockClass": "titulo-categoria-mobile"
+    },
+    "children": ["rich-text#titulo-categoria-mobile"],
+    "title":"titulo-famili-mobile"
+  },
+  "rich-text#titulo-categoria-mobile": {
+    "props": {
+      "fullWidth": true,
+      "width": "100%",
+      "blockClass": "texto-categoria-mobile",
+      "text": "Distroller Fámili"
+    }
+  },
+  "flex-layout.row#promoInfo-mobile":{
+    "props":{
+      "fullWidth":true,
+      "blockClass":"promoInfo-mobile"
+    },
+    "children":[
+      "slider-layout#promoInfo-mobile"
+    ]
+  },
+  "flex-layout.row#taniaInfo-mobile":{
+    "props":{
+      "blockClass":"infoTania-mobile"
+    },
+    "children":[
+      // "info-card#infoTania-mobile"
+      "image#banner3-home"
+    ],
+    "title":"infocard-tania-mobile"
+  },
+  "info-card#infoTania-mobile": {
+    "props": {
+      "id": "infoTania-mobile",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/taniaInfo-mobile.png",
+      "headline": "CONOCE<br>A TANIA",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/sale",
+      "blockClass": "infoTania-mobile",
+      "textAlignment": "center"
+    }
+  },
+  "image#banner3-home":{
+    "props":{
+      "blockClass":"image-banner3-home",
+      "src":"assets/taniaInfo-mobile.png",
+      "width":"100%",
+      "link": {
+        "url": "/chamoy-y-amiguis"
+      }
+    }
+  },
+
+  "flex-layout.row#promoBanner":{
+    "props":{
+      "blockClass":"promoBanner"
+    },
+    "children":[
+      // "info-card#promoBanner"
+      "image#estrellados"
+    ],
+    "title":"promo-banner-mobile"
+  },
+  "info-card#promoBanner": {
+    "props": {
+      "id": "promoBanner",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/promoBanner.png",
+      "headline": "PROMO BANNER",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/sale",
+      "blockClass": "info-card-promoBanner",
+      "textAlignment": "center"
+    }
+  },
+  //top
+  "flex-layout.row#shelf-top": {
+    "children": ["list-context.product-list#newest"],
+    "title":"shelf-lo-mas-nuevo-mobile"
+  },
+  "list-context.product-list#top": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-productsTop"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-productsTop": {
+    "props": {
+      "showNavigationArrows":"never",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelfTop"
+    }
+  },
+  "flex-layout.row#title-top":{
+    "props":{
+      "blockClass":"title-top"
+    },
+    "children":[
+      "rich-text#titulo-top"
+    ],
+    "title":"titulo-lo-mas-nuevo-mobile"
+  },
+  "rich-text#titulo-top":{
+    "props":{
+      "horizontalAlign":"center",
+      "blockClass":"titulo-top",
+      "text":"Top Offers"
+    }
+  },
+
+  //newest
+  "flex-layout.row#shelf-newest": {
+    "children": ["list-context.product-list#newest"],
+    "title":"shelf-lo-mas-nuevo"
+  },
+  "list-context.product-list#newest": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-productsNewest"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-productsNewest": {
+    "props": {
+      "showNavigationArrows":"never",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelfNewest"
+    }
+  },
+  "flex-layout.row#title-newest":{
+    "props":{
+      "blockClass":"title-newest"
+    },
+    "children":[
+      "rich-text#titulo-newest"
+    ],
+    "title":"titulo-lo-mas-nuevo"
+  },
+  "rich-text#titulo-newest":{
+    "props":{
+      "horizontalAlign":"center",
+      "blockClass":"titulo-newest",
+      "text":"Lo mas nuevos"
+    }
+  },
+
+  "slider-layout#promoInfo-mobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carouselMobile",
+      "fullWidth": true,
+      "showPaginationDots": "mobileOnly",
+      "centerModeSlidesGap":0
+      // "centerMode":"center"
+    },
+    "children": [
+      "info-card#homeMobile",
+      "info-card#homeMobile",
+      "info-card#homeMobile"
+    ]
+  },
+
+  "info-card#homeMobile": {
+    "props": {
+      "id": "sliderMobile1",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "textAlignment": "center",
+      // "width": "100%",
+      "mobileImageUrl": "assets/sliderMobile.svg",
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/sale",
+      "blockClass": "sliderHomeMobile-1"
+    }
+  },
+
+  "slider-layout#categoriasSlider": {
+    "props": {
+      "centerMode": "center",
+      // "fullWidth":true,
+      "itemsPerPage": {
+        "mobile": 2
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "infinite": true,
+      "blockClass": "carrusel-categorias"
+    },
+    "children": [
+      "flex-layout.row#rowCat1",
+      "flex-layout.row#rowCat2",
+      "flex-layout.row#rowCat3",
+      "flex-layout.row#rowCat4",
+      "flex-layout.row#rowCat5",
+      "flex-layout.row#rowCat6",
+      "flex-layout.row#rowCat7",
+      "flex-layout.row#rowCat8"
+    ]
+  },
+  "slider-layout#bannersCategorias": {
+    "props": {
+      "centerMode": "center",
+      // "fullWidth":true,
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "autoplay":{
+        "timeout":4000,
+        "stopOnHover":true
+      },
+      // "infinite": true,
+      "blockClass": "slider-categorias"
+    },
+    "children": [
+      "flex-layout.row#categoria1",
+      "flex-layout.row#categoria2",
+      "flex-layout.row#categoria3",
+      "flex-layout.row#categoria4",
+      "flex-layout.row#categoria5"
+    ],
+    "title":"categorias-famili-mobile"
+  },
+  //1
+  "flex-layout.row#rowCat1": {
+    "props": {
+      "blockClass": "rowCat1"
+    },
+    "children": ["flex-layout.col#categoriamobile1"]
+  },
+  "flex-layout.col#categoriamobile1": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "catMobile1"
+    },
+    "children": ["image#catmobile1", "rich-text#catmobile1"]
+  },
+  "image#catmobile1": {
+    "props": {
+      "link": {
+        "url": "/neonatos"
+      },
+      "maxHeight": "216px",
+      "maxWidth": "198px",
+      "blockClass": "imgCAtMobile1",
+      "src": "assets/tania.png"
+    }
+  },
+  "rich-text#catmobile1": {
+    "props": {
+      "blockClass": "textCatMobile1",
+      "text": "Title"
+    }
+  },
+  //2
+  "flex-layout.row#rowCat2": {
+    "props": {
+      "blockClass": "rowCat2",
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#categoriamobile2"]
+  },
+  "flex-layout.col#categoriamobile2": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "catMobile1"
+    },
+    "children": ["image#catmobile2", "rich-text#catmobile2"]
+  },
+  "image#catmobile2": {
+    "props": {
+      "link": {
+        "url": "/chamoy-y-amiguis"
+      },
+      "maxHeight": "216px",
+      "maxWidth": "198px",
+      "blockClass": "imgCAtMobile2",
+      "src": "assets/tania.png"
+    }
+  },
+  "rich-text#catmobile2": {
+    "props": {
+      "blockClass": "textCatMobile2",
+      "text": "Title"
+    }
+  },
+  //3
+  "flex-layout.row#rowCat3": {
+    "props": {
+      "blockClass": "rowCat3"
+    },
+    "children": ["flex-layout.col#categoriamobile3"]
+  },
+  "flex-layout.col#categoriamobile3": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "catMobile3"
+    },
+    "children": ["image#catmobile3", "rich-text#catmobile3"]
+  },
+  "image#catmobile3": {
+    "props": {
+      "link": {
+        "url": "/chikiti-pun-taun"
+      },
+      "maxHeight": "216px",
+      "maxWidth": "198px",
+      "blockClass": "imgCAtMobile3",
+      "src": "assets/tania.png"
+    }
+  },
+  "rich-text#catmobile3": {
+    "props": {
+      "blockClass": "textCatMobile3",
+      "text": "Title"
+    }
+  },
+  //4
+  "flex-layout.row#rowCat4": {
+    "props": {
+      "blockClass": "rowCat4"
+    },
+    "children": ["flex-layout.col#categoriamobile4"]
+  },
+  "flex-layout.col#categoriamobile4": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "catMobile4"
+    },
+    "children": ["image#catmobile4", "rich-text#catmobile4"]
+  },
+  "image#catmobile4": {
+    "props": {
+      "link": {
+        "url": "/mexican-paguer"
+      },
+      "maxHeight": "216px",
+      "maxWidth": "198px",
+      "blockClass": "imgCAtMobile4",
+      "src": "assets/tania.png"
+    }
+  },
+  "rich-text#catmobile4": {
+    "props": {
+      "blockClass": "textCatMobile4",
+      "text": "Title"
+    }
+  },
+  //5
+  "flex-layout.row#rowCat5": {
+    "props": {
+      "blockClass": "rowCat5"
+    },
+    "children": ["flex-layout.col#categoriamobile5"]
+  },
+  "flex-layout.col#categoriamobile5": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "catMobile5"
+    },
+    "children": ["image#catmobile5", "rich-text#catmobile5"]
+  },
+  "image#catmobile5": {
+    "props": {
+      "link": {
+        "url": "/virgencita-plis"
+      },
+      "maxHeight": "216px",
+      "maxWidth": "198px",
+      "blockClass": "imgCAtMobile5",
+      "src": "assets/tania.png"
+    }
+  },
+  "rich-text#catmobile5": {
+    "props": {
+      "blockClass": "textCatMobile5",
+      "text": "Title"
+    }
+  },
+  //6
+  "flex-layout.row#rowCat6": {
+    "props": {
+      "blockClass": "rowCat6"
+    },
+    "children": ["flex-layout.col#categoriamobile6"]
+  },
+  "flex-layout.col#categoriamobile6": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "catMobile6"
+    },
+    "children": ["image#catmobile6", "rich-text#catmobile6"]
+  },
+  "image#catmobile6": {
+    "props": {
+      "link": {
+        "url": "/virgencita-plis"
+      },
+      "maxHeight": "216px",
+      "maxWidth": "198px",
+      "blockClass": "imgCAtMobile6",
+      "src": "assets/tania.png"
+    }
+  },
+  "rich-text#catmobile6": {
+    "props": {
+      "blockClass": "textCatMobile6",
+      "text": "Title"
+    }
+  },
+  //7
+  "flex-layout.row#rowCat7": {
+    "props": {
+      "blockClass": "rowCat5"
+    },
+    "children": ["flex-layout.col#categoriamobile7"]
+  },
+  "flex-layout.col#categoriamobile7": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "catMobile7"
+    },
+    "children": ["image#catmobile7", "rich-text#catmobile7"]
+  },
+  "image#catmobile7": {
+    "props": {
+      "link": {
+        "url": "/virgencita-plis"
+      },
+      "maxHeight": "216px",
+      "maxWidth": "198px",
+      "blockClass": "imgCAtMobile7",
+      "src": "assets/tania.png"
+    }
+  },
+  "rich-text#catmobile7": {
+    "props": {
+      "blockClass": "textCatMobile7",
+      "text": "Title"
+    }
+  },
+
+  "flex-layout.row#info-pago1-img": {
+    "props": {
+      "blockClass": "info-pago-1-rowimg"
+    },
+    "children": ["image#pago1"]
+  },
+  "image#pago1": {
+    "props": {
+      "blockClass": "info-pago-1-img",
+      "src": "assets/porcentaje.svg"
+    }
+  },
+  "flex-layout.row#info-pago1": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "info-pago-1-rowtxt"
+    },
+    "children": ["rich-text#pago1"]
+  },
+  "rich-text#pago1": {
+    "props": {
+      "blockClass": "info-pago-1-txt",
+      "text": "Ofertas exclusivas en linea"
+    }
+  },
+  //7
+  "flex-layout.row#rowCat8": {
+    "props": {
+      "blockClass": "rowCat8"
+    },
+    "children": ["flex-layout.col#categoriamobile8"]
+  },
+  "flex-layout.col#categoriamobile8": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "catMobile7"
+    },
+    "children": ["image#catmobile8", "rich-text#catmobile8"]
+  },
+  "image#catmobile8": {
+    "props": {
+      "link": {
+        "url": "/virgencita-plis"
+      },
+      "maxHeight": "216px",
+      "maxWidth": "198px",
+      "blockClass": "imgCAtMobile7",
+      "src": "assets/tania.png"
+    }
+  },
+  "rich-text#catmobile8": {
+    "props": {
+      "blockClass": "textCatMobile8",
+      "text": "Title"
+    }
+  },
+
+  "flex-layout.row#info-pago8-img": {
+    "props": {
+      "blockClass": "info-pago-1-rowimg"
+    },
+    "children": ["image#pago8"]
+  },
+  "image#pago8": {
+    "props": {
+      "blockClass": "info-pago-1-img",
+      "src": "assets/porcentaje.svg"
+    }
+  },
+  "flex-layout.row#info-pago8": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "info-pago-1-rowtxt"
+    },
+    "children": ["rich-text#pago8"]
+  },
+  "rich-text#pago8": {
+    "props": {
+      "blockClass": "info-pago-1-txt",
+      "text": "Ofertas exclusivas en linea"
+    }
+  },
+  //2
+  "flex-layout.row#info-pago2-img": {
+    "props": {
+      "blockClass": "info-pago-2-rowimg"
+    },
+    "children": ["image#pago2"]
+  },
+  "image#pago2": {
+    "props": {
+      "blockClass": "info-pago-2-img",
+      "src": "assets/tarjeta.svg"
+    }
+  },
+  "flex-layout.row#info-pago2": {
+    "props": {
+      "blockClass": "info-pago-2-rowtxt"
+    },
+    "children": ["rich-text#pago2"]
+  },
+  "rich-text#pago2": {
+    "props": {
+      "blockClass": "info-pago-2-txt",
+      "text": "Pagos con Tarjeta"
+    }
+  },
+  //3
+  "flex-layout.row#info-pago3-img": {
+    "props": {
+      "blockClass": "info-pago-3-rowimg"
+    },
+    "children": ["image#pago3"]
+  },
+  "image#pago3": {
+    "props": {
+      "blockClass": "info-pago-3-img",
+      "src": "assets/seguro.svg"
+    }
+  },
+  "flex-layout.row#info-pago3": {
+    "props": {
+      "blockClass": "info-pago-3-rowtxt"
+    },
+    "children": ["rich-text#pago3"]
+  },
+  "rich-text#pago3": {
+    "props": {
+      "blockClass": "info-pago-3-txt",
+      "text": "Sitio 100% Seguro"
+    }
+  },
+
+  "flex-layout.row#newsletter-home": {
+    "props": {
+      // "horizontalAlign":"center",
+      // "verticalAlign":"middle",
+      "fullWidth": true,
+      "blockClass": "newsletter-home"
+    },
+    "children": ["newsletter-form"],
+    "title":"newsletter-home-desktop"
+  },
+  "footer-spacer": {
+    "props": {
+      "width": "15%"
+    }
+  },
+  "newsletter-form": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      // "width":"30%",
+      "blockClass": "nl-desktop"
+    },
+    "children": ["flex-layout.row#nw-submit-mail"]
+  },
+  "flex-layout.row#nw-submit-mail": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "nw-d-main"
+    },
+    "children": [
+      "flex-layout.col#newsletter-text-col",
+      "flex-layout.col#newsletter-email-col",
+      "flex-layout.col#newsletter-submit-col"
+    ]
+  },
+  "flex-layout.col#newsletter-submit-col": {
+    "props": {
+      "horizontalAlign": "left",
+      // "verticalAlign":"middle",
+      "blockClass": "buttonNewsLetter-col"
+    },
+    "children": ["newsletter-submit"]
+  },
+  "flex-layout.col#newsletter-email-col": {
+    "props": {
+      "horizontalAlign": "center",
+      "width":"20%",
+      "blockClass": "mailNewsLetter-col"
+    },
+    "children": ["newsletter-input-email"]
+  },
+  "flex-layout.col#newsletter-text-col": {
+    "props": {
+      // "width": "33%",
+      "horizontalAlign": "right"
+    },
+    "children": ["rich-text#newsletter-text"]
+  },
+  "rich-text#newsletter-text": {
+    "props": {
+      "blockClass": "labelNewsLetter",
+      "text": "Suscríbete pa' estar enteradísim@\nde lo más nuevo de Distroller"
+    }
+  },
+  "newsletter-input-email": {
+    "props": {
+
+      "blockClass": "emailNewsLetter",
+      "placeholderText": "Pon tu e-mail y obtén un cupón por 15% de descuento"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "width": "33%",
+      "blockClass": "buttonNewsLetter",
+      "submitButtonLabel": "SUBSCRIBIRME"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Summer",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf-recomendaciones": {
+    "children": ["list-context.product-list#recomendaciones"],
+    "title":"shelf-lo-mas-top-desktop"
+  },
+  "list-context.product-list#recomendaciones": {
+    "blocks": [
+      "product-summary.shelf#desk-1"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "showNavigationArrows":"always",
+      "showPaginationDots":"mobileOnly",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "blockClass": "question"
+    }
+  },
+  //metodos de pago desktop
+  "flex-layout.row#metodosDePago": {
+    "props": {
+      "blockClass": "metodos-de-pago",
+      // "preserveLayoutOnMobile":true,
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "marginLeft": 3,
+      "marginRight": 3
+    },
+    "children": [
+      "flex-layout.col#paypal",
+      // "flex-layout.col#estafeta",
+      "flex-layout.col#mastercard",
+      "flex-layout.col#visa",
+      "flex-layout.col#american",
+      "flex-layout.col#oxxo",
+      "flex-layout.col#mercado",
+      "flex-layout.col#kueskiPay"
+    ],
+    "title":"metodos-pago-desktop"
+  },
+
+  "flex-layout.col#kueskiPay": {
+      "props": {
+          "blockClass": "kueskiPay",
+            "marginLeft": 3,
+            "marginRight": 3
+          },
+          "children": ["image#kueskiPay"]
+        },
+
+        "image#kueskiPay": {
+           "props": {
+       "src": "assets/KueskiPay.svg"
+           }
+        },
+    
+
+  "flex-layout.col#paypal": {
+    "props": {
+      "blockClass": "paypal",
+      "marginLeft": 3,
+      "marginRight": 3
+    },
+    "children": ["image#paypal"]
+  },
+  "image#paypal": {
+    "props": {
+      "src": "assets/paypal.svg"
+    }
+  },
+
+  "flex-layout.col#estafeta": {
+    "props": {
+      "blockClass": "estafeta",
+      "marginLeft": 3,
+      "marginRight": 3
+    },
+    "children": ["image#estafeta"]
+  },
+  "image#estafeta": {
+    "props": {
+      "src": "assets/estafeta.svg"
+    }
+  },
+
+  "flex-layout.col#mastercard": {
+    "props": {
+      "blockClass": "mastercard",
+      "marginLeft": 3,
+      "marginRight": 3
+    },
+    "children": ["image#mastercard"]
+  },
+  "image#mastercard": {
+    "props": {
+      "src": "assets/mastercard.svg"
+    }
+  },
+
+  "flex-layout.col#visa": {
+    "props": {
+      "blockClass": "visa",
+      "marginLeft": 3,
+      "marginRight": 3
+    },
+    "children": ["image#visa"]
+  },
+
+  "image#visa": {
+    "props": {
+      "src": "assets/visa.svg"
+    }
+  },
+
+  "flex-layout.col#american": {
+    "props": {
+      "blockClass": "american",
+      "marginLeft": 3,
+      "marginRight": 3
+    },
+    "children": ["image#american"]
+  },
+  "image#american": {
+    "props": {
+      "src": "assets/american.svg"
+    }
+  },
+
+  "flex-layout.col#oxxo": {
+    "props": {
+      "blockClass": "oxxo",
+      "marginLeft": 3,
+      "marginRight": 3
+    },
+    "children": ["image#oxxo"]
+  },
+  "image#oxxo": {
+    "props": {
+      "src": "assets/oxxo.svg"
+    }
+  },
+
+  "flex-layout.col#mercado": {
+    "props": {
+      "blockClass": "mercado",
+      "marginLeft": 3,
+      "marginRight": 3
+    },
+    "children": ["image#mercado"]
+  },
+  "image#mercado": {
+    "props": {
+      "src": "assets/mercado.svg"
+    }
+  },
+
+  ///mobile nwlttr
+
+  "flex-layout.row#newsletter-mobile": {
+    "children": [
+      "newsletter-form#mobile"
+    ],
+    "props": {
+      "blockClass": "nl-mobile"
+    }
+  },
+  "newsletter-form#mobile": {
+    "props": {},
+    "children": [
+      "flex-layout.row#texto-nl-mobile",
+      "flex-layout.row#nl-mobile-mailButton"
+    ]
+  },
+  "flex-layout.row#nl-mobile-mailButton": {
+    "props": {
+      "fullWidth": true,
+      "width": "100%",
+      "horizontalAlign": "center",
+      "blockClass": "nl-mobile-mailButton"
+    },
+    "children": [
+      // "footer-spacer#mobile",
+      "flex-layout.col#newsletter-email-col-mobile",
+      "flex-layout.col#newsletter-submit-col-mobile"//,
+      // "footer-spacer#mobile"
+    ]
+  },
+  "footer-spacer#mobile": {
+    "props": {
+      "width": "23%"
+    }
+  },
+
+  "flex-layout.col#submit-email-nl-mobile": {
+    "props": {
+      "blockClass": "conjuntomailsubmit",
+      "horizontalAlign": "center"
+    },
+    "children": []
+  },
+
+  "flex-layout.col#newsletter-submit-col-mobile": {
+    "props": {
+      "horizontalAlign": "left",
+      "width": "20%",
+      "blockClass": "submit-mobile"
+    },
+    "children": ["newsletter-submit#mobile"]
+  },
+  "flex-layout.col#newsletter-email-col-mobile": {
+    "props": {
+      "horizontalAlign": "right",
+      "width": "40%",
+      "blockClass": "mail-mobile"
+    },
+    "children": [
+      "newsletter-input-email#mobile"
+    ]
+  },
+  "flex-layout.row#texto-nl-mobile": {
+    "props": {},
+    "children": [
+      // "rich-text#newsletter-text#mobile"
+    ]
+  },
+
+  ///nl mobile
+  "rich-text#newsletter-text#mobile": {
+    "props": {
+      "blockClass": "labelNewsLetter-mobile",
+      "text": "Suscríbete pa' estar enteradísim@ de lo más nuevo de Distroller"
+    }
+  },
+  "newsletter-input-email#mobile": {
+    "props": {
+      "blockClass": "emailNewsLetter-mobile",
+      "placeholderText": "Pon tu e-mail y obtén un cupón por 15% de descuento"
+    }
+  },
+  "newsletter-submit#mobile": {
+    "props": {
+      "blockClass": "buttonNewsLetter-mobile",
+      "submitButtonLabel": "SUSCRIBIRME"
+    }
+  },
+  "back-to-top-button": {
+    "props": {
+      "display": "caret-icon"
+    }
+  },
+  "slider-layout#formasDePago": {
+    "props": {
+      "centerMode": "disabled",
+      // "fullWidth":true,
+      "itemsPerPage": {
+        "mobile": 2,
+        "tablet":3
+      },
+      "showNavigationArrows": "never",
+      "infinite": true,
+      "blockClass": "carrusel-metodosPago"
+    },
+    "children": [
+      "image#1",
+      // "image#2",
+      "image#3",
+      "image#4",
+      "image#5",
+      "image#6",
+      "image#7",
+      "image#8"
+    ],
+    "title":"metodos-pago-mobile"
+  },
+  "image#1": {
+    "props": {
+      "src": "assets/paypal.svg"
+    }
+  },
+  "image#2": {
+    "props": {
+      "src": "assets/estafeta.svg"
+    }
+  },
+  "image#3": {
+    "props": {
+      "src": "assets/mastercard.svg"
+    }
+  },
+  "image#4": {
+    "props": {
+      "src": "assets/visa.svg"
+    }
+  },
+  "image#5": {
+    "props": {
+      "src": "assets/american.svg"
+    }
+  },
+  "image#6": {
+    "props": {
+      "src": "assets/oxxo.svg"
+    }
+  },
+  "image#7": {
+    "props": {
+      "src": "assets/mercado.svg"
+    }
+  },
+  "image#8": {
+    "props": {
+      "src": "assets/KueskiPay.svg",
+      "blockClass":"kueski"
+    }
+  },
+  "image#estrellados": {
+    "props": {
+      "blockClass": "promoBanner",
+      "src": "assets/KSIESTRELLA2_BANNERHOME_380x386.jpg",
+      "width":"100%",
+      "link":{
+        "url":""
+      }
+    }
+  }
+}

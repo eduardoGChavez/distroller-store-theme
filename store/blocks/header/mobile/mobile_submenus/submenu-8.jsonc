@@ -1,0 +1,19 @@
+{
+  "menu-item#mobile_menu-8": {
+    "props": {
+      "id": "menu-item-Juegos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Juegos",
+        "text": "Juegos"
+      },
+      "blockClass": "mob-menu-prin-header"
+    },
+    "title":"juegos-header-mobile"
+  }
+}

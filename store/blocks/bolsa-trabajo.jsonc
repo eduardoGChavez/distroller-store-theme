@@ -1,0 +1,235 @@
+{
+    "store.custom#bolsa-trabajo": {
+      "children": [
+          "flex-layout.row#row-container--bolsa-trabajo"
+      ]
+    },
+    "flex-layout.row#row-container--bolsa-trabajo":{
+      "children":[
+        "flex-layout.col#col-content--bolsa-trabajo"
+      ],
+      "props":{
+        "blockClass":"row-container--bolsa-trabajo"
+      }
+    },
+    "flex-layout.col#col-content--bolsa-trabajo":{
+      "children":[
+        "flex-layout.row#row-content--bolsa-trabajo"
+      ],
+      "props":{
+        "blockClass":"col-content--bolsa",
+        "paddingLeft": 0
+      }
+    },
+    "flex-layout.row#row-content--bolsa-trabajo": {
+      "children":[
+        "flex-layout.col#bolsa-trabajo--col-image",
+        "flex-layout.col#bolsa-trabajo--col-texto"
+      ],
+      "props":{
+        "blockClass":"row-content--bolsa"
+      }
+    },
+
+    "flex-layout.col#bolsa-trabajo--col-image": {
+      "children": [
+        "image#bolsa-trabajo-col-image--image",
+        "rich-text#bolsa-trabajo-col-image--text",
+        "rich-text#bolsa-trabajo-col-image--mail"
+      ],
+      "props": {
+        "blockClass": "bolsa-trabajo--image",
+        "width":"40%"
+      }
+    },
+    "image#bolsa-trabajo-col-image--image":{
+      "props":{
+        "blockClass":"bolsa-trabajo--image",
+        "src":"assets/bolsa-trabajo/enfermera-tania-v2.png"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-image--text":{
+      "props":{
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "blockClass":"bolsa-trabajo-col-image--text",
+        "text":"## texto1 \n ### texto2 \n texto3 \n texto4"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-image--mail":{
+      "props":{
+        "blockClass":"bolsa-trabajo-col-image--mail",
+        "text":"atracciondetalento@distroller.com",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },
+
+    "flex-layout.col#bolsa-trabajo--col-texto": {
+      "children": [
+        "rich-text#bolsa-trabajo-col-texto--decrip",
+        "rich-text#bolsa-trabajo-col-texto--req-act-title1",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text1",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text2",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text3",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text4",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text5",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text6",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text7",
+        "rich-text#bolsa-trabajo-col-texto--req-act-title2",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text8",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text9",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text10",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text11",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text12",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text13",
+        "rich-text#bolsa-trabajo-col-texto--req-act-text14",
+        "rich-text#bolsa-trabajo-col-texto--ver-vacantes"
+      ],
+      "props": {
+        "blockClass": "bolsa-trabajo--texto"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--decrip":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--decrip",
+        "text":"## texto1 \n texto2"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-title1":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-title1--req-act",
+        "text":"### Requisitos"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text1":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text2":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text3":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text4":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text5":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text6":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text7":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-title2":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-title2--req-act",
+        "text":"### Requisitos"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text8":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text9":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text10":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text11":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text12":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text13":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--req-act-text14":{
+      "props":{
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass":"bolsa-trabajo-col-texto--req-act",
+        "text":"text"
+      }
+    },
+    "rich-text#bolsa-trabajo-col-texto--ver-vacantes":{
+      "props":{
+        "blockClass":"bolsa-trabajo--ver-vacantes",
+        "text":"[Ver más vacantes](/https://mx.linkedin.com/company/distroller.-amparin-s.a.-d)"
+      }
+    }
+}

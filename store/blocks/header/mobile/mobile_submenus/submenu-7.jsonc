@@ -1,0 +1,47 @@
+{
+  "menu-item#mobile_menu-7": {
+    "props": {
+      "id": "menu-item-personajes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Personajes",
+        "text": "Personajes"
+      },
+      "blockClass": "mob-menu-prin-header"
+    },
+    "title":"personajes-header-mobile"
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile_menu-7": {
+    "props": {
+      "width": "auto",
+      "blockClass": "mobile-submenu-7"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#mobile_menu-7"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_menu-7": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#ksimeritos",
+            "menu-item#aquameritos",
+            "menu-item#mikromeritos",
+            "menu-item#emoshionatos",
+            "menu-item#volameritos",
+            "menu-item#sigotos",
+            "menu-item#prematuros",
+            "menu-item#espumantis",
+            "menu-item#neoflobbies",
+            "menu-item#kkitos"
+    ]
+  }
+
+}

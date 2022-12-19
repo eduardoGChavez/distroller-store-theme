@@ -1,0 +1,48 @@
+{
+  "store.custom#aviso": {
+    "children": [
+      "flex-layout.row#aviso"
+    ]
+  },
+  "flex-layout.row#aviso":{
+    "props":{
+      "horizontalAlign":"center",
+      "blockClass":"aviso"
+    },
+    "children":[
+      "flex-layout.col#aviso"
+    ]
+  },
+  "flex-layout.col#aviso":{
+    "props":{
+      "horizontalAlign":"center",
+      "blockClass":"avisoTituloCol"
+    },
+    "children":[
+      "rich-text#tituloAviso",
+      "flex-layout.row#texto"
+    ],
+    "title":"aviso"
+  },
+  "flex-layout.row#texto":{
+    "props":{
+      "blockClass":"textAviso"
+    },
+    "children":[
+      "rich-text#textoAviso"
+    ]
+  },
+  "rich-text#textoAviso":{
+    "props":{
+      "blockClass":"avisoTexto",
+      "text":"texto"
+    }
+  },
+  "rich-text#tituloAviso":{
+    "props":{
+      "blockClass":"avisoTitulo",
+      "text":"Aviso de privacidad"
+    },
+    "title":"titulo-aviso"
+  }
+}

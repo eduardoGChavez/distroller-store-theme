@@ -1,0 +1,92 @@
+{
+    "store.custom#terminos-y-condiciones": {
+      "blocks": [
+        "flex-layout.row#terminos-y-condiciones"
+      ]
+    },
+  
+    "flex-layout.row#terminos-y-condiciones": {
+      "children": [
+        "flex-layout.col#text-terminos-y-condiciones"
+      ],
+      "props": {
+        "blockClass": "terminos-container"
+      }
+    },
+  
+    "flex-layout.col#text-terminos-y-condiciones": {
+      "children": [
+        "flex-layout.row#titleTerminos",
+        "flex-layout.row#textTerminos"
+      ],
+      "props": {
+        "blockClass": "textColumn",
+        "preventVerticalStretch": true
+      }
+    },
+    "flex-layout.row#textTerminos":{
+      "props":{
+        "blockClass":"textTerminos",
+        "horizontalAlign":"left"
+      },
+      "children":[
+        "flex-layout.col#terminosCol"
+      ]
+    },
+    "flex-layout.col#terminosCol":{
+      "props":{
+        "blockClass":"terminosCol"
+      },
+      "children":[
+        "flex-layout.row#terminos1",
+        "flex-layout.row#terminos2"
+      ]
+    },
+    "flex-layout.row#terminos1":{
+      "props":{
+        "blockClass":"terminos1"
+      },
+      "children":[
+        "rich-text#terminos-y-condiciones"
+      ]
+    },
+    "flex-layout.row#terminos2":{
+      "props":{
+        "blockClass":"terminos2"
+      },
+      "children":[
+        "rich-text#terminos-y-condiciones2"
+      ]
+    },
+    "flex-layout.row#titleTerminos":{
+      "props":{
+        "horizontalAlign":"center",
+        "blockClass":"terminos-y-condiciones"
+      },
+      "children":[
+        "rich-text#title-terminos-y-condiciones"
+      ]
+    },
+    "rich-text#title-terminos-y-condiciones": {
+      "props": {
+        "horizontalAlign":"left",
+        "text":
+        "# Terminos y Condiciones",
+        "blockClass": "title-terminos"
+      }
+    },
+    "rich-text#terminos-y-condiciones": {
+      "props": {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nunc, commodo tincidunt in et. Cum interdum lorem mi ornare pulvinar sed nunc. Libero, mattis sed senectus maecenas morbi. Sed vel facilisis lectus velit morbi condimentum in.\nHabitant ultricies auctor augue nibh feugiat aliquet elit imperdiet. Eget enim faucibus viverra lorem commodo viverra nec. Tortor varius magna id vestibulum donec feugiat aliquam purus, iaculis. Fusce sed dapibus sit scelerisque faucibus at odio consequat egestas. Eget tempus lectus scelerisque felis euismod. Et nisl vestibulum amet imperdiet ornare ut eros, non vitae. Elit, sodales morbi aliquam scelerisque elementum imperdiet sit aliquam. Nibh vitae, placerat gravida eget tortor. In pulvinar facilisis cursus donec nulla nisi, placerat. Mi malesuada nibh pretium auctor dictum congue. Risus adipiscing tortor sapien morbi vestibulum integer velit. Duis dolor accumsan leo pellentesque nibh blandit posuere.\nTincidunt vitae neque et mauris sodales nullam massa quam. Lectus rutrum ornare ac augue tortor dui vitae. Sit felis tristique magna sit vulputate in morbi commodo. Nunc non, sed velit, sed sit nec tincidunt pharetra. Dictum cursus mi nam vel orci tristique at lorem. Sed amet est venenatis massa. Mattis cursus tortor, eget et. Pellentesque adipiscing aliquam, elementum pretium vitae elementum quis non.\nAnte faucibus aliquet malesuada felis quam cursus. Ultrices mauris sed vitae et et scelerisque. Nunc neque eget nisl, dignissim augue diam phasellus in. Turpis metus, enim arcu ultricies dignissim. Et et enim pellentesque tincidunt at. Non tempus tempus diam vulputate in facilisi morbi.\nDapibus urna, dignissim cras viverra nisl venenatis pellentesque turpis. Elementum est faucibus praesent blandit non arcu. Nisl maecenas id nullam justo, ullamcorper habitant egestas vulputate. Tristique habitasse sit amet at egestas bibendum neque, tortor risus. Et est, scelerisque nunc eu. Enim natoque suspendisse eu purus consectetur.",
+        "blockClass": "terminos"
+      }
+    },
+    "rich-text#terminos-y-condiciones2": {
+      "props": {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nunc, commodo tincidunt in et. Cum interdum lorem mi ornare pulvinar sed nunc. Libero, mattis sed senectus maecenas morbi. Sed vel facilisis lectus velit morbi condimentum in.\nHabitant ultricies auctor augue nibh feugiat aliquet elit imperdiet. Eget enim faucibus viverra lorem commodo viverra nec. Tortor varius magna id vestibulum donec feugiat aliquam purus, iaculis. Fusce sed dapibus sit scelerisque faucibus at odio consequat egestas. Eget tempus lectus scelerisque felis euismod. Et nisl vestibulum amet imperdiet ornare ut eros, non vitae. Elit, sodales morbi aliquam scelerisque elementum imperdiet sit aliquam. Nibh vitae, placerat gravida eget tortor. In pulvinar facilisis cursus donec nulla nisi, placerat. Mi malesuada nibh pretium auctor dictum congue. Risus adipiscing tortor sapien morbi vestibulum integer velit. Duis dolor accumsan leo pellentesque nibh blandit posuere.\nTincidunt vitae neque et mauris sodales nullam massa quam. Lectus rutrum ornare ac augue tortor dui vitae. Sit felis tristique magna sit vulputate in morbi commodo. Nunc non, sed velit, sed sit nec tincidunt pharetra. Dictum cursus mi nam vel orci tristique at lorem. Sed amet est venenatis massa. Mattis cursus tortor, eget et. Pellentesque adipiscing aliquam, elementum pretium vitae elementum quis non.\nAnte faucibus aliquet malesuada felis quam cursus. Ultrices mauris sed vitae et et scelerisque. Nunc neque eget nisl, dignissim augue diam phasellus in. Turpis metus, enim arcu ultricies dignissim. Et et enim pellentesque tincidunt at. Non tempus tempus diam vulputate in facilisi morbi.\nDapibus urna, dignissim cras viverra nisl venenatis pellentesque turpis. Elementum est faucibus praesent blandit non arcu. Nisl maecenas id nullam justo, ullamcorper habitant egestas vulputate. Tristique habitasse sit amet at egestas bibendum neque, tortor risus. Et est, scelerisque nunc eu. Enim natoque suspendisse eu purus consectetur.",
+        "blockClass": "terminos2"
+      }
+    }
+
+  }
+  

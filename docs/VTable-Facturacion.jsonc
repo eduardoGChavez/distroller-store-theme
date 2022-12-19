@@ -1,0 +1,117 @@
+// https://distrollermx.vtexcommercestable.com.br/api/dataentities/vtable/documents/dataBilling?_schema=app
+
+{
+    "name": "dataBilling",
+    "title": "Datos de Facturación",
+    "tables": [
+        {
+            "id": "dataBilling",
+            "title": "Datos de Facturación",
+            "entity": "dataBilling",
+            "model": "dataBilling",
+            "fields": {
+                "id": {
+                    "width": 200,
+                    "label": "Id"
+                },
+                "numPedido": {
+                    "width": 200,
+                    "label": "Número de Pedido"
+                },
+                "razonSocial": {
+                    "width": 200,
+                    "label": "Razón Social"
+                },
+                "rfc": {
+                    "width": 200,
+                    "label": "RFC"
+                },
+                "correo": {
+                    "width": 200,
+                    "label": "Correo Electrónico"
+                },
+                "telefono": {
+                    "width": 200,
+                    "label": "Teléfono"
+                },
+                "calle": {
+                    "width": 200,
+                    "label": "Calle"
+                },
+                "numCasa": {
+                    "width": 200,
+                    "label": "Número de Casa"
+                },
+                "cp": {
+                    "width": 200,
+                    "label": "Código Postal"
+                },
+                "entreCalle": {
+                    "width": 200,
+                    "label": "Entre calle o intersección"
+                },
+                "colonia": {
+                    "width": 200,
+                    "label": "Colonia"
+                },
+                "ciudad": {
+                    "width": 200,
+                    "label": "Ciudad"
+                },
+                "estado": {
+                    "width": 200,
+                    "label": "Estado"
+                },
+                "cfdi": {
+                    "width": 200,
+                    "label": "Uso de CFDI"
+                },
+                "pago": {
+                    "width": 200,
+                    "label": "Forma de Pago"
+                }
+            },
+            "list": [
+                "numPedido",
+                "razonSocial",
+                "rfc",
+                "correo",
+                "telefono",
+                "calle",
+                "numCasa",
+                "cp",
+                "entreCalle",
+                "colonia",
+                "ciudad",
+                "estado",
+                "cfdi",
+                "pago"
+            ],
+            "editor": {
+                "settings": {
+                    "sections": [
+                        {
+                            "name": "Facturacion",
+                            "fields": [
+                            "numPedido",
+                            "razonSocial",
+                            "rfc",
+                            "correo",
+                            "telefono",
+                            "calle",
+                            "numCasa",
+                            "cp",
+                            "entreCalle",
+                            "colonia",
+                            "ciudad",
+                            "estado",
+                            "cfdi",
+                            "pago"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

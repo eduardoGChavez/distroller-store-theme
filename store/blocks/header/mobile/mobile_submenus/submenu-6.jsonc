@@ -1,0 +1,77 @@
+{
+  "menu-item#mobile_menu-6": {
+    "props": {
+      "id": "menu-item-diversion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Diversión",
+        "text": "Diversión"
+      },
+      "blockClass": "mob-menu-prin-header"
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu.accordion#mobile_menu-6"
+    ]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile_menu-6": {
+    "props": {
+      "width": "auto",
+      "blockClass": "mobile-submenu-6"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#mobile_menu-6"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_menu-6": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#diversion-1",
+      "menu-item#diversion-2"
+    ]
+  }
+
+
+
+
+
+
+
+  // "menu-item#mobile_menu-6": {
+  //   "props": {
+  //     "id": "menu-item-distrollerizate",
+  //     "type": "custom",
+  //     "iconId": null,
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "",
+  //       "noFollow": false,
+  //       "tagTitle": "Distrollerizate",
+  //       "text": "Distrollerizate"
+  //     },
+  //     "blockClass": "mob-menu-prin-header-distrollerizate"
+  //     // "blockClass": "menuMob-distrollerizate"
+  //   }
+  //   // "blocks":["vtex.menu@2.x:submenu.accordion#mobile_menu-6"]
+  // }
+  // "vtex.menu@2.x:submenu.accordion#mobile_menu-6":{
+  //   "children":[
+  //     "vtex.menu@2.x:menu#mobile_submenu-6"
+  //   ]
+  // },
+  // "vtex.menu@2.x:menu#mobile_submenu-6":{
+  //   "props":{
+  //     "blockClass": "submenuAccordion",
+  //     "categoryId": 63,
+  //     "orientation": "vertical"
+  //   }
+  // }
+}

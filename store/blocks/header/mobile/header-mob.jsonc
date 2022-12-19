@@ -1,0 +1,77 @@
+{
+  "sticky-layout#1-mobile": {
+    "children": [
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#2-mobile"
+    ]
+  },
+  "notification.bar": {
+    "props": {
+      "content": "Meses sin intereses en compras mayores a $799",
+      "blockClass": "header-mob"
+    },
+    "title":"barraNotificacion-header-mobile"
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      // "flex-layout.col#pais",
+      "flex-layout.col#spacer-header",
+      "logo#header",
+      "flex-layout.col#spacer-header",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "header-mob",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    },
+    "title":"header-row-mobile"
+  },
+
+  // "drawer": {
+  //   "children": [
+  //     "menu#drawer"
+  //   ]
+  // },
+  "menu#drawer": {
+    "children": [
+      // "menu-item#category-apparel",
+      // "menu-item#category-home",
+      // "menu-item#more"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "image#logo-mob": {
+    "props": {
+      "src": "assets/header/icon-myAccount.svg",
+      "link": {
+        "url": "/login"
+      },
+      "height": 32,
+      "maxHeight": 32,
+      "blockClass": "icon-login-mob"
+    },
+    "title":"login-icono-header-mobile"
+  },
+  "flex-layout.row#2-mobile": {
+    "children": [
+      "search-bar#mobile"
+    ],
+    "props": {
+      "blockClass": "row-srchBar-mob"
+    },
+    "title":"searchbar-header-mobile"
+  },
+  "search-bar#mobile": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "placeholder": "",
+      "blockClass": "searchBar-mobile"
+    }
+  }
+}

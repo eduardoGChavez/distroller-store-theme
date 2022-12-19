@@ -1,0 +1,284 @@
+{
+  // "flex-layout.row#menu":{
+  //     "children":[
+  //         "vtex.menu@2.x:menu#conoce-mobile1",
+  //         "vtex.menu@2.x:menu#conoce-mobile2",
+  //         "vtex.menu@2.x:menu#conoce-mobile3"
+  //     ]
+  // },
+"vtex.menu@2.x:menu#conoce-mobile1": {
+  "props": {
+    "blockClass": "menu-conoce-accordion",
+    "orientation": "vertical"
+  },
+  "children": ["flex-layout.row#1pdp"],
+  "title":"menu-conoce-mobile"
+},
+"flex-layout.row#1pdp": {
+  "props": {
+    "blockClass": "1pdp"
+  },
+  "children": ["menu-item#conoce-mobile"]
+},
+"menu-item#conoce-mobile": {
+  "props": {
+    "highlight": false,
+    "blockClass": "conoce-mobile",
+    "type": "custom",
+    "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "Conóceme",
+      "text": "Conóceme"
+    }
+  },
+  "blocks": ["vtex.menu@2.x:submenu.accordion#conoce"]
+},
+"vtex.menu@2.x:submenu.accordion#conoce": {
+  "children": [
+      "vtex.menu@2.x:menu#conoce-accordion"
+  ]
+},
+
+"vtex.menu@2.x:menu#conoce-accordion": {
+  "props": {
+    "orientation": "vertical"
+  },
+  "children": ["flex-layout.col#conoce-footer-mobile"]
+},
+"flex-layout.col#conoce-footer-mobile": {
+  "props": {
+    "horizontalAlign": "center"
+  },
+  "children": ["menu-item#conoceItem-mobile"]
+},
+
+"menu-item#conoceItem-mobile": {
+  "props": {
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": false,
+      "tagTitle": "",
+      "text": ""
+    }
+  },
+  "children": [
+    "flex-layout.row#tituloMeet",
+      "flex-layout.row#txtMeet"
+  ]
+},
+
+"flex-layout.row#tituloMeet":{
+  "props":{
+    "blockClass":"tituloMeet"
+  },
+  "children":[
+    // "rich-text#tituloMeet"
+    "flex-layout.row#product-name-mobile"
+  ]
+},
+"rich-text#tituloMeet":{
+  "props":{
+    "blockClass":"tituloMeet",
+    "text":"### titulo"
+  }
+},
+
+"flex-layout.row#txtMeet":{
+    "props":{
+      "blockClass":"txtMeet"
+    },
+    "children":[
+      // "rich-text#conocepdpMobile"
+      "product-description"
+    ]
+},
+
+  "product-description":{
+    "props":{
+      "collapseContent":false
+    }
+  },
+
+"rich-text#conocepdpMobile":{
+  "props":{
+    "blockClass":"conocepdpMobile",
+    "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan semper fusce mauris risus habitasse facilisi. Pharetra ullamcorper sed eget in bibendum justo sed. Venenatis iaculis gravida amet turpis ultrices turpis tincidunt pretium, pellentesque. Maecenas ut ultrices dictum etiam. Dis sodales pharetra lorem augue amet posuere id. Dignissim orci ultrices purus egestas. Morbi vitae lorem sed sed augue. Nisl, sed libero convallis pellentesque "
+  }
+},
+
+
+"image#conocepdp": {
+  "props": {
+    "maxWidth":"100%",
+    "blockClass": "imageConoce",
+    "src": "assets/banner-mobiles.png"
+  }
+},
+
+"vtex.menu@2.x:menu#conoce-mobile2": {
+  "props": {
+    "blockClass": "menu-specs-accordion",
+    "orientation": "vertical"
+  },
+  "children": ["flex-layout.row#2pdp"],
+  "title":"menu-especificaciones-mobile"
+},
+"flex-layout.row#2pdp": {
+  "props": {
+    "blockClass": "2pdp"
+  },
+  "children": ["menu-item#specs-mobile"]
+},
+"menu-item#specs-mobile": {
+  "props": {
+    "highlight": false,
+    "blockClass": "specs-mobile",
+    "type": "custom",
+    "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "Especificaciones",
+      "text": "Especificaciones"
+    }
+  },
+  "blocks": ["vtex.menu@2.x:submenu.accordion#specs"]
+},
+"vtex.menu@2.x:submenu.accordion#specs": {
+  "children": [
+      "vtex.menu@2.x:menu#specs-accordion"
+  ]
+},
+
+"vtex.menu@2.x:menu#specs-accordion": {
+  "props": {
+    "orientation": "vertical",
+    "blockClass":"tabla-especificaciones"
+  },
+  "children": ["flex-layout.col#specs-footer-mobile"]
+},
+"flex-layout.col#specs-footer-mobile": {
+  "props": {
+    "horizontalAlign": "center"
+  },
+  "children": [
+    // "flex-layout.row#description",
+    "product-specification-group#table",
+    "medidasProducto"
+  ]
+},
+"menu-item#specsItem-mobile": {
+  "props": {
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": false,
+      "tagTitle": "",
+      "text": ""
+    }
+  }
+},
+
+
+"vtex.menu@2.x:menu#reviews-mobile3": {
+  "props": {
+    "blockClass":"menu-reviews-accordion",
+    "orientation": "vertical"
+    
+  },
+  "children": [
+    "flex-layout.row#3pdp"
+  ],
+  "title":"menu-reviews-mobile"
+},
+"flex-layout.row#3pdp":{
+  "props":{
+    "blockClass":"3pdp"
+  },
+  "children":[
+    "menu-item#reviews-mobile"
+  ]
+},
+"menu-item#reviews-mobile": {
+  "props": {
+    "highlight":false,
+    "blockClass":"reviews-mobile",
+    "type": "custom",
+    "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": true,
+      "tagTitle": "Reseñas y Comentarios",
+      "text": "Reseñas y Comentarios"
+    }
+  },
+  "children":[
+  ],
+  "blocks": [
+    "vtex.menu@2.x:submenu.accordion#reviews"
+  ]
+},
+"vtex.menu@2.x:submenu.accordion#reviews": {
+  "props":{
+    "blockClass":"acordion-menu-reviews"
+  },
+  "children": [
+    "flex-layout.row#reviews"//,
+    
+    // "vtex.menu@2.x:menu#reviews-accordion"
+  ]
+},
+"flex-layout.row#reviews":{
+  "props":{
+    "blockClass":"reviewsRow"
+  },
+  "children":[
+    "product-reviews"
+  ]
+},
+"vtex.menu@2.x:menu#reviews-accordion": {
+  "props": {
+      "blockClass":"q&aMobile",
+      "orientation": "vertical"
+  },
+  "children": [
+    "flex-layout.col#reviews-mobile"
+  ]
+},
+
+"flex-layout.col#reviews-mobile":{
+  "props":{
+    "horizontalAlign":"center"
+  },
+  "children":[
+    "menu-item#reviewsItem-mobile"
+  ]
+},
+"menu-item#reviewsItem-mobile": {
+  "props": {
+    "height":"100%",
+    "type": "custom",
+    "iconId": null,
+    "highlight": false,
+    "itemProps": {
+      "type": "internal",
+      "href": "#",
+      "noFollow": false,
+      "tagTitle": "",
+      "text": ""
+    }
+  },
+  "children":[
+
+  ]
+}
+}

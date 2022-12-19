@@ -1,0 +1,495 @@
+{
+    "store.custom#politicas": {
+      "children": [
+          "flex-layout.row#politicas"
+      ]
+    },
+    "flex-layout.row#politicas":{
+        "props":{
+            "blockClass":"politicas"
+        },
+        "children":[
+            "flex-layout.col#politicasTitulo"
+        ]
+    },
+    "flex-layout.col#politicasTitulo":{
+        "props":{
+            "horizontalAlign":"center",
+            "blockClass":"politicasTitulo"
+        },
+        "children":[
+          "flex-layout.row#textoEnvios",
+          "rich-text#policitcasTitulo",
+          "flex-layout.row#group1",
+          // "rich-text#policitcasTitulo2",
+          "flex-layout.row#group2",
+          "flex-layout.row#contactos"
+        ]
+    },
+    "flex-layout.row#textoEnvios":{
+      "props":{
+        "blockClass":"textoEnvios"
+      },
+      "children":[
+        "rich-text#envios"
+      ]
+    },
+    "rich-text#envios":{
+      "props":{
+        "blockClass":"enviosText",
+        "text":"*Ventas y envíos únicamente para la República Mexicana"
+      }
+    },
+    "flex-layout.row#contactos":{
+      "props":{
+        "blockClass":"contactoPoliticas"
+      },
+      "children":[
+        "image#bannerContact"
+      ]
+    },
+    "image#bannerContact":{
+      "props":{
+        "blockClass":"imagen-contacto",
+        "src":"assets/bannerContact.png"
+      }
+    },
+    "flex-layout.row#group1":{
+      "props":{
+        "blockClass":"group1"
+      },
+      "children":[
+        "disclosure-layout-group#group1"
+      ]
+    },
+    "flex-layout.row#group2":{
+      "props":{
+        "blockClass":"group2"
+      },
+      "children":[
+        "disclosure-layout-group#group2"
+      ]
+    },
+    "rich-text#policitcasTitulo":{
+        "props":{
+            "blockClass":"politicasTitulo",
+            "text":"Políticas de compra envío y devolución"
+        }
+    },
+    "rich-text#policitcasTitulo2":{
+        "props":{
+            "blockClass":"politicasTitulo2",
+            "text":"¿Cómo comprar?"
+        }
+    },
+    "disclosure-layout-group#group1": {
+        "props":{
+            "blockClass":"group1"
+        },
+        "children": [
+          "flex-layout.col#first",
+          "flex-layout.col#second",
+          "flex-layout.col#third",
+          "flex-layout.col#fourth"
+        ]
+      },
+
+      "image#arrow-group1":{
+        "props":{
+          "horizontalAlign":"right",
+          "blockClass":"arrow-group1",
+          "src":"assets/open.png"
+        }
+      },
+
+      "flex-layout.col#first":{"props":{"blockClass":"first"},"children":["disclosure-layout#first"]},
+      "flex-layout.col#second":{"props":{"blockClass":"second"},"children":["disclosure-layout#second"]},
+      "flex-layout.col#third":{"props":{"blockClass":"third"},"children":["disclosure-layout#third"]},
+      "flex-layout.col#fourth":{"props":{"blockClass":"fourth"},"children":["disclosure-layout#fourth"]},
+
+    //1
+      "disclosure-layout#first": {
+        "children": [
+          "flex-layout.row#row1",
+          "disclosure-content#first"
+        ]
+      },
+      "flex-layout.row#row1":{
+        "props":{
+          "blockClass":"row"
+        },
+        "children":[
+          "disclosure-trigger#first"
+        ]
+      },
+      "disclosure-trigger#first": {
+        "props":{
+          "width":"100%"
+        },
+        "children": [
+          "rich-text#question1",
+          "image#arrow-group1"
+        ]
+      },
+      "disclosure-content#first": {
+        "children": [
+            "rich-text#answer1"
+        ]
+      },
+      "rich-text#question1": {
+        "props": {
+          "text": "Costos de envios de productos"
+        }
+      },
+      "rich-text#answer1": {
+        "props": {
+          "text": "El envío de los productos es gratuito a cualquier parte del país en compras a partir de los $799. Si tu compra es menor a $799, se cobrarán:\n          • D.F. y área metropolitana desde $89\n          • Interior de la República y Zonas extendidas desde $99 pesos."
+        }
+      },
+    //2
+      "disclosure-layout#second": {
+        "children": [
+          "flex-layout.row#row2",
+            "disclosure-content#second"
+        ]
+      },
+      "flex-layout.row#row2":{
+        "props":{
+          "blockClass":"row"
+        },
+        "children":[
+          "disclosure-trigger#second"
+        ]
+      },
+      "disclosure-trigger#second": {
+        "children": [
+          "rich-text#question2",
+          "image#arrow-group1"
+        ]
+      },
+      "disclosure-content#second": {
+        "children": [
+            "rich-text#answer2"
+        ]
+      },
+      "rich-text#question2": {
+        "props": {
+          "text": "¿Cuál es el plazo de entrega de los productos?"
+        }
+      },
+      "rich-text#answer2": {
+        "props": {
+          "text": "Este plazo se establece desde 1 a 7 días hábiles y se cuenta a partir de la verificación y aprobación del pago por cualquiera de los métodos. Esto no garantiza que su entrega se retrase por algún motivo, falta de datos en el domicilio o porque no se encontró a nadie en la dirección."
+        }
+      },
+      //3
+      "disclosure-layout#third": {
+        "children": [
+          "flex-layout.row#row3",
+            "disclosure-content#third"
+        ]
+      },
+      "flex-layout.row#row3":{
+        "props":{
+          "blockClass":"row"
+        },
+        "children":[
+          "disclosure-trigger#third"
+        ]
+      },
+      "disclosure-trigger#third": {
+        "children": [
+          "rich-text#question3",
+          "image#arrow-group1"
+        ]
+      },
+      "disclosure-content#third": {
+        "children": [
+            "rich-text#answer3"
+        ]
+      },
+      "rich-text#question3": {
+        "props": {
+          "text": "Cambios y devoluciones"
+        }
+      },
+      "rich-text#answer3": {
+        "props": {
+          "text": "Durante los 15 días naturales posteriores a la compra, se aceptará cambios o devoluciones por defectos de calidad o fabricación en cualquier producto. Sin embargo, no serán aceptadas devoluciones ocasionadas por mal uso del producto."
+        }
+      },
+      //4
+      "disclosure-layout#fourth": {
+        "children": [
+          "flex-layout.row#row4",
+            "disclosure-content#fourth"
+        ]
+      },
+      "flex-layout.row#row4":{
+        "props":{
+          "blockClass":"row"
+        },
+        "children":[
+          "disclosure-trigger#fourth"
+        ]
+      },
+      "disclosure-trigger#fourth": {
+        "children": [
+          "rich-text#question4",
+          "image#arrow-group1"
+        ]
+      },
+      "disclosure-content#fourth": {
+        "children": [
+            "rich-text#answer4"
+        ]
+      },
+      "rich-text#question4": {
+        "props": {
+          "text": "Pagos en línea"
+        }
+      },
+      "rich-text#answer4": {
+        "props": {
+          "text": "Para Distroller.com la seguridad de su información personal es muy importante; bajo ninguna circunstancia, jamás vendemos su información personal a ningún tercero; nos esforzamos en proteger la seguridad y privacidad de la información que nos proporcione.\nEn Distroller.com puede estar completamente seguro que cuando compra, su información está protegida ya que utilizamos la tecnología de PayPal y Mercado Pago."
+        }
+      },
+
+
+      "disclosure-layout-group#group2": {
+        "props":{
+            "blockClass":"group2"
+        },
+        "children": [
+          "flex-layout.col#firsta",
+          "flex-layout.col#seconda",
+          "flex-layout.col#thirda",
+          "flex-layout.col#fourtha",
+          "flex-layout.col#fiftha",
+          "flex-layout.col#sixtha"
+        ]
+      },
+      "flex-layout.col#firsta":{"props":{"blockClass":"firsta"},"children":["disclosure-layout#firsta"]},
+      "flex-layout.col#seconda":{"props":{"blockClass":"seconda"},"children":["disclosure-layout#seconda"]},
+      "flex-layout.col#thirda":{"props":{"blockClass":"thirda"},"children":["disclosure-layout#thirda"]},
+      "flex-layout.col#fourtha":{"props":{"blockClass":"fourtha"},"children":["disclosure-layout#fourtha"]},
+      "flex-layout.col#fiftha":{"props":{"blockClass":"fiftha"},"children":["disclosure-layout#fiftha"]},
+      "flex-layout.col#sixtha":{"props":{"blockClass":"sixtha"},"children":["disclosure-layout#sixtha"]},
+    //1
+      "disclosure-layout#firsta": {
+        "children": [
+          "flex-layout.row#row1a",
+          "disclosure-content#firsta"
+        ]
+      },
+      "flex-layout.row#row1a":{
+        "props":{
+          "blockClass":"row"
+        },
+        "children":[
+          "disclosure-trigger#firsta"
+        ]
+      },
+      
+      "disclosure-trigger#firsta": {
+        "children": [
+          "rich-text#question1a",
+          "image#arrow-group1"
+        ]
+      },
+      "disclosure-content#firsta": {
+        "children": [
+            "rich-text#answer1a"
+        ]
+      },
+      "rich-text#question1a": {
+        "props": {
+          "text": "Pagos con tarjeta de crédito y débito."
+        }
+      },
+      "rich-text#answer1a": {
+        "props": {
+          "text": "En el checkout elige esta opción, captura el nombre del tarjetahabiente tal cual aparece en el plástico, el número de tu tarjeta (16 dígitos para tarjetas Visa/MasterCard o 15 dígitos para American Express), la fecha de expedición (está al frente de la tarjeta) y código de seguridad (tres dígitos al reverso del plástico en tarjetas Visa/MasterCard, 4 dígitos arriba del número de la tarjeta para las tarjetas American Express)."
+        }
+      },
+    //2
+      "disclosure-layout#seconda": {
+        "children": [
+          "flex-layout.row#row2a", 
+          "disclosure-content#seconda"
+        ]
+      },
+      "flex-layout.row#row2a":{
+        "props":{
+          "blockClass":"row"
+        },
+        "children":[
+          "disclosure-trigger#seconda"
+        ]
+      },
+      "disclosure-trigger#seconda": {
+        "children": [
+          "rich-text#question2a",
+          "image#arrow-group1"
+        ]
+      },
+      "disclosure-content#seconda": {
+        "children": [
+            "rich-text#answer2a"
+        ]
+      },
+      "rich-text#question2a": {
+        "props": {
+          "text": "El pago se refleja inmediatamente."
+        }
+      },
+      "rich-text#answer2a": {
+        "props": {
+          "text": "Si la transacción no es exitosa puede ser por tres razones:\n          •  Capturaste mal algún dato\n          •  Estás usando una tarjeta de débito que no está autorizada para hacer transacciones por internet\n          •  Tu tarjeta no tiene fondos"
+        }
+      },
+      //3
+      "disclosure-layout#thirda": {
+        "children": [
+          "flex-layout.row#row3a", 
+            "disclosure-content#thirda"
+        ]
+      },
+      "flex-layout.row#row3a":{
+        "props":{
+          "blockClass":"row"
+        },
+        "children":[
+          "disclosure-trigger#thirda"
+        ]
+      },
+      "disclosure-trigger#thirda": {
+        "children": [
+          "rich-text#question3a",
+          "image#arrow-group1"
+        ]
+      },
+      "disclosure-content#thirda": {
+        "children": [
+            "rich-text#answer3a"
+        ]
+      },
+      "rich-text#question3a": {
+        "props": {
+          "text": "Pagos con Cuenta PayPal"
+        }
+      },
+      "rich-text#answer3a": {
+        "props": {
+          "text": "En el checkout selecciona la opción PayPal y posteriormente haz click en \"Comprar Ahora\", inmediatamente serás re direccionado al sitio de PayPal en el cual podrás acceder a tu cuenta PayPal y finalizar el pago."
+        }
+      },
+      //4
+      "disclosure-layout#fourtha": {
+        "children": [
+          "flex-layout.row#row4a", 
+          "disclosure-content#fourtha"
+        ]
+      },
+      "flex-layout.row#row4a":{
+        "props":{
+          "blockClass":"row"
+        },
+        "children":[
+          "disclosure-trigger#fourtha"
+        ]
+      },
+      "disclosure-trigger#fourtha": {
+        "children": [
+          "rich-text#question4a",
+          "image#arrow-group1"
+        ]
+      },
+      "disclosure-content#fourtha": {
+        "children": [
+            "rich-text#answer4a"
+        ]
+      },
+      "rich-text#question4a": {
+        "props": {
+          "text": "Pago en efectivo (Mercado pago)"
+        }
+      },
+      "rich-text#answer4a": {
+        "props": {
+          "text": "texto"
+        }
+      },
+      //5
+      "disclosure-layout#fiftha": {
+        "children": [
+          "flex-layout.row#row5a", 
+          "disclosure-content#fiftha"
+        ]
+      },
+      "flex-layout.row#row5a":{
+        "props":{
+          "blockClass":"row"
+        },
+        "children":[
+          "disclosure-trigger#fiftha"
+        ]
+      },
+      "disclosure-trigger#fiftha": {
+        "children": [
+          "rich-text#question5a",
+          "image#arrow-group1"
+        ]
+      },
+      "disclosure-content#fiftha": {
+        "children": [
+            "rich-text#answer5a"
+        ]
+      },
+      "rich-text#question5a": {
+        "props": {
+          "text": "Confirmación de envío"
+        }
+      },
+      "rich-text#answer5a": {
+        "props": {
+          "text": "Una vez que su pedido sea enviado, recibirá un correo electrónico con el número guía y el tiempo aproximado de entrega. Que no debe exceder de 7 días hábiles a partir de la fecha de confirmación de pago.\n\nRecuerde que todos los pedidos realizados antes de la 12 pm se procesan el mismo día hábil."
+        }
+      },
+      //6
+      "disclosure-layout#sixtha": {
+        "children": [
+          "flex-layout.row#row6a", 
+            "disclosure-content#sixtha"
+        ]
+      },
+      "flex-layout.row#row6a":{
+        "props":{
+          "blockClass":"row"
+        },
+        "children":[
+          "disclosure-trigger#sixtha"
+        ]
+      },
+      "disclosure-trigger#sixtha": {
+        "children": [
+          "rich-text#question6a",
+          "image#arrow-group1"
+        ]
+      },
+      "disclosure-content#sixtha": {
+        "children": [
+            "rich-text#answer6a"
+        ]
+      },
+      "rich-text#question6a": {
+        "props": {
+          "text": "Estatus del pedido"
+        }
+      },
+      "rich-text#answer6a": {
+        "props": {
+          "text": "El pedido puede ser rastreado a través de la página del proveedor de paquetería asignado a su código postal, el número de guía se le proporciona en el correo de confirmación \"pedido enviado\", que llega del remitente \"tienda onlain Distroller."
+        }
+      }
+  }

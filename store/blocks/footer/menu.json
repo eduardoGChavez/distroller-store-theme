@@ -1,0 +1,612 @@
+{
+  "vtex.menu@2.x:menu#menuVertical1": {
+    "props": {
+      "width":"20%",
+      "orientation": "vertical",
+      "blockClass":"verticalMenu1"
+    },
+    "children": [
+      "menu-item#informacion",
+      "menu-item#acercaDe",
+      "menu-item#tiendas",
+      "menu-item#compromisoSocial",
+      "menu-item#bolsaDeTrabajo",
+      "menu-item#contacto",
+      "menu-item#faq",
+      "menu-item#fac"
+    ],
+    "title":"informacion-footer-desktop"
+  },
+
+  "menu-item#fac": {
+    "props": {
+      "blockClass":"facturacion",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/facturacion",
+        "noFollow": true,
+        "tagTitle": "Facturación",
+        "text": "Facturación"
+      }
+    }
+  },
+
+  "menu-item#faq": {
+    "props": {
+      "blockClass":"preguntasFrecuentes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "preguntas frecuentes",
+        "text": "Preguntas frecuentes"
+      }
+    }
+  },
+
+
+
+  "menu-item#contacto": {
+    "props": {
+      "blockClass":"contacto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": true,
+        "tagTitle": "Datos de contacto",
+        "text": "Datos de contacto"
+      }
+    }
+  },
+  "menu-item#informacion": {
+    "props": {
+      "blockClass":"informacionHeaderText",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Información",
+        "text": "Información"
+      }
+    }
+  },
+  "menu-item#acercaDe": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "Acerca De Distroller",
+        "text": "Acerca De Distroller"
+      }
+    }
+  },
+  "menu-item#tiendas": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tiendas",
+        "noFollow": false,
+        "tagTitle": "Tiendas",
+        "text": "Tiendas"
+      }
+    }
+  },
+  "menu-item#compromisoSocial": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://mexico.distroller.com/institucional/compromiso-social",
+        "noFollow": false,
+        "tagTitle": "Compromiso Social",
+        "text": "Compromiso Social"
+      }
+    }
+  },
+  "menu-item#bolsaDeTrabajo": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsa-de-trabajo",
+        "noFollow": false,
+        "tagTitle": "Bolsa De Tabajo",
+        "text": "Bolsa De Trabajo"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#menuVertical2": {
+    "props": {
+      "width":"20%",
+      "orientation": "vertical",
+      "blockClass":"verticalMenu2"
+    },
+    "children": [
+      "menu-item#legales",
+      "menu-item#politicasDeCompraEnvioyDevolucion",
+      "menu-item#terminosYCondiciones",
+      "menu-item#avisoDePrivacidad"
+    ],
+    "title":"legales-footer-desktop"
+  },
+  "menu-item#legales": {
+    "props": {
+      "blockClass":"legalesHeaderText",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Legales",
+        "text": "Legales"
+      }
+    }
+  },
+
+  "menu-item#politicasDeCompraEnvioyDevolucion": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politicas",
+        "noFollow": false,
+        "tagTitle": "Políticas de compra, envío y devolución",
+        "text": "Políticas de compra, envío y devolución"
+      }
+    }
+  },
+
+  "menu-item#terminosYCondiciones": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/terminos-y-condiciones",
+        "noFollow": false,
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+
+  "menu-item#avisoDePrivacidad": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/aviso-privacidad",
+        "noFollow": false,
+        "tagTitle": "Aviso de privacidad",
+        "text": "Aviso de privacidad"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-decoration": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#smartphones",
+      "menu-item#videogames",
+      "menu-item#tvs"
+    ]
+  },
+
+  "menu-item#smartphones": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/smartphones",
+        "noFollow": true,
+        "tagTitle": "Smartphones",
+        "text": "Smartphones"
+      }
+    }
+  },
+
+  "menu-item#videogames": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/videogames",
+        "noFollow": true,
+        "tagTitle": "Videogames",
+        "text": "Videogames"
+      }
+    }
+  },
+
+  "menu-item#tvs": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/tvs",
+        "noFollow": true,
+        "tagTitle": "TVs",
+        "text": "TVs"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-bags": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#bags",
+      "menu-item#backpacks",
+      "menu-item#necessaire"
+    ]
+  },
+
+  "menu-item#bags": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/d",
+        "noFollow": true,
+        "tagTitle": "Bags",
+        "text": "Bags"
+      }
+    }
+  },
+
+  "menu-item#backpacks": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/backpacks",
+        "noFollow": true,
+        "tagTitle": "Backpacks",
+        "text": "Backpacks"
+      }
+    }
+  },
+
+  "menu-item#necessaire": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/necessaire",
+        "noFollow": true,
+        "tagTitle": "Necessaire",
+        "text": "Necessaire"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "blockClass":"menu-footer-accordion",
+      "orientation": "vertical"
+      
+    },
+    "children": [
+      "flex-layout.row#1",
+      "flex-layout.row#2"
+    ]
+  },
+  "flex-layout.row#1":{
+    "props":{
+      "blockClass":"1"
+    },
+    "children":[
+      "menu-item#informacion-mobile"
+    ]
+  },
+  "flex-layout.row#2":{
+    "props":{
+      "blockClass":"2"
+    },
+    "children":[
+      "menu-item#legales-mobile"
+    ]
+  },
+
+  "menu-item#informacion-mobile": {
+    "props": {
+      "highlight":false,
+      "blockClass":"informacion-mobile",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Información",
+        "text": "Información"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#informacion"]
+  },
+  "vtex.menu@2.x:submenu.accordion#informacion": {
+    "children": ["vtex.menu@2.x:menu#informacion-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#informacion-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.col#menuInfo-footer-mobile"
+      
+    ]
+  },
+  "flex-layout.col#menuInfo-footer-mobile":{
+    "props":{
+      "horizontalAlign":"center"
+    },
+    "children":[
+      "menu-item#acercaDe-mobile",
+      "menu-item#tiendas-mobile",
+      "menu-item#compromisoSocial-mobile",
+      "menu-item#bolsaDeTrabajo-mobile",
+      "menu-item#contacto-mobile",
+      "menu-item#faq-mobile",
+      "menu-item#fac-mobile"
+    ]
+  },
+
+  "menu-item#faq-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": false,
+        "tagTitle": "preguntas frecuentes",
+        "text": "Preguntas frecuentes"
+      }
+    }
+  },
+  "menu-item#fac-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/facturacion",
+        "noFollow": false,
+        "tagTitle": "Facturación",
+        "text": "Facturación"
+      }
+    }
+  },
+
+  "menu-item#contacto-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": false,
+        "tagTitle": "Datos de contacto",
+        "text": "Datos de contacto"
+      }
+    }
+  },
+
+  "menu-item#legales-mobile": {
+    "props": {
+      "isActive":false,
+      "blockClass":"legales-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "Legales",
+        "text": "Legales"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#legales-mobile"]
+  },
+  "vtex.menu@2.x:submenu.accordion#legales-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-legales-mobile"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#footer-legales-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.col#menuLegal-footer-mobile"
+    ]
+  },
+  "flex-layout.col#menuLegal-footer-mobile":{
+      "props":{
+        "horizontalAlign":"center"
+      },
+      "children":[
+      "menu-item#politicasDeCompra-mobile",
+      "menu-item#terminosYCondiciones-mobile",
+      "menu-item#avisoDePrivacidad-mobile"
+      
+      ]
+  },
+  "menu-item#politicasDeCompra-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politicas",
+        "noFollow": false,
+        "tagTitle": "Políticas de compra, envío y devolución",
+        "text": "Políticas de compra, envío y devolución"
+      }
+    }
+  },
+  "menu-item#terminosYCondiciones-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "terminos-y-condiciones",
+        "noFollow": false,
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+  "menu-item#avisoDePrivacidad-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/aviso-privacidad",
+        "noFollow": false,
+        "tagTitle": "Aviso De Privacidad",
+        "text": "Aviso De Privacidad"
+      }
+    }
+  },
+
+  "menu-item#acercaDe-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "Acerca De Distroller",
+        "text": "Acerca De Distroller"
+      }
+    }
+  },
+
+  "menu-item#tiendas-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tiendas",
+        "noFollow": false,
+        "tagTitle": "Tiendas",
+        "text": "Tiendas"
+      }
+    }
+  },
+
+  "menu-item#compromisoSocial-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://mexico.distroller.com/institucional/compromiso-social",
+        "noFollow": false,
+        "tagTitle": "Compromiso Social",
+        "text": "Compromiso Social"
+      }
+    }
+  },
+
+  "menu-item#bolsaDeTrabajo-mobile": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsa-de-trabajo",
+        "noFollow": false,
+        "tagTitle": "Bolsa De Trabajo",
+        "text": "Bolsa De Trabajo"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#menuVertical3": {
+    "props": {
+      "width":"20%",
+      "orientation": "vertical",
+      "blockClass":"verticalMenu2"
+    },
+    "children": [
+      "menu-item#metodos"
+    ]
+  },
+  "menu-item#metodos": {
+    "props": {
+      "blockClass":"metodosHeaderText",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Metodos de pago",
+        "text": "Metodos de pago"
+      }
+    }
+  }
+
+}

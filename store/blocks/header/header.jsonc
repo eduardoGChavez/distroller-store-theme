@@ -1,0 +1,62 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header#static": {
+    "blocks": ["header-layout.desktop#static", "header-layout.mobile#static"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop#static": {
+    "children": [
+      "flex-layout.row#2-desktop", // Notification bar
+      // "sticky-layout#4-desktop" // Sticky
+      "flex-layout.row#4-desktop"
+    ]
+  },
+  "header-layout.mobile#static": {
+    "children": [
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#2-mobile",
+      "notification.bar"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      // "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop", // Notification bar
+      // "flex-layout.row#3-desktop", // Search bar - Stores - Cart
+      "sticky-layout#4-desktop" // Sticky
+    ]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+
+
+
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "header-layout.mobile": {
+    "children": [
+      "sticky-layout#1-mobile",
+      "notification.bar"
+    ]
+  }
+}

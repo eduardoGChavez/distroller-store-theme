@@ -1,0 +1,56 @@
+{
+  "store.custom#about-us": {
+    "path": "/about-us"
+  },
+  "store.custom#faq": {
+    "path": "/faq"
+  },
+  "store.custom#aviso": {
+    "path": "/aviso-privacidad"
+  },
+  "store.custom#politicas": {
+    "path": "/politicas"
+  },
+  "store.custom#contact-us": {
+    "path": "/contact-us"
+  },
+  "store.custom#terminos-y-condiciones": {
+    "path": "/terminos-y-condiciones"
+  },
+  "store.custom#facturacion": {
+    "path": "/facturacion"
+  },
+  "store.custom#juego-ksi-mision": {
+    "path": "/juegos/juego-ksi-mision"
+  },
+  "store.custom#juego-quien-es": {
+    "path": "/juegos/juego-quien-es"
+  },
+  "store.custom#juego-cuidado-neonatal": {
+    "path": "/juegos/juego-cuidado-neonatal"
+  },
+  "store.custom#juego-mikro-viaje": {
+    "path": "/juegos/juego-mikro-viaje"
+  },
+  "store.custom#juegos": {
+    "path": "/juegos"
+  },
+  "store.storelocator":{
+    "path": "/tiendas"
+  },
+  "store.custom#personajes-indiv-page":{
+    "path": "/personajes-indiv-page"
+  },
+  "store.custom#personajes-prin-page":{
+    "path": "/personajes-prin-page"
+  },
+  "store.custom#personajes-especi-page":{
+    "path": "/personajes-especi-page"
+  },
+  "store.custom#compromiso":{
+    "path": "/compromiso"
+  },
+  "store.custom#bolsa-trabajo":{
+    "path": "/bolsa-de-trabajo"
+  }
+}

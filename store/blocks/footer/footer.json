@@ -1,0 +1,391 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+      ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#newsletter-home",
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#menuVertical1",
+      "vtex.menu@2.x:menu#menuVertical2",
+      "flex-layout.col#redesFooter",
+      "flex-layout.row#footerImagen"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddigBottom": 3
+    },
+    "title":"menu-footer-desktop"
+  },
+
+  "flex-layout.col#redesFooter":{
+    "props":{
+      "blockClass":"redesFooter"
+    },
+    "children":[
+      "flex-layout.row#tituloRedes",
+      "flex-layout.row#iconosFooterDesktop",
+      "flex-layout.row#infoPagos-master"
+    ],
+    "title":"redesSociales-footer-desktop"
+  },
+
+  "flex-layout.row#iconosFooterDesktop":{
+    "props":{
+      "blockClass":"iconosFooterDesktop"
+    },
+    "children":[
+      "flex-layout.col#facebook-NotBar",
+      "flex-layout.col#instagram-NotBar",
+      "flex-layout.col#youtube-NotBar",
+      "flex-layout.col#tiktok-NotBar",
+      "flex-layout.col#pinteres-NotBar",
+      "flex-layout.col#spotify-NotBar",
+      "flex-layout.col#twitter-NotBar"
+    ]
+  },
+
+  "flex-layout.row#tituloRedes":{
+    "props":{
+      "blockClass":"tituloRedes"
+    },
+    "children":[
+      "rich-text#redesTitulos"
+    ]
+  },
+
+  "rich-text#redesTitulos":{
+    "props":{
+      "blockClass":"redesTitulo",
+      "text":"Redes Sociales"
+    }
+  },
+
+  "flex-layout.col#imagen":{
+    "props":{
+      "horizontalAlign":"left",
+      "width":"50%"
+    },
+    "children":[
+      "flex-layout.row#footerImagen"
+    ],
+    "title":"imagenes-footer-desktop"
+  },
+
+  "flex-layout.row#footerImagen":{
+    "props":{
+      "horizontalAlign":"center"
+    },
+    "children":[
+      "image#footerImageDistroller"
+    ]
+  },
+  "image#footerImageDistroller":{
+    "props":{
+      "src":"assets/distroller_white_1.svg",
+      "blockClass":"imagFooter"
+
+    }
+  },
+
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "flex-layout.row#footerRow"
+    ],
+    "props": {
+      "blockClass": "credits"
+    },
+    "title":"bottom-footer-desktop"
+  },
+  "flex-layout.row#footerRow":{
+    "props":{
+      "blockClass":"footerRow"  
+    },
+    "children":[
+      "flex-layout.col#footerCol1",
+      "footer-spacer#1",
+      "flex-layout.col#footerCol4"
+      ]
+  },
+  "footer-spacer#1":{
+    "props":{
+      "width":"7%"
+    }
+  },
+  "flex-layout.col#footerCol1":{
+    "props":{
+      "horizontalAlign":"left",
+      "verticalAlign":"middle"
+    },
+    "children":[
+      "rich-text#footer"
+    ]
+  },
+  "flex-layout.col#footerCol4":{
+    "props":{
+      "horizontalAlign":"left",
+      "verticalAlign":"middle",
+      "blockClass":"footerText"
+    },
+    "children":[
+      "rich-text#footer4"
+    ]
+  },"rich-text#footer": {
+    "props": {
+      "horizontalAlign":"center",
+      "text":"Made with <span>**&#10084;**</span> by Punto Commerce",
+      "blockClass": "footer1"
+    }
+  },
+  "rich-text#footer4": {
+    "props": {
+      "horizontalAlign":"center",
+      "text": "Distroller 2022. Todos los derechos reservados",
+      "blockClass": "footer4"
+    }
+  },
+
+
+
+
+
+
+  "footer-layout.mobile": {
+    "props":{
+        "blockClass":"footer-mobile"
+    },
+    "children": [
+      "flex-layout.row#textoBottom",
+      "flex-layout.row#newsletter-mobile",
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#paisesMobile",
+      "flex-layout.row#2-footer-mobile",
+      "flex-layout.row#3-footer-mobile",
+      "flex-layout.row#5-footer-mobile"
+    ]
+  },
+
+  "flex-layout.row#paisesMobile":{
+    "props":{
+      "blockClass":"paises"
+    },
+    "children":[
+      "flex-layout.col#pais"
+    ]
+  },
+  "flex-layout.row#4-footer-mobile":{
+    "props":{
+      "verticalAlign":"middle",
+      "blockClass":"imagenDistroller"
+    },
+    "children":[
+      "image#distroller"
+    ]
+  },
+  "image#distroller":{
+    "props":{
+      "src":"assets/distroller_white_1.svg"
+    }
+  },
+  "flex-layout.row#3-footer-mobile":{
+    "props":{
+      "preserveLayoutOnMobile":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch": true,
+      "blockClass":"imagenesRedes"
+    },
+    "children":[
+      "flex-layout.col#img7",
+      "flex-layout.col#img6",
+      "flex-layout.col#img5",
+      "flex-layout.col#img4",
+      "flex-layout.col#img3",
+      "flex-layout.col#img2",
+      "flex-layout.col#img1"
+    ]
+  },
+  "flex-layout.col#img1":{
+    "props":{
+      "marginLeft":3,
+      "marginRight":3,
+      "verticalAlign":"middle",
+      "blockClass":"imgRed-1"
+    },
+    "children":[
+      "image#red-1"
+    ]
+  },
+  "flex-layout.col#img2":{
+    "props":{
+      "marginLeft":3,
+      "marginRight":3,
+      "verticalAlign":"middle",
+      "blockClass":"imgRed-2"
+    },
+    "children":[
+      "image#red-2"
+    ]
+  },
+  "flex-layout.col#img3":{
+    "props":{
+      "marginLeft":3,
+      "marginRight":3,
+      "verticalAlign":"middle",
+      "blockClass":"imgRed-3"
+    },
+    "children":[
+      "image#red-3"
+    ]
+  },
+  "flex-layout.col#img4":{
+    "props":{
+      "marginLeft":3,
+      "marginRight":3,
+      "verticalAlign":"middle",
+      "blockClass":"imgRed-4"
+    },
+    "children":[
+      "image#red-4"
+    ]
+  },
+  "flex-layout.col#img5":{
+    "props":{
+      "marginLeft":3,
+      "marginRight":3,
+      "verticalAlign":"middle",
+      "blockClass":"imgRed-5"
+    },
+    "children":[
+      "image#red-5"
+    ]
+  },
+  "flex-layout.col#img6":{
+    "props":{
+      "marginLeft":3,
+      "marginRight":3,
+      "verticalAlign":"middle",
+      "blockClass":"imgRed-6"
+    },
+    "children":[
+      "image#red-6"
+    ]
+  },
+  "flex-layout.col#img7":{
+    "props":{
+      "marginLeft":3,
+      "marginRight":3,
+      "verticalAlign":"middle",
+      "blockClass":"imgRed-7"
+    },
+    "children":[
+      "image#red-7"
+    ]
+  },
+  "image#red-1":{
+    "props":{
+      
+      "src":"assets/Vector.svg",
+      "link":{
+        "url":"https://twitter.com/distroller"
+      }
+    }
+  },
+  "image#red-2":{
+    "props":{
+      
+      "src":"assets/Vector-1.svg",
+      "link":{
+        "url":"https://open.spotify.com/artist/0tXUJeSaYStaOHUetQMhSA"
+      }
+    }
+  },
+  "image#red-3":{
+    "props":{
+      "src":"assets/Vector-2.svg",
+      "link":{
+        "url":"https://www.pinterest.com.mx/distroller"
+      }
+    }
+  },
+  "image#red-4":{
+    "props":{
+      "src":"assets/Vector-3.svg",
+      "link":{
+        "url":"https://www.tiktok.com/@distrolleroficial?lang=es"
+      }
+    }
+  },
+  "image#red-5":{
+    "props":{
+      "src":"assets/Vector-4.svg",
+      "link":{
+        "url":"https://www.youtube.com/user/distrollertube"
+      }
+    }
+  },
+  "image#red-6":{
+    "props":{
+      "src":"assets/Vector-5.svg",
+      "link":{
+        "url":"https://www.instagram.com/distrollergram"
+      }
+    }
+  },
+  "image#red-7":{
+    "props":{
+      "src":"assets/Vector-6.svg",
+      "link":{
+        "url":"https://www.facebook.com/distroller"
+      }
+    }
+  },
+  "flex-layout.row#5-footer-mobile":{
+    "props":{"verticalAlign":"middle",
+      "blockClass":"footer-mobile"
+    },
+    "children":[
+      "rich-text#footer-mobile-text"
+    ]
+  },
+  "rich-text#footer-mobile-text":{
+    "props":{
+      "preserveLayoutOnMobile":true,
+      "preventHorizontalStretch":true,
+      "blockClass":"texto-mobile-footer",
+      "text":"Made with <span>*&#10084;*</span> by Punto Commerce\nDistroller 2022. Todos los derechos reservados"
+    }
+  },
+  
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+    },
+    "children": [
+      "vtex.menu@2.x:menu#footer-mobile"
+    ]
+  },
+  "flex-layout.row#2-footer-mobile":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "blockClass":"redes-mobile-footer"
+    },
+    "children":[
+        "rich-text#footer-mobile-redes"
+    ]
+  },
+  "rich-text#footer-mobile-redes":{
+    "props":{
+      "text":"REDES SOCIALES"
+    }
+  }
+}
+

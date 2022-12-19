@@ -1,0 +1,95 @@
+{
+  "menu-item#mobile_menu-1": {
+    "props": {
+      "id": "menu-item-bebes-neonatos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Neonatos",
+        "text": "Neonatos"
+      },
+      "blockClass": "mob-menu-prin-header"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile_menu-1"
+    ],
+    "title":"bebesNeonatos-header-mobile"
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile_menu-1": {
+    "props": {
+      "width": "auto",
+      "blockClass": "mobile-submenu-1"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#mobile_menu-1"//,
+      // "vtex.menu@2.x:menu#image-product1"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_menu-1": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#ksimeritos",
+      "menu-item#aquameritos",
+      "menu-item#mikromeritos",
+      "menu-item#emoshionatos",
+      "menu-item#volameritos",
+      "menu-item#sigotos",
+      "menu-item#prematuros",
+      "menu-item#espumantis",
+      "menu-item#neoflobbies",
+      "menu-item#kkitos",
+      "menu-item#neonatos-ver-todos"
+    ]
+  }
+
+
+
+
+
+
+
+
+  // "menu-item#mobile_menu-1": {
+  //   "props": {
+  //     "id": "menu-item-productos",
+  //     "type": "custom",
+  //     "iconId": null,
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "",
+  //       "noFollow": false,
+  //       "tagTitle": "Productos",
+  //       "text": "Productos"
+  //     },
+  //     "blockClass": "mob-menu-prin-header"
+  //   },
+  //   "blocks":["vtex.menu@2.x:submenu.accordion#mobile_menu-1"]
+  // },
+  // "vtex.menu@2.x:submenu.accordion#mobile_menu-1": {
+  //   "props": {
+  //     "width": "auto",
+  //     "blockClass": "cont-product-menu"
+  //   },
+  //   "children": [
+  //     "vtex.menu@2.x:menu#mobile_menu-1"
+  //   ]
+  // },
+  // "vtex.menu@2.x:menu#mobile_menu-1": {
+  //   "props": {
+  //     "orientation": "vertical"
+  //   },
+  //   "children": [
+  //     "menu-item#producto-1",
+  //     "menu-item#producto-2",
+  //     "menu-item#producto-3"
+  //   ]
+  // }
+}

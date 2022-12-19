@@ -1,0 +1,124 @@
+{
+    "store.custom#compromiso": {
+      "children": [
+          "flex-layout.row#row-content--compromiso-social"
+      ]
+    },
+    "flex-layout.row#row-content--compromiso-social":{
+      "props":{
+        "blockClass":"row-content--compromiso-social",
+        "fullWidth":true
+      },
+      "children":[
+        "flex-layout.col#col-content--compromiso-social"
+      ]
+    },
+    "flex-layout.col#col-content--compromiso-social":{
+      "props":{
+        "blockClass":"col-content--compromiso-social"
+      },
+      "children":[
+        "flex-layout.row#textoCompromiso",
+        "flex-layout.row#imagenCompromiso",
+        "flex-layout.row#botonComprimiso"
+      ]
+    },
+    "flex-layout.row#textoCompromiso":{
+      "props":{
+        "blockClass":"textoCompromiso"
+      },
+      "children":[
+        "rich-text#imagenCompromiso"
+      ]
+    },
+    "rich-text#imagenCompromiso":{
+      "props":{
+        "blockClass":"textoCompromiso",
+        "text":"### texto \n a modificar desde el site editor"
+      }
+    },
+
+    "flex-layout.row#imagenCompromiso":{
+      "props":{
+        "blockClass":"imagenCompromiso"
+      },
+      "children":[
+        "flex-layout.col#imagen1",
+        "flex-layout.col#imagen2",
+        "flex-layout.col#imagen3"
+
+      ]
+    },
+
+    "flex-layout.col#imagen1":{
+      "props":{
+        "blockClass":"imagen1"
+      },
+      "children":[
+        "image#imagenCompromiso1"
+      ]
+    },
+    "flex-layout.col#imagen2":{
+      "props":{
+        "blockClass":"imagen2"
+      },
+      "children":[
+        "image#imagenCompromisoFundacion"
+      ]
+    },
+    "flex-layout.col#imagen3":{
+      "props":{
+        "blockClass":"imagen3"
+      },
+      "children":[
+        "image#imagenCompromiso2"
+      ]
+    },
+
+
+
+
+    "image#imagenCompromiso1":{
+      "props":{
+        "blockClass":"imagenCompromiso1",
+        "src":"assets/compromiso-1.png",
+        "width":"40%"
+      }
+    },
+    "image#imagenCompromisoFundacion":{
+      "props":{
+        "blockClass":"imagenCompromisoFundacion",
+        "src":"assets/fundacion.png",
+        "width":"90%"
+      }
+    },
+    "image#imagenCompromiso2":{
+      "props":{
+        "blockClass":"imagenCompromiso2",
+        "src":"assets/compromiso-2.png",
+        "width":"40%"
+      }
+    },
+    "flex-layout.row#botonComprimiso":{
+      "props":{
+        "blockClass":"botonCompromisoRow"
+      },
+      "children":[
+        "flex-layout.col#botonComprimiso"
+      ]
+    },
+    "flex-layout.col#botonComprimiso":{
+      "props":{
+        "blockClass":"botonCompromisoCol"
+      },
+      "children":[
+        "rich-text#botonCompromiso"
+      ]
+    },
+    "rich-text#botonCompromiso":{
+      "props":{
+        "blockClass":"botonCompromiso",
+        "text":"[Más info aquí](/http://fundacionamparoserrano.org/)"
+      }
+    }
+}

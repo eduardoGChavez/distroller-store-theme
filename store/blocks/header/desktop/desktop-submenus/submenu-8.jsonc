@@ -1,0 +1,19 @@
+{
+    "menu-item#juegos": {
+        "props": {
+            "id": "menu-item-juegos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Juegos",
+                "text": "Juegos"
+            },
+            "blockClass": "menu-prin-header"
+        },
+        "title":"juegos-header-desktop"
+    }
+}

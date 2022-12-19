@@ -1,0 +1,65 @@
+{
+  "store.custom#juego-cuidado-neonatal": {
+    "parent": { 
+      "header": "header#static"
+    },
+    "blocks": [
+      "responsive-layout.desktop#juego-cuidado-neonatal",
+      "responsive-layout.mobile#juego-cuidado-neonatal"
+    ]
+  },
+  "responsive-layout.desktop#juego-cuidado-neonatal": {
+    "children": [
+      "flex-layout.row#juego-title-desktop",
+      "flex-layout.row#juego-cuidado-neonatal--desktop"
+    ]
+  },
+
+  "responsive-layout.mobile#juego-cuidado-neonatal": {
+    "children": [
+      "flex-layout.row#juego-title-mobile",
+      "flex-layout.row#juego-regresar-mobile",
+      "flex-layout.row#juego-cuidado-neonatal--mobile"
+    ]
+  },
+  
+  
+  "flex-layout.row#juego-cuidado-neonatal--desktop": {
+    "children": [
+      "flex-layout.col#juego-cuidado-neonatal"
+    ],
+    "props": {
+      "paddingTop": 9,
+      "paddingBottom": 9,
+      "blockClass": "row-juego-cuidado-neonatal"
+    }
+  },
+  "flex-layout.row#juego-cuidado-neonatal--mobile": {
+    "children": [
+      "flex-layout.col#juego-cuidado-neonatal"
+    ],
+    "props": {
+      "paddingTop": 9,
+      "paddingBottom": 9,
+      "blockClass": "row-juego-cuidado-neonatal"
+    }
+  },
+  "flex-layout.col#juego-cuidado-neonatal": {
+    "children": [
+      "iframe#cuidado-neonatal"
+      // "IFrameGames"
+    ],
+    "props": {
+      "blockClass": "col-juego-cuidado-neonatal"
+    }
+  },
+
+  "iframe#cuidado-neonatal": {
+    "props": {
+      "src": "https://juegosdistroller.vicom.mx/cuidado-neonatal/",
+      "width": "100%",
+      "height": 615,
+      "blockClass": "iframe-cuidado-neonatal"
+    }
+  }
+}

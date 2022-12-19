@@ -1,0 +1,19 @@
+{
+    "menu-item#personajes": {
+        "props": {
+            "id": "menu-item-personajes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Personajes",
+                "text": "Personajes"
+            },
+            "blockClass": "menu-prin-header"
+        },
+        "title":"personajes-header-desktop"
+    }
+}

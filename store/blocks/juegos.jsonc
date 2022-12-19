@@ -1,0 +1,334 @@
+{
+  "store.custom#juegos": {
+    // "parent": { 
+    //   "header": "header#static"
+    // },
+    "children": [
+      "flex-layout.row#juegos-title",
+      "flex-layout.row#juegos-container"
+    ]
+  },
+  "flex-layout.row#juegos-title": {
+    "children": [
+      "rich-text#juegos-title"
+    ],
+    "props": {
+      "blockClass": "juegos-title-container-prin"
+    }
+  },
+  "rich-text#juegos-title":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":"juegos-title-prin",
+      "text":"Juegos"
+    }
+  },
+  "flex-layout.row#juegos-container": {
+    "children": [
+      "flex-layout.col#juegos-container-left",
+      "flex-layout.col#juegos-container-right"
+    ],
+    "props": {
+      "paddingTop": 8,
+      "paddingBottom": 8,
+      "blockClass": "juegos-container"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "flex-layout.col#juegos-container-left": {
+    "children": [
+      "flex-layout.row#juegos-container-left--img2", // Cuidado neonatal
+      "flex-layout.row#juegos-container-right--img1" // Quien es quien
+    ],
+    "props": {
+      "paddingLeft": 6,
+      "paddingRight": 6,
+      "blockClass": "juegos-container-left"
+    }
+  },
+  "flex-layout.row#juegos-container-left--img1": {
+    "children": [
+      "flex-layout.col#juegos-container-left--img1"
+    ],
+    "props": {
+      "paddingTop": 6,
+      "paddingBottom": 6,
+      "blockClass": "row-juegos-container-left--img1"
+    }
+  },
+  "flex-layout.col#juegos-container-left--img1": {
+    "children": [
+      "image#juegos-content-left--img1",
+      // "flex-layout.row#juegos-content-left--title1",
+      // "flex-layout.row#juegos-content-left--text1",
+      // "flex-layout.row#juegos-content-left--button1"
+      "rich-text#juegos-content-left--title1",
+      "rich-text#juegos-content-left--text1",
+      "rich-text#juegos-content-left--button1"
+    ],
+    "props": {
+      "blockClass": "col-juegos-container-left--img1"
+    }
+  },
+  "flex-layout.row#juegos-content-left--title1": {
+    "children": [
+      "rich-text#juegos-content-left--title1"
+    ]
+  },
+  "flex-layout.row#juegos-content-left--text1": {
+    "children": [
+      "rich-text#juegos-content-left--text1"
+    ]
+  },
+  "flex-layout.row#juegos-content-left--button1": {
+    "children": [
+      "rich-text#juegos-content-left--button1"
+    ],
+    "props":{
+      "blockClass":["juegos-content--button", "juegos-content-left--button1"]
+    }
+  },
+  "image#juegos-content-left--img1":{
+    "props":{
+      "blockClass": ["juegos-content--img", "juegos-content-left--img1"],
+      "src":"assets/juegos/juegos-ksi.jpg",
+      "width":"100%",
+      "link":{
+        "url":"/juegos/juego-ksi-mision"
+      }
+    }
+  },
+  "rich-text#juegos-content-left--title1":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["juegos-content--title", "juegos-content-left--title1"],
+      "text":"Ksi-Misión-Espacial"
+    }
+  },
+  "rich-text#juegos-content-left--text1":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["juegos-content--text", "juegos-content-left--text1"],
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna, velit felis, a, ornare. Neque amet a vel nisl tempus."
+    }
+  },
+  "rich-text#juegos-content-left--button1":{
+    "props":{
+      // "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["juegos-content--button", "juegos-content-left--button1"],
+      "text":"[Jugar](/juegos/juego-ksi-mision)"
+    }
+  },
+  
+  
+  "flex-layout.row#juegos-container-left--img2": {
+    "children": [
+      "flex-layout.col#juegos-container-left--img2"
+    ],
+    "props": {
+      "paddingTop": 6,
+      "paddingBottom": 6,
+      "blockClass": "row-juegos-container-left--img2"
+    }
+  },
+  "flex-layout.col#juegos-container-left--img2": {
+    "children": [
+      "image#juegos-content-left--img2",
+      "rich-text#juegos-content-left--title2",
+      "rich-text#juegos-content-left--text2",
+      "rich-text#juegos-content-left--button2"
+    ],
+    "props": {
+      "blockClass": "col-juegos-container-left--img2"
+    }
+  },
+  "image#juegos-content-left--img2":{
+    "props":{
+      "blockClass": ["juegos-content--img", "juegos-content-left--img2"],
+      "src":"assets/juegos/juego-cuidado-neonatal.jpg",
+      "width":"100%",
+      "link":{
+        "url":"/juegos/juego-cuidado-neonatal"
+      }
+    }
+  },
+  "rich-text#juegos-content-left--title2":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["juegos-content--title", "juegos-content-left--title2"],
+      "text":"Cuidado Neonatal"
+    }
+  },
+  "rich-text#juegos-content-left--text2":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["juegos-content--text", "juegos-content-left--text2"],
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna, velit felis, a, ornare. Neque amet a vel nisl tempus."
+    }
+  },
+  "rich-text#juegos-content-left--button2":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["juegos-content--button", "juegos-content-left--button2"],
+      "text":"[Jugar](/juegos/juego-cuidado-neonatal)"
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "flex-layout.col#juegos-container-right": {
+    "children": [
+      "flex-layout.row#juegos-container-right--img2", // Mikro viaje interespeshial
+      "flex-layout.row#juegos-container-left--img1" // Ksi mision espacial
+    ],
+    "props": {
+      "paddingLeft": 6,
+      "paddingRight": 6,
+      "blockClass": "juegos-container-right"
+    }
+  },
+  "flex-layout.row#juegos-container-right--img1": {
+    "children": [
+      "flex-layout.col#juegos-container-right--img1"
+    ],
+    "props": {
+      "paddingTop": 6,
+      "paddingBottom": 6,
+      "blockClass": "row-juegos-container-right--img1"
+    }
+  },
+  "flex-layout.col#juegos-container-right--img1": {
+    "children": [
+      "image#juegos-content-right--img1",
+      "rich-text#juegos-content-right--title1",
+      "rich-text#juegos-content-right--text1",
+      "rich-text#juegos-content-right--button1"
+    ],
+    "props": {
+      "blockClass": "col-juegos-container-right--img1"
+    }
+  },
+  "image#juegos-content-right--img1":{
+    "props":{
+      "blockClass": ["juegos-content--img", "juegos-content-right--img1"],
+      "src":"assets/juegos/juego-quien-es-quien.jpg",
+      "width":"100%",
+      "link":{
+        "url":"/juegos/juego-quien-es"
+      }
+    }
+  },
+  "rich-text#juegos-content-right--title1":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["juegos-content--title", "juegos-content-right--title1"],
+      "text":"¿Quién es Quién?"
+    }
+  },
+  "rich-text#juegos-content-right--text1":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["juegos-content--text", "juegos-content-right--text1"],
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna, velit felis, a, ornare. Neque amet a vel nisl tempus."
+    }
+  },
+  "rich-text#juegos-content-right--button1":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["juegos-content--button", "juegos-content-right--button1"],
+      "text":"[Jugar](/juegos/juego-quien-es)"
+    }
+  },
+
+  
+  "flex-layout.row#juegos-container-right--img2": {
+    "children": [
+      "flex-layout.col#juegos-container-right--img2"
+    ],
+    "props": {
+      "paddingTop": 6,
+      "paddingBottom": 6,
+      "blockClass": "row-juegos-container-right--img2"
+    }
+  },
+  "flex-layout.col#juegos-container-right--img2": {
+    "children": [
+      "image#juegos-content-right--img2",
+      "rich-text#juegos-content-right--title2",
+      "rich-text#juegos-content-right--text2",
+      "rich-text#juegos-content-right--button2"
+    ],
+    "props": {
+      "blockClass": "col-juegos-container-right--img2"
+    }
+  },
+  "image#juegos-content-right--img2":{
+    "props":{
+      "blockClass": ["juegos-content--img", "juegos-content-right--img2"],
+      "src":"assets/juegos/Banner-juegos.png",
+      "width":"100%",
+      "link":{
+        "url":"/juegos/juego-mikro-viaje"
+      }
+    }
+  },
+  "rich-text#juegos-content-right--title2":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["juegos-content--title", "juegos-content-right--title2"],
+      "text":"Mikro Viaje Interespeshial"
+    }
+  },
+  "rich-text#juegos-content-right--text2":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["juegos-content--text", "juegos-content-right--text2"],
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna, velit felis, a, ornare. Neque amet a vel nisl tempus."
+    }
+  },
+  "rich-text#juegos-content-right--button2":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["juegos-content--button", "juegos-content-right--button2"],
+      "text":"[Jugar](/juegos/juego-mikro-viaje)"
+    }
+  }
+}

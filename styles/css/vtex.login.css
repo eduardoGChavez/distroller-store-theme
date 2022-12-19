@@ -1,0 +1,358 @@
+
+/* ----------------- Font Family Inicio ----------------------- */
+:global(.vtex-login-2-x-label)::after,
+:global(.vtex-login-2-x-formTitle),
+:global(.vtex-login-2-x-accessCodeOptionBtn) :global(.vtex-button) :global(.vtex-button__label)::after,
+:global(.vtex-login-2-x-emailPasswordOptionBtn) :global(.vtex-button) :global(.vtex-button__label),
+:global(.vtex-login-2-x-googleOptionBtn) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-login-2-x-oauthLabel),
+:global(.vtex-login-2-x-googleOptionBtn) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-login-2-x-oauthLabel) :global(.vtex-login-2-x-oauthProvider)
+:global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-login-2-x-oauthLabel),
+:global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-login-2-x-oauthLabel) :global(.vtex-login-2-x-oauthProvider),
+:global(.vtex-account) :global(.vtex-my-account-1-x-userInfo) :global(.vtex-my-account-1-x-userGreeting) {
+    font-family: 'SparkyBillyLight';
+}
+/* ----------------- Font Family Fin ----------------------- */
+:global(.vtex-account) :global(.vtex-my-account-1-x-userInfo) :global(.vtex-my-account-1-x-userGreeting) {
+    font-size: 20px;
+}
+:global(.vtex-login-2-x-contentAlwaysWithOptions) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+:global(.vtex-login-2-x-container) :global(.vtex-button) {
+    border: 0px;
+}
+:global(.vtex-login-2-x-container) :global(.vtex-button):focus,
+:global(.vtex-login-2-x-container) :global(.vtex-button):hover {
+    background-color: #8E3392 !important;
+    border: 0px;
+}
+:global(.vtex-login-2-x-container) :global(.vtex-button__label) {
+    padding: 0px;
+    /* margin-right: 41px; */
+}
+:global(.vtex-login-2-x-label) {
+    font-size: 0px;
+    padding: 0px;
+    position: relative;
+    top: -2px;
+}
+:global(.vtex-login-2-x-label)::after {
+    content: "Mi Cuenta" !important;
+    font-size: 14px;
+    text-transform: none;
+}
+:global(.vtex-login-2-x-label)::before {
+    content: url("assets/header/icon-myAccount.svg");
+    position: relative;
+    margin-right: 13px;
+    top: 6px;
+  }
+:global(.vtex-login-2-x-profile) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-transform: none;
+}
+
+
+
+
+
+
+:global(.vtex-login-2-x-container) :global(.vtex-button):hover,
+:global(.vtex-login-2-x-container) :global(.vtex-button):focus {
+    background-color: #8E3392;
+}
+
+:global(.vtex-login-2-x-container) :global(.vtex-button),
+:global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label) {
+    border: 0px;
+}
+:global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 0px 40px 0px 0px;
+}
+
+:global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label)
+:global(.vtex-login-2-x-profile) {
+    text-transform: none;
+    height: 30px;
+    position: relative;
+    top: -4px;
+    display: block;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+:global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label)
+:global(.vtex-login-2-x-profile)::before {
+    content: url("assets/header/icon-myAccount.svg");
+    position: relative;
+    top: 6px;
+    margin-right: 13px;
+}
+/* Mi cuenta form */
+:global(.vtex-login-2-x-arrowUp) {
+    background: #E42990;
+}
+:global(.vtex-login-2-x-content){
+    background: #E42990;
+    border-radius: 5px;
+    padding: 12px 23px 9px 23px;
+}
+:global(.vtex-login-2-x-formTitle) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px !important;
+    text-align: center;
+    color: #FFFFFF;
+}
+:global(.vtex-login-2-x-forgotPasswordForm) :global(.vtex-login-2-x-formTitle) :global(.vtex-login-2-x-formSubtitle) {
+    color: white;
+    font-size: 12px;
+}
+:global(.vtex-login-2-x-box) :global(.vtex-login-2-x-contentContainer) :global(.vtex-login-2-x-content) {
+  padding: 12px 23px 9px 23px;
+}
+:global(.vtex-login-2-x-contentForm),
+:global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-loginOptionsContainer) :global(.vtex-login-2-x-options) {
+    max-width: 269px;
+    min-width: 269px;
+}
+:global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-loginOptionsContainer) :global(.vtex-login-2-x-options) {
+    border: 0px;
+}
+:global(.vtex-login-2-x-optionsList) :global(.vtex-login-2-x-optionsListItem) {
+  margin-bottom: 6px;
+}
+:global(.vtex-login-2-x-optionsList) :global(.vtex-login-2-x-button) :global(.vtex-button) {
+    min-height: 35px;
+    max-height: 35px;
+    border: 0px;
+}
+:global(.vtex-login-2-x-optionsList) :global(.vtex-login-2-x-button) :global(.vtex-button__label) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #8E3392;
+    text-transform: none;
+}
+:global(.vtex-login-2-x-accessCodeOptionBtn) :global(.vtex-button),
+:global(.vtex-login-2-x-emailPasswordOptionBtn) :global(.vtex-button) {
+    background-color: #FFFFFF;
+}
+:global(.vtex-login-2-x-optionsList) :global(.vtex-login-2-x-accessCodeOptionBtn) :global(.vtex-button),
+:global(.vtex-login-2-x-optionsList) :global(.vtex-login-2-x-emailPasswordOptionBtn) :global(.vtex-button) {
+    color: #FFFFFF;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+:global(.vtex-login-2-x-optionsList) :global(.vtex-login-2-x-accessCodeOptionBtn) :global(.vtex-button) :global(.vtex-button__label) {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Google login inicio*/
+:global(.vtex-login-2-x-googleOptionBtn) :global(.vtex-button) {
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+:global(.vtex-login-2-x-googleOptionBtn) :global(.vtex-button)::after {
+    content: url(assets/header/icon-google.jpg);
+    position: relative;
+    top: -30px;
+    left: -116px;
+}
+:global(.vtex-login-2-x-contentAlwaysWithOptions) :global(.vtex-login-2-x-googleOptionBtn) :global(.vtex-button)::after {
+    left: -142px;
+}
+:global(.vtex-login-2-x-googleOptionBtn) :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 8px 5px 8px 5px !important;
+    justify-content: left;
+}
+:global(.vtex-login-2-x-googleOptionBtn) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-login-2-x-oauthLabel) {
+    margin: 0px 0px 0px 14px;
+    text-transform: none;
+}
+:global(.vtex-login-2-x-googleOptionBtn) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-login-2-x-oauthLabel),
+:global(.vtex-login-2-x-googleOptionBtn) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-login-2-x-oauthLabel) :global(.vtex-login-2-x-oauthProvider) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8E3392;
+}
+/* Google login fin*/
+
+/* Facebook login inicio*/
+:global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-button) {
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+:global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-login-2-x-oauthLabel) {
+    font-size: 0px !important;
+}
+:global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-login-2-x-oauthLabel)::before {
+    content: "Entra con";
+    font-size: 14px;
+}
+:global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-button)::after {
+    content: url(assets/header/icon-facebook.jpg);
+    position: relative;
+    top: -30px;
+    left: -116px;
+}
+:global(.vtex-login-2-x-contentAlwaysWithOptions) :global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-button)::after {
+    left: -142px;
+}
+:global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 8px 5px 8px 5px !important;
+    justify-content: left;
+}
+:global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-login-2-x-oauthLabel) {
+    margin: 0px 0px 0px 14px;
+    text-transform: none;
+}
+:global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-login-2-x-oauthLabel),
+:global(.vtex-login-2-x-facebookOptionBtn) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-login-2-x-oauthLabel) :global(.vtex-login-2-x-oauthProvider) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8E3392;
+}
+/* Facebook login fin*/
+
+:global(.vtex-login-2-x-content) :global(.vtex-input-prefix__group) {
+    border: 0px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+:global(.vtex-login-2-x-contentContainer) {
+    background-color: #8E3392;
+    border-radius: 5px;
+}
+:global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-emailVerification) :global(.vtex-login-2-x-formLinkContainer) :global(.vtex-login-2-x-forgotPasswordLink),
+:global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-emailVerification) :global(.vtex-login-2-x-formLinkContainer) :global(.vtex-login-2-x-dontHaveAccount),
+:global(.vtex-login-2-x-contentContainer) :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-forgotPasswordLink), /* Form flotate */
+:global(.vtex-login-2-x-contentContainer) :global(.vtex-login-2-x-content) :global(.vtex-login-2-x-dontHaveAccount) { /* Form flotate */
+  color: white;
+}
+/* Buttons Mi cuenta - Salir */ 
+:global(.vtex-login-2-x-content--accountOptions) :global(.vtex-login-2-x-contentForm) {
+    padding: 0px;
+}
+:global(.vtex-login-2-x-content) :global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-accountOptions) :global(.vtex-login-2-x-button) {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    max-width: 269px;
+    width: 100%;
+    max-height: 34px;
+    height: 100%;
+    border: 0px;
+    color: #8E3392;
+}
+:global(.vtex-login-2-x-content) :global(.vtex-login-2-x-contentForm) :global(.vtex-login-2-x-accountOptions) :global(.vtex-button) {
+    background-color: #8E3392;
+    border-radius: 5px;
+    max-width: 269px;
+    width: 100%;
+    max-height: 34px;
+    height: 100%;
+    border: 0px;
+    color: #EAEAEA;
+}
+/* Footer ventana flotante login */
+:global(.vtex-login-2-x-formFooter) {
+    border: 0px;
+}
+:global(.vtex-login-2-x-formFooter) :global(.vtex-login-2-x-backButton) :global(.vtex-button) {
+    border: 0px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    color: #8E3392;
+}
+:global(.vtex-login-2-x-formFooter) :global(.vtex-login-2-x-sendButton) :global(.vtex-button) {
+    border: 0px;
+    background: #8E3392;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+@media (max-width: 1025px) {
+    :global(.vtex-login-2-x-label) {
+      top: -7px !important;
+      position: relative !important;
+      height: 32px !important;
+      display: block !important;
+    }
+    :global(.vtex-login-2-x-label)::after {
+      content: none !important;
+    }
+    :global(.vtex-login-2-x-label)::before {
+      content: url(assets/header/icon-myAccountMob.svg);
+      margin-right: 18px !important;
+      height: 32px !important;
+    }
+
+
+
+
+    :global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label) {
+        padding-right: 0px;
+    }
+    :global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label)
+    :global(.vtex-login-2-x-profile) {
+        font-size: 0px;
+        height: 32px;
+        top: 0px; 
+    }
+    :global(.vtex-login-2-x-container) :global(.vtex-button) :global(.vtex-button__label)
+    :global(.vtex-login-2-x-profile)::before {
+        content: url("assets/header/icon-myAccountMob.svg");
+        margin-right: 0px;
+        top: 0px; 
+    }
+}
+
+
+
+/* Menu Account */
+:global(.vtex-account)
+:global(.vtex-my-account-1-x-menu) {
+    padding-right: 0px;
+    /* padding-left: 5px; */
+}
+:global(.vtex-account)
+:global(.vtex-my-account-1-x-menu)
+:global(.vtex-account_menu-link) {
+    padding-left: 5px;
+}
+
+:global(.vtex-login-2-x-inputContainerAccessCode) {
+    font-size: 14.2px;
+}
+:global(.vtex-account)
+:global(.vtex-my-account-1-x-genderSubContainer),
+:global(.vtex-account) :global(.vtex-my-account-1-x-profileEdit)
+:global(.vtex-profile-form-3-x-genderInput) {
+    display: none;
+}
+:global(.vtex-account) :global(.vtex-my-account-1-x-newsletterBoxContainer)
+:global(.vtex-my-account-1-x-newsletterContainerMessage) {
+    padding-bottom: 0px;
+}

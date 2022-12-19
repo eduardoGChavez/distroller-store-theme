@@ -1,0 +1,528 @@
+{
+  "store.custom#contact-us": {
+    "blocks":[
+      "responsive-layout.desktop#contactoDesktop",
+      "responsive-layout.mobile#contactoMobile"
+    ]
+  },
+
+  "responsive-layout.mobile#contactoMobile":{
+    "props":{
+      "blockClass":"contactoMobile"
+    },
+    "children":[
+      "flex-layout.row#formEscribenos",
+      "flex-layout.row#contactanos",
+      "flex-layout.row#localStores"
+    ]
+  },
+
+  "flex-layout.row#contactanos":{
+    "props":{
+      "blockClass":"contactanos"
+    },
+    "children":[
+      "flex-layout.col#contactanosCol"
+    ],
+    "title":"contactanos"
+  },
+
+  "flex-layout.col#contactanosCol":{
+    "props":{
+      "blockClass":"contactanosCol"
+    },
+    "children":[
+      "flex-layout.row#tituloContactanos",
+      "flex-layout.row#imagenContactanos",
+      "flex-layout.row#mailContactanos",
+      "flex-layout.row#ubicacionContactanos"
+    ]
+  },
+
+  "flex-layout.row#ubicacionContactanos":{
+    "props":{
+      "blockClass":"ubicacionContactanos"
+    },
+    "children":[
+      "flex-layout.col#imageUbicacionContactanos",
+      "flex-layout.col#textoUbicacionContactanos"
+    ]
+  },
+
+  "flex-layout.col#textoUbicacionContactanos":{
+    "props":{
+      "width":"90%",
+      "blockClass":"textoUbicacionContactanos"
+    },
+    "children":[
+      "rich-text#ubicacionContactanos"
+    ]
+  },
+  
+
+  "flex-layout.col#imageUbicacionContactanos":{
+    "props":{
+      "width":"10%",
+      "blockClass":"imageUbicacionContactanos"
+    },
+    "children":[
+      "image#ubicacionContactanos"
+    ]
+  },
+
+
+  "rich-text#ubicacionContactanos":{
+    "props":{
+      "blockClass":"ubicacionContactanos",
+      "text":"Av. Torres de Ixtapantongo #380-P, Colonia Olivar de los Padres, Delegación Álvaro Obregón, C.P. 01780, México, D.F."
+    }
+  },
+
+  "image#ubicacionContactanos":{
+    "props":{
+      "blockClass":"ubicacionContactanos",
+      "src":"assets/ubicacion.svg"
+    }
+  },
+
+  
+
+  "flex-layout.row#mailContactanos":{
+    "props":{
+      "blockClass":"mailContactanos"
+    },
+    "children":[
+      "flex-layout.col#imagenMailcontactanos",
+      "flex-layout.col#textoMailcontactanos"
+    ]
+  },
+
+  "flex-layout.col#textoMailcontactanos":{
+    "props":{
+      "width":"90%",
+      "blockClass":"textoMailcontactanos"
+    },
+    "children":[
+      "rich-text#mailContactanos"
+    ]
+  },
+
+  "flex-layout.col#imagenMailcontactanos":{
+    "props":{
+      "width":"10%",
+      "blockClass":"imagenMailcontactanos"
+    },
+    "children":[
+      "image#mailContactanos"
+    ]
+  },
+
+  "rich-text#mailContactanos":{
+    "props":{
+      "blockClass":"mailContactanos",
+      "text":"tiendaonlinedistroller@distroller.com"
+    }
+  },
+
+  "image#mailContactanos":{
+    "props":{
+      "blockClass":"mailContactanos",
+      "src":"assets/mail.svg"
+    }
+  },
+
+  "flex-layout.row#imagenContactanos":{
+    "props":{
+      "blockClass":"imagenContactanos"
+    },
+    "children":[
+      "image#ContactanosImg"
+    ]
+  },
+
+  "image#ContactanosImg":{
+    "props":{
+      "blockClass":"ContactanosImg",
+      "src":"assets/contacto.png"
+    }
+  },
+
+
+  "flex-layout.row#tituloContactanos":{
+    "props":{
+      "blockClass":"tituloContactanos"
+    },
+    "children":[
+      "rich-text#contactanosTxt"
+    ]
+  },
+  "rich-text#contactanosTxt":{
+    "props":{
+      "blockClass":"contactanosTxt",
+      "text":"### Contáctanos!!!"
+    }
+  },
+
+
+
+  "flex-layout.row#formEscribenos":{
+    "props":{
+      "blockClass":"formEscribenos"
+    },
+    "children":[
+      "flex-layout.col#formEscribenos"
+    ],
+    "title":"form-escribenos"
+  },
+
+  "flex-layout.col#formEscribenos":{
+    "props":{
+      "blockClass":"formEscribenos"
+    },
+    "children":[
+      "flex-layout.row#escribenosTxt",
+      "form#contacto"
+      // "flex-layout.row#formMobile"
+    ]
+  },
+
+  "flex-layout.row#formMobile":{
+    "props":{
+      "blockClass":"formMobile"
+    },
+    "children":[
+      
+      // "flex-layout.col#formMobile"
+    ]
+  },
+
+  "flex-layout.col#formMobile":{
+    "props":{
+      "blockClass":"formMobile"
+    },
+    "children":[
+      "form#contacto"
+    ]
+  },
+
+  "flex-layout.row#escribenosTxt":{
+    "props":{
+      "blockClass":"recribenosTxt"
+    },
+    "children":[
+      "rich-text#recibenosTxt"
+    ]
+  },
+
+  "rich-text#recibenosTxt":{
+    "props":{
+      "blockClass":"escribenosTxt",
+      "text":"### Escríbenos!!!\n\nSi tienes dudas, sugerencias o comentarios, plis escríbenos y nosotros nos comunicamos contigo. Mil ochomil gracias!!!"
+    }
+  },
+
+  "responsive-layout.desktop#contactoDesktop":{
+    "props":{
+      "blockClass":"contactDesktop"
+    },
+    "children":[
+      "flex-layout.row#contact",
+      "flex-layout.row#localStores"
+    ],
+    "title":"contacto-desktop"
+  },
+
+  "flex-layout.row#contact":{
+    "props":{
+      "blockClass":"masterColumna"
+    },
+    "children":[
+      "flex-layout.col#contact-us",
+      "flex-layout.col#form"
+    ]
+  },
+
+  "flex-layout.col#contact-us": {
+    "props":{
+      "blockClass":"contact-us",
+      "width":"30%"
+    },
+    "children": [
+      "rich-text#contact-us",
+      "image#contact",
+      "flex-layout.row#mailContacto",
+      "flex-layout.row#ubicacionContacto"
+    ]
+  },
+
+  "flex-layout.row#ubicacionContacto":{
+    "props":{
+      "horizontalAlign":"left",
+      "blockClass":"ubicacionContacto"
+    },
+    "children":[
+       "flex-layout.col#ubicacionImgCol",
+       "flex-layout.col#ubicacionTxtCol"
+    ]
+  }, 
+
+  "flex-layout.col#ubicacionImgCol":{
+    "props":{
+      "width":"12%",
+      "blockClass":"ubicacionImgCol"
+    },
+    "children":[
+      "image#ubicacion"
+    ]
+  },
+
+  "flex-layout.col#ubicacionTxtCol":{
+    "props":{
+      "blockClass":"ubicacionTxtCol"
+    },
+    "children":[
+      "rich-text#ubicacion"
+    ]
+  },
+
+  "image#ubicacion":{
+    "props":{
+      "blockClass":"ubicacion",
+      "src":"assets/ubicacion.svg"
+    }
+  },
+
+  "rich-text#ubicacion":{
+    "props":{
+      "blockClass":"ubicacion",
+      "text":"Av. Torres de Ixtapantongo #380-P, Colonia Olivar de los Padres, Delegación Álvaro Obregón, C.P. 01780, México, D.F."
+    }
+  },
+
+  "flex-layout.row#mailContacto":{
+    "props":{
+      "blockClass":"mailContacto"
+    },
+    "children":[
+      
+      "flex-layout.col#imgCol",
+      "flex-layout.col#mailCol"
+    ]
+  },
+
+  "flex-layout.col#imgCol":{
+    "props":{
+      "width":"12%",
+      "blockClass":"imgCol"
+    },
+    "children":[
+      "image#mail"
+    ]
+  },
+
+  "flex-layout.col#mailCol":{
+    "props":{
+      "horizontalAlign":"left",
+      "blockClass":"mailCol"
+    },
+    "children":[
+      "rich-text#mail"
+    ]
+  },
+  "image#mail":{
+    "props":{
+      "blockClass":"mail",
+      "src":"assets/mail.svg"
+    }
+  },
+
+  "rich-text#mail":{
+    "props":{
+      "blockClass":"mail",
+      "text":"tiendaonlinedistroller@distroller.com"
+    }
+  },
+
+  "image#contact":{
+    "props":{
+      "blockClass":"imageContact",
+      "src":"assets/contacto.png"
+    }
+  },
+
+  "flex-layout.row#textoContacto":{
+    "props":{
+      "blockClass":"textoContacto"
+    },
+    "children":[
+      "rich-text#textoContacto"
+    ]
+  },
+
+  "rich-text#textoContacto":{
+    "props":{
+      "blockClass":"textoContacto",
+      "text":"### Contáctanos!!!"
+    }
+  },
+
+  "rich-text#contact-us": {
+    "props": {
+      "text": "## Contáctanos!!!",
+      "blockClass":"contactUsTitle"
+    }
+  },
+  /*----------------- Inicio de Formulario--------------------*/
+  "flex-layout.col#form":{
+    "children":[
+      "rich-text#contactForm",
+      "form#contacto"
+    ],"props":{
+        // "width":"70%",
+        "blockClass":"colform",
+        "paddingLeft":10,
+        "paddingRight":10
+    }
+},
+"rich-text#contactForm":{
+  "props":{
+    "blockClass":"contactForm",
+    "text":"### Escríbenos!!!\n\nSi tienes dudas, sugerencias o comentarios, plis escríbenos y nosotros nos comunicamos contigo. Mil ochomil gracias!!!"
+  }
+},
+
+"form#contacto": {
+  "props": {
+    "entity": "contactform",
+    "schema": "datoscont"
+  },
+  "children": [ 
+    "flex-layout.row#formNombreMail",
+    "form-input.textarea",
+    "form-submit#contacto"
+  ],
+  "blocks": ["form-success#contacto"]
+},
+"flex-layout.row#formNombreMail":{
+  "props":{
+    "blockClass":"formNameMail"
+  },
+  "children":[
+    "flex-layout.col#nombre",
+    "flex-layout.col#mail"    
+  ]
+},
+"flex-layout.col#nombre":{
+  "props":{
+    "blockClass":"nombre",
+    "horizontalAlign":"left"
+  },
+  "children":[
+    "form-input.text#nombre"
+  ]
+},
+"flex-layout.col#mail":{
+  "props":{
+    "blockClass":"correo",
+    "horizontalAlign":"right"
+  },
+  "children":[
+    "form-input.text#mail"
+  ]
+},
+"form-success#contacto": {
+  "children": [
+    "rich-text#successSubmit-contacto"
+  ]
+},
+"rich-text#successSubmit-contacto": {
+  "props": {
+    "text": "Mensaje enviado correctamente!",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "blockClass":"mensajeConfirmacion"
+  }
+},
+"form-input.text#nombre": {
+  "props": {
+    "pointer": "#/properties/nombre",
+    "label": "Nombre"
+  }
+},
+"form-input.text#mail": {
+  "props": {
+    "pointer": "#/properties/email",
+    "label": "Correo"
+  }
+},
+"form-input.textarea": {
+  "props": {
+    "pointer": "#/properties/mensaje",
+    "label": "Mensaje"
+  }
+},
+"form-submit#contacto": {
+  "props": {
+    "label": "Enviar",
+    "blockClass":"botonEnviar"
+  }
+},
+
+/*----------------- Final de Formulario--------------------*/
+  "form#contact-us": {
+    "props": {
+      "entity": "contact",
+      "schema": "site-contact"
+  },
+  "blocks": [
+      "form-success#contact-us"
+    ],
+    "children": [
+      "form-input.text#title",
+      "form-input.text#name",
+      "form-input.text#email",
+      "form-input.textarea#message",
+      "form-submit#contact"
+    ]
+  },
+
+  "form-success#contact-us": {
+    "children": [
+      "rich-text#success-submit"
+    ]
+  },
+  "rich-text#success-submit": {
+    "props": {
+      "text": "Thanks for reaching out! We will come back shortly.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "form-input.text#title": {
+    "props": {
+      "pointer": "#/properties/title"
+    }
+  },
+  "form-input.text#name": {
+    "props": {
+      "pointer": "#/properties/name"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email"
+    }
+  },
+  "form-input.textarea#message": {
+    "props": {
+      "pointer": "#/properties/message"
+    }
+  },
+
+  "form-submit#contact": {
+    "props": {
+      "label": "Submit"
+    }
+  }
+}

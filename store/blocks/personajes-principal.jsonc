@@ -1,0 +1,1573 @@
+{
+  "store.custom#personajes-prin-page": {
+    "children": [
+      "flex-layout.row#perosnajes-prin-titulo",
+      "flex-layout.row#personaje-prin-row-container",
+      "removeCards"
+    ]
+  },
+  "flex-layout.row#personaje-prin-row-container": {
+    "children": [
+      "flex-layout.col#personajes-prin-col-filtro",
+      "flex-layout.col#personajes-prin-col-content"
+    ],
+    "props": {
+      "blockClass": "personajesIndiv"
+    }
+  },
+
+  "flex-layout.row#perosnajes-prin-titulo":{
+    "props":{
+      "blockClass":"row-prin-personaje"
+    },
+    "children":[
+      "flex-layout.col#perosnajes-prin-titulo"
+    ]
+  },
+
+  "flex-layout.col#personajes-prin-col-filtro": {
+    "children": [
+      "flex-layout.row#personajes-prin-filtro-neonatos",
+      "flex-layout.row#personajes-prin-filtro-virgencita",
+      "flex-layout.row#personajes-prin-filtro-chikitiPunTaun",
+      "flex-layout.row#personajes-prin-filtro-chamoyAmiguis",
+      "flex-layout.row#personajes-prin-filtro-mexicanPaguer"
+    ],
+    "props": {
+      "width": "27%",
+      "blockClass": "personajes-indiv-col-img-a"
+    },
+    "title": "col-filtros"
+  },
+
+  //chamoyAmiguis
+  "flex-layout.row#personajes-prin-filtro-mexicanPaguer": {
+    "children": [
+      "image#mexicanPaguer",
+      "rich-text#personajes-prin-filtro-mexicanPaguer"
+    ],
+    "title": "filtro-mexicanPaguer"
+  },
+  "image#mexicanPaguer":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  
+  "rich-text#personajes-prin-filtro-mexicanPaguer":{
+    "props":{
+      "text":"[Mexican Pagüer](/personaje-mexican-paguer)",
+      "blockClass":["personajes-prin-filtro", "personajes-prin-filtro-mexicanPaguer"]
+    }
+  },
+
+  //chamoyAmiguis
+  "flex-layout.row#personajes-prin-filtro-chamoyAmiguis": {
+    "children": [
+      "image#chamoyAmiguis",
+      "rich-text#personajes-prin-filtro-chamoyAmiguis"
+    ],
+    "title": "filtro-chamoyYAmiguis"
+  },
+  "image#chamoyAmiguis":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  
+  "rich-text#personajes-prin-filtro-chamoyAmiguis":{
+    "props":{
+      "text":"[Chamoy y Amiguis](/personaje-chamoy-y-amiguis)",
+      "blockClass":["personajes-prin-filtro", "personajes-prin-filtro-chamoyAmiguis"]
+    }
+  },
+
+  //chikitiPunTaun
+  "flex-layout.row#personajes-prin-filtro-chikitiPunTaun": {
+    "children": [
+      "image#chikitiPunTaun",
+      "rich-text#personajes-prin-filtro-chikitiPunTaun"
+    ],
+    "title": "filtro-chikitiPunTaun"
+  },
+  "image#chikitiPunTaun":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  
+  "rich-text#personajes-prin-filtro-chikitiPunTaun":{
+    "props":{
+      "text":"[Chikiti Pun Taun](/personaje-chikiti-pun-taun)",
+      "blockClass":["personajes-prin-filtro", "personajes-prin-filtro-chikitiPunTaun"]
+    }
+  },
+
+  //virgencita
+  "flex-layout.row#personajes-prin-filtro-virgencita": {
+    "children": [
+      "image#virgencita",
+      "rich-text#personajes-prin-filtro-virgencita"
+    ],
+    "title": "filtro-Virgencita"
+  },
+  "image#virgencita":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  
+  "rich-text#personajes-prin-filtro-virgencita":{
+    "props":{
+      "text":"[Virgencita](/personaje-virgencita)",
+      "blockClass":["personajes-prin-filtro", "personajes-prin-filtro-virgencita"]
+    }
+  },
+  //neonato
+  "flex-layout.row#personajes-prin-filtro-neonatos": {
+    "children": [
+      "image#neonato",
+      "rich-text#personajes-prin-filtro-neonatos"
+    ],
+    "title": "filtro-neonatos"
+  },
+  "image#neonato":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  
+  "rich-text#personajes-prin-filtro-neonatos":{
+    "props":{
+      "text":"[Neonatos](/personaje-neonatos)",
+      "blockClass":["personajes-prin-filtro", "personajes-prin-filtro-neonatos"]
+    }
+  },
+
+
+
+  "flex-layout.col#personajes-prin-col-content": {
+    "children": [
+
+
+      "flex-layout.col#card-indiv-personaje1",
+      "flex-layout.col#card-indiv-personaje2",
+      "flex-layout.col#card-indiv-personaje3",
+      "flex-layout.col#card-indiv-personaje4",
+      "flex-layout.col#card-indiv-personaje5",
+      "flex-layout.col#card-indiv-personaje6",
+      "flex-layout.col#card-indiv-personaje7",
+      "flex-layout.col#card-indiv-personaje8",
+      "flex-layout.col#card-indiv-personaje9",
+      "flex-layout.col#card-indiv-personaje10",
+      "flex-layout.col#card-indiv-personaje11",
+      "flex-layout.col#card-indiv-personaje12",
+      "flex-layout.col#card-indiv-personaje13",
+      "flex-layout.col#card-indiv-personaje14",
+      "flex-layout.col#card-indiv-personaje15",
+      "flex-layout.col#card-indiv-personaje16",
+      "flex-layout.col#card-indiv-personaje17",
+      "flex-layout.col#card-indiv-personaje18",
+      "flex-layout.col#card-indiv-personaje19",
+      "flex-layout.col#card-indiv-personaje20",
+      "flex-layout.col#card-indiv-personaje21",
+      "flex-layout.col#card-indiv-personaje22",
+      "flex-layout.col#card-indiv-personaje23",
+      "flex-layout.col#card-indiv-personaje24",
+      "flex-layout.col#card-indiv-personaje25",
+      "flex-layout.col#card-indiv-personaje26",
+      "flex-layout.col#card-indiv-personaje27",
+      // "flex-layout.col#card-indiv-personaje28",
+      "flex-layout.col#card-indiv-personaje29",
+      "flex-layout.col#card-indiv-personaje30",
+      "flex-layout.col#card-indiv-personaje31"
+
+
+      // "flex-layout.row#card-indiv-personaje1",
+      // "flex-layout.row#card-indiv-personaje2",
+      // "flex-layout.row#card-indiv-personaje3",
+      // "flex-layout.row#card-indiv-personaje4",
+      // "flex-layout.row#card-indiv-personaje5",
+      // "flex-layout.row#card-indiv-personaje6",
+      // "flex-layout.row#card-indiv-personaje7",
+      // "flex-layout.row#card-indiv-personaje8",
+      // "flex-layout.row#card-indiv-personaje9",
+      // "flex-layout.row#card-indiv-personaje10"
+
+      // "rich-text#nombre-personaje-indiv"
+      // "rich-text#info-personaje-indiv",
+      // "rich-text#ver-product-personaje-indiv"
+    ],
+    "props": {
+      "width": "68%",
+      "blockClass": "personajes-indiv-col-txt-a"
+    }
+  },
+
+    ////////////////////////////////////////////////
+    "flex-layout.row#card-indiv-personaje10":{
+      "props":{
+        "blockClass":"card-indiv-personaje"
+      },
+      "children":[
+        "flex-layout.col#card-indiv-personaje29",
+        "flex-layout.col#card-indiv-personaje30",
+        "flex-layout.col#card-indiv-personaje31"
+      ]
+    },
+
+    //31
+    "flex-layout.col#card-indiv-personaje31":{
+      "props":{
+        "blockClass":"card-indiv-personaje"
+      },
+      "children":[
+        "image#personaje-indiv31",
+        "rich-text#personaje-indiv31",
+        "flex-layout.row#row-spacer",
+        "flex-layout.row#boton-indiv-personaje31"
+      ],
+      "title": "personaje-card-31"
+    },
+    "flex-layout.row#boton-indiv-personaje31":{
+      "props":{
+        "blockClass":"boton-indiv-personaje"
+      },
+      "children":[
+        "rich-text#boton-indiv-personaje31"
+      ]
+    },
+    "rich-text#boton-indiv-personaje31":{
+      "props":{
+        "blockClass":"boton-indiv-personaje",
+        "text":"[Ver más](/href)"
+      }
+    },
+    "rich-text#personaje-indiv31":{
+      "props":{
+        "blockClass":"persoanje-indiv",
+        "text":"### Nombare\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      }
+    },
+    "image#personaje-indiv31":{
+      "props":{
+        "blockClass":"personaje-indiv",
+        "src":"assets/personajes/aquamerito 2.svg"
+      }
+    },
+
+    //30
+    "flex-layout.col#card-indiv-personaje30":{
+      "props":{
+        "blockClass":"card-indiv-personaje"
+      },
+      "children":[
+        "image#personaje-indiv30",
+        "rich-text#personaje-indiv30",
+        "flex-layout.row#row-spacer",
+        "flex-layout.row#boton-indiv-personaje30"
+      ],
+      "title": "personaje-card-30"
+    },
+    "flex-layout.row#boton-indiv-personaje30":{
+      "props":{
+        "blockClass":"boton-indiv-personaje"
+      },
+      "children":[
+        "rich-text#boton-indiv-personaje30"
+      ]
+    },
+    "rich-text#boton-indiv-personaje30":{
+      "props":{
+        "blockClass":"boton-indiv-personaje",
+        "text":"[Ver más](/href)"
+      }
+    },
+    "rich-text#personaje-indiv30":{
+      "props":{
+        "blockClass":"persoanje-indiv",
+        "text":"### Nombare\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      }
+    },
+    "image#personaje-indiv30":{
+      "props":{
+        "blockClass":"personaje-indiv",
+        "src":"assets/personajes/aquamerito 2.svg"
+      }
+    },
+
+    //29
+    "flex-layout.col#card-indiv-personaje29":{
+      "props":{
+        "blockClass":"card-indiv-personaje"
+      },
+      "children":[
+        "image#personaje-indiv29",
+        "rich-text#personaje-indiv29",
+        "flex-layout.row#row-spacer",
+        "flex-layout.row#boton-indiv-personaje29"
+      ],
+      "title": "personaje-card-29"
+    },
+    "flex-layout.row#boton-indiv-personaje29":{
+      "props":{
+        "blockClass":"boton-indiv-personaje"
+      },
+      "children":[
+        "rich-text#boton-indiv-personaje29"
+      ]
+    },
+    "rich-text#boton-indiv-personaje29":{
+      "props":{
+        "blockClass":"boton-indiv-personaje",
+        "text":"[Ver más](/href)"
+      }
+    },
+    "rich-text#personaje-indiv29":{
+      "props":{
+        "blockClass":"persoanje-indiv",
+        "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+      }
+    },
+    "image#personaje-indiv29":{
+      "props":{
+        "blockClass":"personaje-indiv",
+        "src":"assets/personajes/aquamerito 2.svg"
+      }
+    },
+
+  
+
+   ////////////////////////////////////////////////
+   "flex-layout.row#card-indiv-personaje9":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "flex-layout.col#card-indiv-personaje25",
+      "flex-layout.col#card-indiv-personaje26",
+      "flex-layout.col#card-indiv-personaje27"
+    ]
+  },
+  //27
+  "flex-layout.col#card-indiv-personaje27":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv27",
+      "rich-text#personaje-indiv27",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje27"
+    ],
+    "title": "personaje-card-27"
+  },
+  "flex-layout.row#boton-indiv-personaje27":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje27"
+    ]
+  },
+  "rich-text#boton-indiv-personaje27":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv27":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv27":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //26
+  "flex-layout.col#card-indiv-personaje26":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv26",
+      "rich-text#personaje-indiv26",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje26"
+    ],
+    "title": "personaje-card-26"
+  },
+  "flex-layout.row#boton-indiv-personaje26":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje26"
+    ]
+  },
+  "rich-text#boton-indiv-personaje26":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv26":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv26":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //25
+  "flex-layout.col#card-indiv-personaje25":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv25",
+      "rich-text#personaje-indiv25",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje25"
+    ],
+    "title": "personaje-card-25"
+  },
+  "flex-layout.row#boton-indiv-personaje25":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje25"
+    ]
+  },
+  "rich-text#boton-indiv-personaje25":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv25":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv25":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+
+
+
+  ////////////////////////////////////////////////
+  "flex-layout.row#card-indiv-personaje8":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "flex-layout.col#card-indiv-personaje22",
+      "flex-layout.col#card-indiv-personaje23",
+      "flex-layout.col#card-indiv-personaje24"
+    ]
+  },
+  //24
+  "flex-layout.col#card-indiv-personaje24":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv24",
+      "rich-text#personaje-indiv24",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje24"
+    ],
+    "title": "personaje-card-24"
+  },
+  "flex-layout.row#boton-indiv-personaje24":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje24"
+    ]
+  },
+  "rich-text#boton-indiv-personaje24":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv24":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv24":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //23
+  "flex-layout.col#card-indiv-personaje23":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv23",
+      "rich-text#personaje-indiv23",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje23"
+    ],
+    "title": "personaje-card-23"
+  },
+  "flex-layout.row#boton-indiv-personaje23":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje23"
+    ]
+  },
+  "rich-text#boton-indiv-personaje23":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv23":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv23":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //22
+  "flex-layout.col#card-indiv-personaje22":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv22",
+      "rich-text#personaje-indiv22",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje22"
+    ]
+  },
+  "flex-layout.row#boton-indiv-personaje22":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje22"
+    ]
+  },
+  "rich-text#boton-indiv-personaje22":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv22":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv22":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+
+
+
+  
+  ////////////////////////////////////////////////
+  "flex-layout.row#card-indiv-personaje7":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "flex-layout.col#card-indiv-personaje19",
+      "flex-layout.col#card-indiv-personaje20",
+      "flex-layout.col#card-indiv-personaje21"
+    ]
+  },
+  //21
+  "flex-layout.col#card-indiv-personaje21":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv21",
+      "rich-text#personaje-indiv21",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje21"
+    ],
+    "title": "personaje-card-21"
+  },
+  "flex-layout.row#boton-indiv-personaje21":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje21"
+    ]
+  },
+  "rich-text#boton-indiv-personaje21":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv21":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv21":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //20
+  "flex-layout.col#card-indiv-personaje20":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv20",
+      "rich-text#personaje-indiv20",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje20"
+    ],
+    "title": "personaje-card-20"
+  },
+  "flex-layout.row#boton-indiv-personaje20":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje20"
+    ]
+  },
+  "rich-text#boton-indiv-personaje20":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv20":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv20":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //19
+  "flex-layout.col#card-indiv-personaje19":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv19",
+      "rich-text#personaje-indiv19",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje19"
+    ],
+    "title": "personaje-card-19"
+  },
+  "flex-layout.row#boton-indiv-personaje19":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje19"
+    ]
+  },
+  "rich-text#boton-indiv-personaje19":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv19":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv19":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+
+
+
+  ////////////////////////////////////////////////
+  "flex-layout.row#card-indiv-personaje6":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "flex-layout.col#card-indiv-personaje16",
+      "flex-layout.col#card-indiv-personaje17",
+      "flex-layout.col#card-indiv-personaje18"
+    ]
+  },
+  //18
+  "flex-layout.col#card-indiv-personaje18":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv18",
+      "rich-text#personaje-indiv18",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje18"
+    ],
+    "title": "personaje-card-18"
+  },
+  "flex-layout.row#boton-indiv-personaje18":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje18"
+    ]
+  },
+  "rich-text#boton-indiv-personaje18":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv18":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv18":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //17
+  "flex-layout.col#card-indiv-personaje17":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv17",
+      "rich-text#personaje-indiv17",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje17"
+    ],
+    "title": "personaje-card-17"
+  },
+  "flex-layout.row#boton-indiv-personaje17":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje17"
+    ]
+  },
+  "rich-text#boton-indiv-personaje17":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv17":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv17":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //16
+  "flex-layout.col#card-indiv-personaje16":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv16",
+      "rich-text#personaje-indiv16",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje16"
+    ],
+    "title": "personaje-card-16"
+  },
+  "flex-layout.row#boton-indiv-personaje16":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje16"
+    ]
+  },
+  "rich-text#boton-indiv-personaje16":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv16":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv16":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+
+
+
+  ////////////////////////////////////////////////
+  "flex-layout.row#card-indiv-personaje5":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "flex-layout.col#card-indiv-personaje13",
+      "flex-layout.col#card-indiv-personaje14",
+      "flex-layout.col#card-indiv-personaje15"
+    ]
+  },
+  //12
+  "flex-layout.col#card-indiv-personaje15":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv15",
+      "rich-text#personaje-indiv15",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje15"
+    ],
+    "title": "personaje-card-15"
+  },
+  "flex-layout.row#boton-indiv-personaje15":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje15"
+    ]
+  },
+  "rich-text#boton-indiv-personaje15":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv15":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv15":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //14
+  "flex-layout.col#card-indiv-personaje14":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv14",
+      "rich-text#personaje-indiv14",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje14"
+    ],
+    "title": "personaje-card-14"
+  },
+  "flex-layout.row#boton-indiv-personaje14":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje14"
+    ]
+  },
+  "rich-text#boton-indiv-personaje14":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv14":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv14":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //13
+  "flex-layout.col#card-indiv-personaje13":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv13",
+      "rich-text#personaje-indiv13",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje13"
+    ],
+    "title": "personaje-card-13"
+  },
+  "flex-layout.row#boton-indiv-personaje13":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje13"
+    ]
+  },
+  "rich-text#boton-indiv-personaje13":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv13":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv13":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+
+
+////////////////////////////////////////////////
+  "flex-layout.row#card-indiv-personaje4":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "flex-layout.col#card-indiv-personaje10",
+      "flex-layout.col#card-indiv-personaje11",
+      "flex-layout.col#card-indiv-personaje12"
+    ]
+  },
+  //12
+  "flex-layout.col#card-indiv-personaje12":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv12",
+      "rich-text#personaje-indiv12",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje12"
+    ],
+    "title": "personaje-card-12"
+  },
+  "flex-layout.row#boton-indiv-personaje12":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje12"
+    ]
+  },
+  "rich-text#boton-indiv-personaje12":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv12":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv12":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //11
+  "flex-layout.col#card-indiv-personaje11":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv11",
+      "rich-text#personaje-indiv11",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje11"
+    ],
+    "title": "personaje-card-11"
+  },
+  "flex-layout.row#boton-indiv-personaje11":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje11"
+    ]
+  },
+  "rich-text#boton-indiv-personaje11":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv11":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv11":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //10
+  "flex-layout.col#card-indiv-personaje10":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv10",
+      "rich-text#personaje-indiv10",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje10"
+    ],
+    "title": "personaje-card-10"
+  },
+  "flex-layout.row#boton-indiv-personaje10":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje10"
+    ]
+  },
+  "rich-text#boton-indiv-personaje10":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv10":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv10":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+
+
+  "flex-layout.row#card-indiv-personaje3":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "flex-layout.col#card-indiv-personaje7",
+      "flex-layout.col#card-indiv-personaje8",
+      "flex-layout.col#card-indiv-personaje9"
+    ]
+  },
+  //9
+  "flex-layout.col#card-indiv-personaje9":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv9",
+      "rich-text#personaje-indiv9",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje9"
+    ],
+    "title": "personaje-card-9"
+  },
+  "flex-layout.row#boton-indiv-personaje9":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje9"
+    ]
+  },
+  "rich-text#boton-indiv-personaje9":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv9":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv9":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //8
+  "flex-layout.col#card-indiv-personaje8":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv8",
+      "rich-text#personaje-indiv8",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje8"
+    ],
+    "title": "personaje-card-8"
+  },
+  "flex-layout.row#boton-indiv-personaje8":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje8"
+    ]
+  },
+  "rich-text#boton-indiv-personaje8":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv8":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv8":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //7
+  "flex-layout.col#card-indiv-personaje7":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv7",
+      "rich-text#personaje-indiv7",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje7"
+    ],
+    "title": "personaje-card-7"
+  },
+  "flex-layout.row#boton-indiv-personaje7":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje7"
+    ]
+  },
+  "rich-text#boton-indiv-personaje7":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv7":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv7":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+
+
+  "flex-layout.row#card-indiv-personaje2":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "flex-layout.col#card-indiv-personaje4",
+      "flex-layout.col#card-indiv-personaje5",
+      "flex-layout.col#card-indiv-personaje6"
+    ]
+  },
+  //6
+  "flex-layout.col#card-indiv-personaje6":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv6",
+      "rich-text#personaje-indiv6",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje6"
+    ],
+    "title": "personaje-card-6"
+  },
+  "flex-layout.row#boton-indiv-personaje6":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje6"
+    ]
+  },
+  "rich-text#boton-indiv-personaje6":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv6":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv6":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //5
+  "flex-layout.col#card-indiv-personaje5":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv5",
+      "rich-text#personaje-indiv5",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje5"
+    ],
+    "title": "personaje-card-5"
+  },
+  "flex-layout.row#boton-indiv-personaje5":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje5"
+    ]
+  },
+  "rich-text#boton-indiv-personaje5":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv5":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv5":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //4
+  "flex-layout.col#card-indiv-personaje4":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv4",
+      "rich-text#personaje-indiv4",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje4"
+    ],
+    "title": "personaje-card-4"
+  },
+  "flex-layout.row#boton-indiv-personaje4":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje4"
+    ]
+  },
+  "rich-text#boton-indiv-personaje4":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv4":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv4":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+
+  "flex-layout.row#card-indiv-personaje1":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "flex-layout.col#card-indiv-personaje1",
+      "flex-layout.col#card-indiv-personaje2",
+      "flex-layout.col#card-indiv-personaje3"
+    ]
+  },
+  //3
+  "flex-layout.col#card-indiv-personaje3":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv3",
+      "rich-text#personaje-indiv3",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje3"
+    ],
+    "title": "personaje-card-3"
+  },
+  "flex-layout.row#boton-indiv-personaje3":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje3"
+    ]
+  },
+  "rich-text#boton-indiv-personaje3":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv3":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv3":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //2
+  "flex-layout.col#card-indiv-personaje2":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv2",
+      "rich-text#personaje-indiv2",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje2"
+    ],
+    "title": "personaje-card-2"
+  },
+  "flex-layout.row#boton-indiv-personaje2":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje2"
+    ]
+  },
+  "rich-text#boton-indiv-personaje2":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv2":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv2":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+  //1
+  "flex-layout.col#card-indiv-personaje1":{
+    "props":{
+      "blockClass":"card-indiv-personaje"
+    },
+    "children":[
+      "image#personaje-indiv1",
+      "rich-text#personaje-indiv1",
+      "flex-layout.row#row-spacer",
+      "flex-layout.row#boton-indiv-personaje1"
+    ],
+    "title": "personaje-card-1"
+  },
+  "flex-layout.row#row-spacer": {
+    "props": {
+      "height": "grow",
+      "blockClass": "row-spacer"
+    }
+  },
+  "flex-layout.row#boton-indiv-personaje1":{
+    "props":{
+      "blockClass":"boton-indiv-personaje"
+    },
+    "children":[
+      "rich-text#boton-indiv-personaje1"
+    ]
+  },
+  "rich-text#boton-indiv-personaje1":{
+    "props":{
+      "blockClass":"boton-indiv-personaje",
+      "text":"[Ver más](/href)"
+    }
+  },
+  "rich-text#personaje-indiv1":{
+    "props":{
+      "blockClass":"persoanje-indiv",
+      "text":"### Nombre\nlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    }
+  },
+  "image#personaje-indiv1":{
+    "props":{
+      "blockClass":"personaje-indiv",
+      "src":"assets/personajes/aquamerito 2.svg"
+    }
+  },
+
+
+
+
+  "flex-layout.col#perosnajes-prin-titulo":{
+    "props":{
+      "blockClass":"personajes-indiv-titulo"
+    },
+    "children":[
+      "rich-text#personaje-indiv-titulo"
+    ]
+  },
+
+  "rich-text#personaje-indiv-titulo":{
+    "props":{
+      "blockClass":"personajes-indiv-titulo",
+      "text":"## Personajes"
+    }
+  },
+
+  "rich-text#nombre-personaje-indiv":{
+    "props":{
+      "text":"Nombre Personaje",
+      "blockClass":"nombre-personaje-indiv"
+    }
+  },
+  "rich-text#info-personaje-indiv":{
+    "props":{
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum augue nec eleifend euismod. Cras viverra vestibulum elit vitae accumsan. Duis aliquet massa a venenatis varius. Nulla facilisi. Morbi molestie nec massa eget bibendum. Vestibulum accumsan eu lorem sed venenatis. Suspendisse arcu ante, porttitor tempus dignissim ac, scelerisque sit amet tellus. Suspendisse accumsan odio sed justo venenatis, id molestie lectus dapibus. Integer magna dui, pharetra sit amet semper nec, maximus id metus. Pellentesque mollis quis nisl vel facilisis. Curabitur ornare a leo nec pellentesque. Fusce blandit sapien quis ante placerat, eu aliquet justo viverra. Ut in dapibus arcu. Etiam sapien turpis, condimentum in volutpat nec, rhoncus a enim.",
+      "blockClass":"info-personaje-indiv"
+    }
+  },
+  "rich-text#ver-product-personaje-indiv":{
+    "props":{
+      "text":"[Ver Producto](/)",
+      "blockClass":"ver-product-personaje-indiv"
+    }
+  }
+}

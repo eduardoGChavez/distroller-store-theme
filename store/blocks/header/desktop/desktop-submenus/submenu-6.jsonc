@@ -1,0 +1,88 @@
+{
+    "menu-item#diversion": {
+        "props": {
+            "id": "menu-item-diversion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Diversión",
+                "text": "Diversión"
+            },
+            "blockClass": "menu-prin-header"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#diversion"
+        ]
+    },
+    "vtex.menu@2.x:submenu#diversion": {
+        "props": {
+            "width": "auto",
+            "blockClass": "cont-submenu-desktop"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#diversion"
+        ]
+    },
+    "vtex.menu@2.x:menu#diversion": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#diversion-1",
+            "menu-item#diversion-2"
+            // "menu-item#diversion-3"
+        ]
+    },
+    "menu-item#diversion-1": {
+        "props": {
+            "id": "menu-item-diversion-1",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Distroller Chanel",
+                "text": "Distroller Chanel"
+            },
+            "title":"diversion-1"
+        }
+    },
+    "menu-item#diversion-2": {
+        "props": {
+            "id": "menu-item-diversion-2",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Juegos",
+                "text": "Juegos"
+            },
+            "title":"diversion-2"
+        }
+    },
+    "menu-item#diversion-3": {
+        "props": {
+            "id": "menu-item-diversion-3",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": false,
+                "tagTitle": "Diversion 3",
+                "text": "Diversion 3"
+            },
+            "title":"diversion-3"
+        }
+    }
+}

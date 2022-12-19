@@ -1,0 +1,91 @@
+{
+  "menu-item#mobile_menu-2": {
+    "props": {
+      "id": "menu-item-chamoy-amiguis",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Chamoy Amiguis",
+        "text": "Chamoy Amiguis"
+      },
+      "blockClass": "mob-menu-prin-header"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu.accordion#mobile_menu-2"
+    ],
+    "title":"chamoyYAmiguis-header-mobile"
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile_menu-2": {
+    "props": {
+      "width": "auto",
+      "blockClass": "mobile-submenu-2"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#mobile_menu-2"
+    ]
+  },
+  "vtex.menu@2.x:menu#mobile_menu-2": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#chamoyEdicionEspecial",
+      "menu-item#amiguisdeChamoy",
+      "menu-item#teenTokers",
+      "menu-item#pikolines",
+      "menu-item#bobozidades",
+      "menu-item#plusDecorativo",
+      "menu-item#miniBags",
+      "menu-item#Chamoy-ver-todos"
+    ]
+  }
+
+
+
+
+
+
+  // "menu-item#mobile_menu-2": {
+  //   "props": {
+  //     "id": "menu-item-personaje",
+  //     "type": "custom",
+  //     "iconId": null,
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "",
+  //       "noFollow": false,
+  //       "tagTitle": "Personajes",
+  //       "text": "Personajes"
+  //     },
+  //     "blockClass": "mob-menu-prin-header"
+  //   },
+  //   "blocks":[
+  //     "vtex.menu@2.x:submenu.accordion#mobile_menu-2"
+  //   ]
+  // },
+  // "vtex.menu@2.x:submenu.accordion#mobile_menu-2": {
+  //   "props": {
+  //     "width": "auto",
+  //     "blockClass": "cont-personaje-menu"
+  //   },
+  //   "children": [
+  //     "vtex.menu@2.x:menu#mobile_menu-2"
+  //   ]
+  // },
+  // "vtex.menu@2.x:menu#mobile_menu-2": {
+  //   "props": {
+  //     "orientation": "vertical"
+  //   },
+  //   "children": [
+  //     "menu-item#personaje-1",
+  //     "menu-item#personaje-2",
+  //     "menu-item#personaje-3"
+  //   ]
+  // }
+}

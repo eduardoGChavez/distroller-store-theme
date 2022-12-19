@@ -1,0 +1,975 @@
+{
+  "store.search": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "pagination": "infinity-scroll",
+      "context": {
+        // "skusFilter": "ALL",
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "default",
+        "maxItemsPerPage": 48
+      }
+    }
+  },
+
+  "store.search#brand": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "pagination": "infinity-scroll",
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 100,
+        "skusFilter": "ALL",
+        "simulationBehavior": "default"
+      }
+    }
+  },
+
+  "store.search#department": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "pagination": "infinity-scroll",
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "default"
+      }
+    }
+  },
+
+  "store.search#category": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "pagination": "infinity-scroll",
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "default"
+      }
+    }
+  },
+
+  "store.search#subcategory": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "pagination": "infinity-scroll",
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "default"
+      }
+    }
+  },
+
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout.desktop": {
+    "children": [
+      "flex-layout.row#banner-searchResult",
+      // "flex-layout.row#searchbread",
+      // "slider-layout#desk-slider-searchResult",
+      "flex-layout.row#desk-slider-searchResult",
+
+
+      "flex-layout.row#searchtitle-desktop",
+      "flex-layout.row#result",
+      "back-to-top-button",
+      "OrderFilters"
+    ],
+    "props": {
+      // "pagination": "show-more",
+      "pagination": "infinity-scroll",
+      "preventRouteChange": false,
+      "defaultGalleryLayout": "grid"
+    }
+  },
+  "flex-layout.row#banner-searchResult": {
+    "children": [
+      "list-context.image-list#banner-searchResult"
+    ],
+    "props": {
+      "blockClass": "banner-searchResult"
+    },
+    "title":"row-banner-desktop"
+  },
+  "list-context.image-list#banner-searchResult": {
+    "children": ["slider-layout#images-shearchResult"],
+    "props": {
+      "height": 720,
+      "blockClass": "banner-searchResult",
+      "images": [
+        {
+          "image": "",
+          "mobileImage": ""
+        }
+      ]
+    },
+    "title": "List-Context-banner-home"
+  },
+
+  "slider-layout#images-shearchResult": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "banner-searchResult"
+    },
+    "title":"imagen-banner"
+  },
+
+  "flex-layout.row#searchbread": {
+    "children": ["breadcrumb.search", "flex-layout.col#spacer", "order-by.v2"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      // "fullWidth": true,
+      "colSizing": "auto",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "search-breadCrum"
+    }
+  },
+
+  "flex-layout.row#desk-slider-searchResult": {
+    "children": [
+      "list-context.image-list#cat-imgs"
+    ],
+    "props": {
+      "blockClass": "desk-slider-searchResult"
+    }
+  },
+  "list-context.image-list#cat-imgs": {
+    "children": ["slider-layout#images-cats"],
+    "props": {
+      "height": 320,
+      "blockClass": "banner-searchResult",
+      "images": [
+        {
+          "image": "assets/search-result/cat-ejemplo2.jpg",
+          "mobileImage": "assets/search-result/cat-ejemplo2.jpg"
+        },
+        {
+          "image": "assets/search-result/cat-ejemplo2.jpg",
+          "mobileImage": "assets/search-result/cat-ejemplo2.jpg"
+        },
+        {
+          "image": "assets/search-result/cat-ejemplo2.jpg",
+          "mobileImage": "assets/search-result/cat-ejemplo2.jpg"
+        },
+        {
+          "image": "assets/search-result/cat-ejemplo2.jpg",
+          "mobileImage": "assets/search-result/cat-ejemplo2.jpg"
+        }
+        // {
+        //   "image": "assets/search-result/chamoyPlushDecorativoSinfondo.png",
+        //   "mobileImage": "assets/search-result/cat-ejemplo.jpg"
+        // }
+      ]
+    },
+    "title": "List-Context-cats"
+  },
+  "slider-layout#images-cats": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "cat-imgs-searchResult"
+    }
+  },
+// ------------------------------------------------- Slider Desktop Inicio -------------------------------------------------
+  "slider-layout#desk-slider-searchResult": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "blockClass": "carousel-searchResult"
+    },
+    "children": [
+      "flex-layout.row#desk-searchResult-item1", 
+      "flex-layout.row#desk-searchResult-item2", 
+      "flex-layout.row#desk-searchResult-item3",
+      "flex-layout.row#desk-searchResult-item4",
+      "flex-layout.row#desk-searchResult-item5"
+    ]
+  },
+
+
+
+
+
+  "flex-layout.row#desk-searchResult-item1": {
+    "children": ["flex-layout.col#desk-searchResult-item1"]
+  },
+  "flex-layout.col#desk-searchResult-item1": {
+    "children": [
+      "flex-layout.row#image-item1",
+      "flex-layout.row#text-item1"
+    ],
+    "props": {
+      "blockClass": "col-sliderSearchResult-item1"
+    }
+  },
+  "flex-layout.row#image-item1": {
+    "children": ["image#slider-item1"],
+    "props": {"horizontalAlign": "center"}
+  },
+  "image#slider-item1": {
+    "props": {
+      "src": "assets/search-result/ksmieritos.svg",
+      "link": {
+        "url": "/ksmieritos?_q=Ksmieritos&map=ft"
+      },
+      "maxHeight": 180,
+      "blockClass": "desk-searchResult-item"
+    }
+  },
+  "flex-layout.row#text-item1": {
+    "children": ["rich-text#1"]
+  },
+  "rich-text#1": {
+    "props": {
+      "text": "Ksmieritos",
+      "textPosition": "CENTER",
+      "blockClass": "text-slider-searchResult"
+    }
+  },
+
+
+
+
+
+  
+  "flex-layout.row#desk-searchResult-item2": {
+    "children": ["flex-layout.col#desk-searchResult-item2"]
+  },
+  "flex-layout.col#desk-searchResult-item2": {
+    "children": [
+      "flex-layout.row#image-item2",
+      "flex-layout.row#text-item2"
+    ],
+    "props": {
+      "blockClass": "col-sliderSearchResult-item2"
+    }
+  },
+  "flex-layout.row#image-item2": {
+    "children": ["image#slider-item2"],
+    "props": {"horizontalAlign": "center"}
+  },
+  "image#slider-item2": {
+    "props": {
+      "src": "assets/search-result/ksmieritos.svg",
+      "link": {
+        "url": "/aquameritos?_q=aquameritos&map=ft"
+      },
+      "maxHeight": 180,
+      "blockClass": "desk-searchResult-item"
+    }
+  },
+  "flex-layout.row#text-item2": {
+    "children": ["rich-text#2"]
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Aquameritos",
+      "textPosition": "CENTER",
+      "blockClass": "text-slider-searchResult"
+    }
+  },
+
+
+
+
+
+  "flex-layout.row#desk-searchResult-item3": {
+    "children": [
+      "flex-layout.col#desk-searchResult-item3"
+    ]
+  },
+  "flex-layout.col#desk-searchResult-item3": {
+    "children": [
+      "flex-layout.row#image-item3",
+      "flex-layout.row#text-item3"
+    ],
+    "props": {
+      "blockClass": "col-sliderSearchResult-item3"
+    }
+  },
+  "flex-layout.row#image-item3": {
+    "children": ["image#slider-item3"]
+  },
+  "image#slider-item3": {
+    "props": {
+      "src": "assets/search-result/ksmieritos.svg",
+      "link": {
+        "url": "/amoshionato?_q=amoshionato&map=ft"
+      },
+      "maxHeight": 180,
+      "blockClass": "desk-searchResult-item"
+    }
+  },
+  "flex-layout.row#text-item3": {
+    "children": ["rich-text#3"]
+  },
+  "rich-text#3": {
+    "props": {
+      "text": "Volamerito",
+      "textPosition": "CENTER",
+      "blockClass": "text-slider-searchResult"
+    }
+  },
+
+
+
+
+
+  
+
+  "flex-layout.row#desk-searchResult-item4": {
+    "children": ["flex-layout.col#desk-searchResult-item4"]
+  },
+  "flex-layout.col#desk-searchResult-item4": {
+    "children": [
+      "flex-layout.row#image-item4",
+      "flex-layout.row#text-item4"
+    ],
+    "props": {
+      "blockClass": "col-sliderSearchResult-item4"
+    }
+  },
+  "flex-layout.row#image-item4": {
+    "children": ["image#slider-item4"]
+  },
+  "image#slider-item4": {
+    "props": {
+      "src": "assets/search-result/ksmieritos.svg",
+      "link": {
+        "url": "/emoshionato?_q=Emoshionato&map=ft"
+      },
+      "maxHeight": 180,
+      "blockClass": "desk-searchResult-item"
+    }
+  },
+  "flex-layout.row#text-item4": {
+    "children": ["rich-text#4"]
+  },
+  "rich-text#4": {
+    "props": {
+      "text": "Emoshionato",
+      "textPosition": "CENTER",
+      "blockClass": "text-slider-searchResult"
+    }
+  },
+
+
+
+
+
+  
+
+  "flex-layout.row#desk-searchResult-item5": {
+    "children": ["flex-layout.col#desk-searchResult-item5"]
+  },
+  "flex-layout.col#desk-searchResult-item5": {
+    "children": [
+      "flex-layout.row#image-item5",
+      "flex-layout.row#text-item5"
+    ],
+    "props": {
+      "blockClass": "col-sliderSearchResult-item5"
+    }
+  },
+  "flex-layout.row#image-item5": {
+    "children": ["image#slider-item5"]
+  },
+  "image#slider-item5": {
+    "props": {
+      "src": "assets/search-result/ksmieritos.svg",
+      "link": {
+        "url": "https://www.facebook.com/distroller"
+      },
+      "maxHeight": 180,
+      "blockClass": "desk-searchResult-item"
+    }
+  },
+  "flex-layout.row#text-item5": {
+    "children": ["rich-text#5"]
+  },
+  "rich-text#5": {
+    "props": {
+      "text": "Ejemolo5",
+      "textPosition": "CENTER",
+      "blockClass": "text-slider-searchResult"
+    }
+  },
+// ------------------------------------------------- Slider Desktop Fin -------------------------------------------------
+
+
+
+
+
+
+
+
+
+  "flex-layout.row#searchtitle-desktop": {
+    // "children": ["search-title.v2"],
+    "children": ["breadcrumb.search", "search-title.v2", "order-by.v2"],
+    "props": {
+      "blockClass": "search-searchTitle"
+    }
+  },
+  "flex-layout.col#searchtitle-mobile": {
+    // "children": ["search-title.v2"],
+    "children": ["search-title.v2"],
+    "props": {
+      "blockClass": "search-searchTitle",
+      "width": "34%"
+    }
+  },
+  "flex-layout.col#searchTotalProducts-mobile": {
+    // "children": ["search-title.v2"],
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "search-totalproducts",
+      "verticalAlign": "middle",
+      "width": "33%"
+    }
+  },
+  "flex-layout.row#result": {
+    "children": ["flex-layout.col#content"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "search-result"
+    }
+  },
+  // "flex-layout.col#filter": {
+  //   "children": ["filter-navigator.v3"],
+  //   "props": {
+  //     "blockClass": "filterCol"
+  //   }
+  // },
+  // "filter-navigator.v3": {
+  //   "props": {
+  //     "facetOrdering": [
+  //       {
+  //         "key": "brand",
+  //         "orderBy": "name",
+  //         "order": "ASC"
+  //       }
+  //     ]
+  //   }
+  // },
+  "flex-layout.col#content": {
+    "children": [
+      // "flex-layout.row#searchinfo",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#searchinfo": {
+    "children": ["flex-layout.col#productCount"]//, "flex-layout.row#orderByAndSwitcher"]
+  },
+  "flex-layout.row#orderByAndSwitcher": {
+    "children": ["order-by.v2", "gallery-layout-switcher"],
+    "props": {
+      "horizontalAlign": "right",
+      "preventHorizontalStretch": true,
+      "blockClass": "orderByAndSwitcher",
+      "colGap": 3
+    }
+  },
+  "flex-layout.col#productCount": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountCol"
+    }
+  },
+  "flex-layout.row#fetchprevious": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": ["search-fetch-previous"]
+  },
+  "flex-layout.row#fetchmore": {
+    "props": {
+      "marginTop": 3
+    },
+    "children": ["search-fetch-more"]
+  },
+  "search-fetch-previous": {
+    "props": {
+      "htmlElementForButton": "a"
+    }
+  },
+  "search-fetch-more": {
+    "props": {
+      "htmlElementForButton": "a",
+      "specificationOptions": [
+        {
+          "key": "brand",
+          "orderBy": "name",
+          "order": "ASC"
+        }
+      ]
+    }
+  },
+  "flex-layout.row#products": {
+    "children": ["search-content"]
+  },
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  },
+
+  "search-result-layout.mobile": {
+    "children": [
+      // "flex-layout.row#searchbread",
+      "flex-layout.row#banner-searchResult",
+      "flex-layout.row#mob-breadCrum",
+      // "breadcrumb.search",
+      "flex-layout.row#mob-slider-searchResult",
+      "flex-layout.row#row-title",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "back-to-top-button",
+      "OrderFilters"
+    ],
+    "props": {
+      // "pagination": "show-more",
+      "pagination": "infinity-scroll",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "flex-layout.row#mob-breadCrum": {
+    "children":[
+      "breadcrumb.search", "breadcrumb"
+      // ,
+      // "flex-layout.col#switcherMobile"
+    ],
+    "props" :{"preserveLayoutOnMobile": true}
+  },
+
+  
+  "flex-layout.row#mob-slider-searchResult": {
+    "children": [
+      // "slider-layout#mob-slider-searchResult"
+      "list-context.image-list#cat-imgs"
+    ],
+    "props": {
+      "blockClass": "mob-slider-searchResult"
+    }
+  },
+// ------------------------------------------------- Slider Mobile Inicio -------------------------------------------------
+  "slider-layout#mob-slider-searchResult": {
+    "props": {
+      "itemsPerPage": {
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel-searchResult"
+    },
+    "children": [
+      "flex-layout.row#mob-searchResult-item1", 
+      "flex-layout.row#mob-searchResult-item2", 
+      "flex-layout.row#mob-searchResult-item3",
+      "flex-layout.row#mob-searchResult-item4",
+      "flex-layout.row#mob-searchResult-item5"
+    ]
+  },
+
+
+
+
+
+  "flex-layout.row#mob-searchResult-item1": {
+    "children": ["flex-layout.col#mob-searchResult-item1"]
+  },
+  "flex-layout.col#mob-searchResult-item1": {
+    "children": [
+      "flex-layout.row#slider-image-mob-item1",
+      "flex-layout.row#slider-mob-text-item1"
+    ],
+    "props": {
+      "blockClass": "col-mob-sliderSearchResult-item1"
+    }
+  },
+  "flex-layout.row#slider-image-mob-item1": {
+    "children": ["image#slider-mob-item1"],
+    "props": {"horizontalAlign": "center"}
+  },
+  "image#slider-mob-item1": {
+    "props": {
+      "src": "assets/search-result/ksmieritos.svg",
+      "link": {
+        "url": "/ksmieritos?_q=Ksmieritos&map=ft"
+      },
+      "maxHeight": 180,
+      "blockClass": "mob-searchResult-item"
+    }
+  },
+  "flex-layout.row#slider-mob-text-item1": {
+    "children": ["rich-text#slider-mob-text1"]
+  },
+  "rich-text#slider-mob-text1": {
+    "props": {
+      "text": "Ksimerito",
+      "textPosition": "CENTER",
+      "blockClass": "text-slider-mob-searchResult"
+    }
+  },
+
+
+
+
+
+  
+  "flex-layout.row#mob-searchResult-item2": {
+    "children": ["flex-layout.col#mob-searchResult-item2"]
+  },
+  "flex-layout.col#mob-searchResult-item2": {
+    "children": [
+      "flex-layout.row#image-mob-item2",
+      "flex-layout.row#slider-mob-text-item2"
+    ],
+    "props": {
+      "blockClass": "col-mob-sliderSearchResult-item2"
+    }
+  },
+  "flex-layout.row#image-mob-item2": {
+    "children": ["image#slider-mob-item2"],
+    "props": {"horizontalAlign": "center"}
+  },
+  "image#slider-mob-item2": {
+    "props": {
+      "src": "assets/search-result/ksmieritos.svg",
+      "link": {
+        "url": "/aquameritos?_q=aquameritos&map=ft"
+      },
+      "maxHeight": 180,
+      "blockClass": "mob-searchResult-item"
+    }
+  },
+  "flex-layout.row#slider-mob-text-item2": {
+    "children": ["rich-text#slider-mob-text2"]
+  },
+  "rich-text#slider-mob-text2": {
+    "props": {
+      "text": "Aquamerito",
+      "textPosition": "CENTER",
+      "blockClass": "text-slider-mob-searchResult"
+    }
+  },
+
+
+
+
+
+  "flex-layout.row#mob-searchResult-item3": {
+    "children": [
+      "flex-layout.col#mob-searchResult-item3"
+    ]
+  },
+  "flex-layout.col#mob-searchResult-item3": {
+    "children": [
+      "flex-layout.row#image-mob-item3",
+      "flex-layout.row#slider-mob-text-item3"
+    ],
+    "props": {
+      "blockClass": "col-mob-sliderSearchResult-item3"
+    }
+  },
+  "flex-layout.row#image-mob-item3": {
+    "children": ["image#slider-mob-item3"]
+  },
+  "image#slider-mob-item3": {
+    "props": {
+      "src": "assets/search-result/ksmieritos.svg",
+      "link": {
+        "url": "/amoshionato?_q=amoshionato&map=ft"
+      },
+      "maxHeight": 180,
+      "blockClass": "mob-searchResult-item"
+    }
+  },
+  "flex-layout.row#slider-mob-text-item3": {
+    "children": ["rich-text#slider-mob-text3"]
+  },
+  "rich-text#slider-mob-text3": {
+    "props": {
+      "text": "Amoshionato",
+      "textPosition": "CENTER",
+      "blockClass": "text-slider-mob-searchResult"
+    }
+  },
+
+
+
+
+
+  
+
+  "flex-layout.row#mob-searchResult-item4": {
+    "children": ["flex-layout.col#mob-searchResult-item4"]
+  },
+  "flex-layout.col#mob-searchResult-item4": {
+    "children": [
+      "flex-layout.row#image-mob-item4",
+      "flex-layout.row#slider-mob-text-item4"
+    ],
+    "props": {
+      "blockClass": "col-mob-sliderSearchResult-item4"
+    }
+  },
+  "flex-layout.row#image-mob-item4": {
+    "children": ["image#slider-mob-item4"]
+  },
+  "image#slider-mob-item4": {
+    "props": {
+      "src": "assets/search-result/ksmieritos.svg",
+      "link": {
+        "url": "/emoshionato?_q=Emoshionato&map=ft"
+      },
+      "maxHeight": 180,
+      "blockClass": "mob-searchResult-item"
+    }
+  },
+  "flex-layout.row#slider-mob-text-item4": {
+    "children": ["rich-text#slider-mob-text4"]
+  },
+  "rich-text#slider-mob-text4": {
+    "props": {
+      "text": "Emoshionato",
+      "textPosition": "CENTER",
+      "blockClass": "text-slider-mob-searchResult"
+    }
+  },
+
+
+
+
+
+  
+
+  "flex-layout.row#mob-searchResult-item5": {
+    "children": ["flex-layout.col#mob-searchResult-item5"]
+  },
+  "flex-layout.col#mob-searchResult-item5": {
+    "children": [
+      "flex-layout.row#image-item5",
+      "flex-layout.row#slider-mob-text-item5"
+    ],
+    "props": {
+      "blockClass": "col-mob-sliderSearchResult-item5"
+    }
+  },
+  "flex-layout.row#image-mob-item5": {
+    "children": ["image#slider-mob-item5"]
+  },
+  "image#slider-mob-item5": {
+    "props": {
+      "src": "assets/search-result/ksmieritos.svg",
+      "link": {
+        "url": "https://www.facebook.com/distroller"
+      },
+      "maxHeight": 180,
+      "blockClass": "mob-searchResult-item"
+    }
+  },
+  "flex-layout.row#slider-mob-text-item5": {
+    "children": ["rich-text#slider-mob-text5"]
+  },
+  "rich-text#slider-mob-text5": {
+    "props": {
+      "text": "Emoshionato",
+      "textPosition": "CENTER",
+      "blockClass": "text-slider-mob-searchResult"
+    }
+  },
+// ------------------------------------------------- Slider Mobile Fin -------------------------------------------------
+
+
+
+
+  "flex-layout.row#row-title": {
+    "children": [
+      "flex-layout.col#switcherMobile",
+      // Falta título
+      "flex-layout.col#searchtitle-mobile",
+      "flex-layout.col#searchTotalProducts-mobile"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "colJustify": "around"
+    }
+  },
+  "flex-layout.row#contentmobile": {
+    "children": ["search-content"],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "flex-layout.row#searchinfomobile": {
+    "children": [
+      "flex-layout.col#orderByMobile"
+      // "flex-layout.col#filterMobile"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "colJustify": "around"
+    }
+  },
+
+  "flex-layout.col#orderByMobile": {
+    "children": ["order-by.v2"],
+    "props": {
+      "blockClass": "orderByMobileCol"
+    }
+  },
+
+  "flex-layout.row#productCountMobile": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountMobileRow"
+    }
+  },
+
+  "flex-layout.col#filterMobile": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterMobileCol",
+      "width": "33%"
+    }
+  },
+  "flex-layout.col#switcherMobile": {
+    "children": ["gallery-layout-switcher"],
+    "props": {
+      "verticalAlign": "middle",
+      "width": "33%"
+    }
+  },
+  "search-not-found-layout": {
+    "children": ["flex-layout.row#notfound"]
+  },
+
+  "flex-layout.row#notfound": {
+    "children": ["not-found"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 4,
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#listLayout",
+      "GridSummary": "product-summary.shelf"
+    }
+  },
+  "gallery-layout-switcher": {
+    "children": [
+      /*
+       * For accessbility to work properly,
+       * It's important to define the options in the same order as the layouts
+       */
+      "gallery-layout-option#grid",
+      "gallery-layout-option#list"
+    ]
+  },
+  "gallery-layout-option#grid": {
+    "props": {
+      "name": "grid"
+    },
+    "children": [
+      "icon-grid",
+      "responsive-layout.desktop#textOptionGrid"
+    ]
+  },
+  "gallery-layout-option#list": {
+    "props": {
+      "name": "list"
+    },
+    "children": [
+      "icon-inline-grid",
+      "responsive-layout.desktop#textOptionList"
+    ]
+  },
+  "responsive-layout.desktop#textOptionGrid": {
+    "children": [
+      "rich-text#option-grid"
+    ]
+  },
+  "responsive-layout.desktop#textOptionList": {
+    "children": [
+      "rich-text#option-list"
+    ]
+  },
+  "rich-text#option-grid": {
+    "props": {
+      "text": "Grid",
+      "textColor": "c-auto",
+      "blockClass": "layout-option"
+    }
+  },
+  "rich-text#option-list": {
+    "props": {
+      "text": "List",
+      "textColor": "c-auto",
+      "blockClass": "layout-option"
+    }
+  }
+}

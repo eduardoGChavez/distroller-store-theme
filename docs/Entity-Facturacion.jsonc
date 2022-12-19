@@ -1,0 +1,171 @@
+// https://distrollermx.vtexcommercestable.com.br/api/dataentities/dataBilling/schemas/dataBilling
+
+{
+    "title": "dataBilling",
+    "type": "object",
+    "properties": {
+        "numPedido": {
+            "type": "string",
+            "title": "Número de Pedido",
+            "description": "Número de pedido"
+        },
+        "razonSocial": {
+            "type": "string",
+            "title": "Razón Social",
+            "description": "Razón social"
+        },
+        "rfc": {
+            "type": "string",
+            "title": "RFC",
+            "description": "RFC"
+        },
+        "correo": {
+            "type": "string",
+            "title": "Correo Electrónico",
+            "description": "Correo electronico"
+        },
+        "telefono": {
+            "type": "string",
+            "title": "Teléfono",
+            "description": "Teléfono"
+        },
+        "calle": {
+            "type": "string",
+            "title": "Calle",
+            "description": "Calle"
+        },
+        "numCasa": {
+            "type": "string",
+            "title": "Número de Casa",
+            "description": "Número de Casa"
+        },
+        "cp": {
+            "type": "string",
+            "title": "Código Postal",
+            "description": "Código Postal"
+        },
+        "entreCalle": {
+            "type": "string",
+            "title": "Entre Calle",
+            "description": "Entre calles o intersección"
+        },
+        "colonia": {
+            "type": "string",
+            "title": "Colonia",
+            "description": "Colonia"
+        },
+        "ciudad": {
+            "type": "string",
+            "title": "Ciudad",
+            "description": "Ciudad"
+        },
+        "estado":{
+            "type":"string",
+            "enum":[
+                "Jalisco"
+            ]
+        },
+        "cfdi":{
+            "type":"string",
+            "enum":[
+                "Por definir",
+                "Gastos generales",
+                "Adquisición de mercancías",
+                "Devoluciones, descuentos o bonificaciones"
+            ]
+        },
+        "pago":{
+            "type":"string",
+            "enum":[
+                "Tarjeta de débito",
+                "Efectivo",
+                "Tarjeta de crédito",
+                "Transferencia bancaria"
+            ]
+        }
+    },
+    "required": [
+        "numPedido",
+        "razonSocial",
+        "rfc",
+        "correo",
+        "telefono",
+        "calle",
+        "numCasa",
+        "cp",
+        "entreCalle",
+        "colonia",
+        "ciudad",
+        "estado",
+        "cfdi",
+        "pago"
+    ],
+    "v-indexed":[
+        "numPedido",
+        "razonSocial",
+        "rfc",
+        "correo",
+        "telefono",
+        "calle",
+        "numCasa",
+        "cp",
+        "entreCalle",
+        "colonia",
+        "ciudad",
+        "estado",
+        "cfdi",
+        "pago"
+    ],
+    "v-security": {
+        "publicJsonSchema": true,
+        "allowGetAll": false,
+        "publicRead": [
+            "fieldExample"
+        ],
+        "publicWrite": [
+            "numPedido",
+            "razonSocial",
+            "rfc",
+            "correo",
+            "telefono",
+            "calle",
+            "numCasa",
+            "cp",
+            "entreCalle",
+            "colonia",
+            "ciudad",
+            "estado",
+            "cfdi",
+            "pago"
+        ],
+        "publicFilter": [
+            "fieldExample"
+        ]
+    },
+    "v-triggers":[
+        {
+            "name":"info-facturacion",
+            "active": true,
+            "action":{
+                "type": "t-email",
+                "template": "info-facturacion",
+                "body":{
+                    "numPedido": "{!numPedido}",
+                    "razonSocial": "{!razonSocial}",
+                    "rfc": "{!rfc}",
+                    "correo": "{!correo}",
+                    "telefono": "{!telefono}",
+                    "calle": "{!calle}",
+                    "numCasa": "{!numCasa}",
+                    "cp": "{!cp}",
+                    "entreCalle": "{!entreCalle}",
+                    "colonia": "{!colonia}",
+                    "ciudad": "{!ciudad}",
+                    "estado": "{!estado}",
+                    "cfdi": "{!cfdi}",
+                    "pago": "{!pago}"
+                }
+            }
+        }
+    ]
+}

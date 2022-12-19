@@ -1,0 +1,29 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      // Bebés neonatos
+      // Chamoy y amiguis
+      // Chikiti Pun Taun
+      // Accesorios para ti
+      // Outlet
+      // Diversión
+      "menu-item#bebesNeonatos",
+      "menu-item#chamoyAmiguis",
+      "menu-item#chikiPunTaun",
+      "menu-item#ropaYAccesoriosParaTi",
+      "menu-item#personajes",
+      "menu-item#juegos",
+      "menu-item#outlet",
+      "menu-item#extra"
+      // "menu-item#productos",
+      // "menu-item#personajes",
+      // "menu-item#channel",
+      // "menu-item#diversion"
+      // "menu-item#juegos"
+      // "menu-item#distrollerizate"
+    ]
+  }
+}
